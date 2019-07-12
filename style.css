@@ -973,7 +973,7 @@ DONE ANIMATION */
     }
 }
 
-@media (max-width: 360px) {
+@media(max-width:500px) and (min-width:320px)   {
     .cb-cursor {
         opacity: 0;
     }
@@ -1034,11 +1034,11 @@ DONE ANIMATION */
     .social-3 {
         padding-top: 0vh;
         left: 5vw;
-        top: 80vh;
+        top: 75vh;
     }
     .language-mobie {
         padding-top: 0vh;
-        top: 80vh;
+        top: 75vh;
         left: 78vw;
     }
     #nextSlideBtn {
@@ -1092,6 +1092,9 @@ DONE ANIMATION */
     }
     .page-body {
         height: 82.03125vh;
+    }
+    #page-wrapper{
+        overflow: hidden;
     }
 }
 
