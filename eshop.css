@@ -330,20 +330,6 @@ video {
     backface-visibility: hidden;
 }
 
-.product-grid .product-picture img {
-    display: block;
-    border: none;
-    -webkit-transform: scale(1.01) translateZ(0);
-    transform: scale(1.01) translateZ(0);
-}
-
-.product-grid .product-picture:after,
-.product-grid .product-picture img {
-    width: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
 .product-grid .product-picture:after {
     content: '';
     position: absolute;
@@ -360,8 +346,8 @@ video {
     position: absolute;
     bottom: 30px;
     left: 30px;
-    height: 20px;
-    width: 20px;
+    height: 30px;
+    width: 30px;
     opacity: 0;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -382,8 +368,125 @@ video {
     background: #fff;
 }
 
+.product-grid .product-more:after {
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.product-grid .product-link:hover .product-more {
+    opacity: 1;
+}
+
 .u-absolute {
     position: absolute;
+}
+
+.product-grid .product-name {
+    margin-bottom: 8px;
+    max-height: 2.16rem;
+    overflow: hidden;
+    color: #000;
+    font-size: 2rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.product-grid .product-info-category {
+    display: inline-block;
+    color: rgba(0, 0, 0, .54);
+    font-size: 1.2rem;
+    line-height: 1.4;
+    letter-spacing: .4em;
+    text-transform: uppercase;
+    vertical-align: top;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.product-grid-more-button {
+    padding: 22px 28px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    background: 0 0;
+    border: 1px solid #282e38;
+    color: #000;
+    font-size: 1.2rem;
+    line-height: 1;
+    letter-spacing: .05em;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    position: relative;
+    -webkit-transition: color .6s cubic-bezier(.165, .84, .44, 1);
+    transition: color .6s cubic-bezier(.165, .84, .44, 1);
+}
+
+.product-grid .product-link:focus .product-picture img,
+.product-grid .product-link:hover .product-picture img {
+    opacity: .8;
+}
+
+.product-grid .product-picture img {
+    -webkit-transition: opacity .6s cubic-bezier(.165, .84, .44, 1);
+    transition: opacity .6s cubic-bezier(.165, .84, .44, 1);
+}
+
+.product-grid .product-picture img {
+    display: block;
+    border: none;
+    -webkit-transform: scale(1.01) translateZ(0);
+    transform: scale(1.01) translateZ(0);
+}
+
+.product-grid .product-picture:after,
+.product-grid .product-picture img {
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.product-grid-more-button:hover {
+    color: white;
+}
+
+.product-cart-more-button-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.product-grid-more-button:hover:before {
+    -webkit-transform: scaleX(1) translateZ(0);
+    transform: scaleX(1) translateZ(0);
+}
+
+.product-grid-more-button:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #282e38;
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transform: scaleX(0) translateZ(0);
+    transform: scaleX(0) translateZ(0);
+    -webkit-transition: -webkit-transform .6s cubic-bezier(.165, .84, .44, 1);
+    transition: -webkit-transform .6s cubic-bezier(.165, .84, .44, 1);
+    transition: transform .6s cubic-bezier(.165, .84, .44, 1);
+    transition: transform .6s cubic-bezier(.165, .84, .44, 1), -webkit-transform .6s cubic-bezier(.165, .84, .44, 1);
+}
+
+.container-button-more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.product-grid-more-button {
+    width: 240px;
+    height: 60px;
 }
 
 
