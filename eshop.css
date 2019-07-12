@@ -1,0 +1,143 @@
+._container-eshop {
+    padding-left: 83px;
+    width: 100%;
+    height: 400px;
+    background-color: beige;
+}
+
+._navi-link {
+    display: inline-flex;
+    align-items: center;
+}
+
+._dash {
+    width: 15px;
+    height: 2px;
+    background-color: black;
+}
+
+._container-dash {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+._item-link {
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: rgb(30, 33, 39);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+}
+
+._item-link.active,
+._item-link:hover {
+    font-weight: bold;
+}
+
+._detail-item {
+    padding-top: 28px;
+}
+
+#_detail-item-left {
+    width: 29.85%;
+    padding: 0px;
+}
+
+#_detail-item-right {
+    width: 70.15%;
+    padding: 0px;
+    background-color: green;
+}
+
+
+/* ._container-left {
+    display: -webkit-flex;
+    -webkit-flex-direction: row-reverse;
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+#_detail-image {
+    width: 88%;
+    height: 66.0185vh;
+}
+
+._container-small-images {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 20px;
+}
+
+._container-small-images li {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 40px;
+}
+
+.image_slide.active {
+    border: #dfe0e1 1px solid;
+}
+
+._container-left {
+    display: flex;
+}
+
+
+/* #_detail-item-left {
+    width: 47.75%;
+    padding: 0px;
+}
+
+#_detail-item-right {
+    width: 52.25%;
+    padding: 0px;
+} */
+
+.carousel.fading .carousel-inner>.item {
+    /* Override the properties for the default sliding carousel */
+    display: block;
+    position: absolute;
+    left: 0 !important;
+    /* Hide slides by default */
+    opacity: 0;
+    /* Set transition to opactity */
+    -moz-transition: .6s ease-in-out opacity;
+    -webkit-transition: .6s ease-in-out opacity;
+    -o-transition: .6s ease-in-out opacity;
+    transition: .6s ease-in-out opacity;
+}
+
+
+/* Active slides are visible on transition end */
+
+.carousel.fading .carousel-inner>.active,
+
+/* Next slide is visible during transition */
+
+.carousel.fading .carousel-inner>.next.left {
+    opacity: 1;
+}
+
+.carousel.fading .carousel-inner>.next,
+.carousel.fading .carousel-inner>.active.left {
+    opacity: 0;
+}
+
+.carousel-inner .item {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    ._container-left {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    ._container-small-images {
+        display: flex;
+    }
+    #_detail-image {
+        height: 485px;
+    }
+}

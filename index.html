@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thời Trang</title>
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="pointer.css">
+
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="menu.css">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div id="page-wrapper">
+        <div class="cb-cursor cb-color" id="cursor-page">
+        </div>
+        <div class="header">
+            <div id="logo">
+                <a href="#">
+                    <img src="./img/logo.png">
+                </a>
+            </div>
+            <nav class="menu menu-desktop" role="navigation">
+                <ul class="menu-list menu-left">
+                    <li>
+                        <a class="link-item" href="#about">PROJECTS</a>
+                        <div class="container-red-slider">
+                            <hr class="active-li">
+                        </div>
+                    </li>
+                    <li>
+                        <a class="link-item" href="#exp">E-SHOP</a>
+                        <div class="container-red-slider">
+                            <hr class="active-li">
+                        </div>
+                    </li>
+                    <li>
+                        <a class="link-item" href="#skills">ABOUT US</a>
+                        <div class="container-red-slider">
+                            <hr class="active-li">
+                        </div>
+                    </li>
+                    <li>
+                        <a class="link-item" href="#projects">CONTACT</a>
+                        <div class="container-red-slider">
+                            <hr class="active-li">
+                        </div>
+                    </li>
+                    <li>
+                        <ul class="lang">
+                            <li style="padding: 0px">
+                                <a class="en expand active ">ENG </a>
+                                <a class="lang-space ">/</a>
+                                <a class="vi expand">VIE</a>
+                            </li>
+                        </ul>
+                        <div class="container-red-slider">
+                            <hr class="active-li">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="navMobie">
+                <div class="container-menu-mobie">
+                    <ul class="navMenu">
+                        <li><a href="#0">PROJECTS</a></li>
+                        <li><a href="#0">E-SHOP</a></li>
+                        <li class="active"><a href="#0">ABOUT US</a></li>
+                        <li><a href="#0">CONTACT</a></li>
+                    </ul>
+                    <div class="logo-menu-mobie">
+                        <img src="./img/logo-menu-mobie.png">
+                    </div>
+                    <div class="footerMenuMobie">
+                        <div class="container-icon-social">
+                            <a href="#">
+                                <img class="img-facebook">
+                            </a>
+                            <a href="#">
+
+                                <img class="img-youtube ytb-mobie" src="./img/youtubeHover.svg">
+                            </a>
+                            <a href="#">
+                                <img class="img-instagram" src="./img/instaHover.svg">
+                            </a>
+                        </div>
+
+                        <div class="container-cart-item">
+                            <div id="cartMenu">
+                                CART
+                            </div>
+                            <div class="number-item-cart">
+                                <div>
+                                    0
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <i class="fa fa-times closeButton" aria-hidden="true"></i>
+            </nav>
+
+            <nav class="" id="navRightCart">
+                <div class="artile">
+                    <div class="number-artile">
+                        1 ARTICLE
+                    </div>
+                    <i class="fa fa-times closeCart" aria-hidden="true"></i>
+                </div>
+                <div class="infomationCart">
+                    <div class="img-cart">
+                        <img src="./img/itemCart.png">
+                    </div>
+                    <div class="info-item">
+                        <div class="title-item">
+                            1x Eye flow T-Shirt
+                        </div>
+                        <div class="size-item">
+                            S/Black/T-Shirt
+                        </div>
+                        <div class="cost-info">
+                            <div class="cost-item">
+                                75$
+                            </div>
+                            <div class="count-item">
+                                <div class="decrement-item">
+                                    <i class="fa fa-minus" style="color:#8d8e91;"></i>
+                                </div>
+                                <div class="increment-item">
+                                    <i class="fa fa-plus" style="color:white;"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr class="custom-line-hr">
+                <div class="totalMonney">
+                    <div>
+                        Total
+                    </div>
+                    <div id="totalMonney">
+                        75$
+                    </div>
+                </div>
+
+                <div class="payment-now">
+                    <a>Payment Now</a>
+                </div>
+                <hr style="width: 66.5%">
+            </nav>
+
+            <div class="burgerIcon">
+                <div class="burgerLine"></div>
+                <div class="burgerLine lineCenter"></div>
+                <div class="burgerLine"></div>
+            </div>
+        </div>
+
+        <div class="page-body">
+            <div class=" text_logo">
+                <img class="img-responsive" id="textSlogan" src="./img/Hustel-text.png">
+            </div>
+            <div class="col-xs-8 p-0" id="col-left">
+                <div id="carousel-1" class="carousel slide">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item ">
+                            <img class="image_slide" src="./img/pic1.png">
+                        </div>
+                        <div class="item">
+                            <img class="image_slide" src="./img/pic2.png">
+                        </div>
+                        <div class="item">
+                            <img class="image_slide" src="./img/pic3.png">
+                        </div>
+
+                        <div class="item">
+                            <img class="image_slide" src="./img/4.png">
+                        </div>
+                        <div class="item">
+                            <img class="image_slide" src="./img/pic5.png">
+                        </div>
+                    </div>
+                </div>
+                <a>
+                    <div class="container_apple">
+                        <img class="logo-apple" src="./img/Appstore.svg">
+                        <div class="container-text-apple">
+                            <div class="text-descripton-1">AVALABLE ON</div>
+                            <div class="text-descripton-2">APP STORE</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://mp3.zing.vn">
+                    <div class="container_android">
+                        <img class="logo-android">
+                        <div class="container-text-android">
+                            <div class="text-descripton-1">GET IT ON</div>
+                            <span class="text-descripton-2">CH PLAY</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-xs-2" id="col-center">
+                <div class="container-button">
+                    <div class="circle-text customNextButton" id="nextSlideBtn">
+                        <div class="custom-animation">
+                        </div>
+                        <div class="container-image-arrow">
+                            <img class="cssArrow" src="./img/Arow-Right.svg" />
+                        </div>
+                    </div>
+
+                    <div class="circle-text customPrevButton" id="previousSlideBtn">
+                        <div class="custom-animation">
+
+                        </div>
+                        <div class="container-image-arrow">
+                            <img class="cssArrow" style=" transform: rotate(180deg);" src="./img/Arow-Right.svg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="social-3">
+                    <div class="container-icon-social-desktop">
+                        <a href="#">
+                            <img class="img-facebook ">
+                        </a>
+                        <a href="#">
+                            <img class="img-youtube" src="./img/Youtube.svg">
+                        </a>
+                        <a href="#">
+                            <img class="img-instagram" src="./img/Instagram.svg">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="language-mobie">
+                    <a class="active">ENG </a><b>/</b><a> VI</a>
+                </div>
+
+            </div>
+            <div class=" col-xs-2" id="col-right">
+                <div id="counter">
+                    <div class="rotate">
+
+                    </div>
+                </div>
+                <ul id="timecount-wrap">
+                </ul>
+                <div id="carousel-2" class="carousel slide">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item ">
+                            <img class="image_slide" src="./img/next1.png">
+                        </div>
+                        <div class="item active">
+                            <img class="image_slide" src="./img/next2.png">
+                        </div>
+                        <div class="item">
+                            <img class="image_slide" src="./img/next3.png">
+                        </div>
+                        <div class="item">
+                            <img class="image_slide" src="./img/next4.png">
+                        </div>
+                        <div class="item">
+                            <img class="image_slide" src="./img/next5.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+        <script src="pointer.js"></script>
+        <script src="slider.js "></script>
+        <script src="menu.js "></script>
+
+    </div>
+
+</body>
+
+</html>

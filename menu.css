@@ -1,0 +1,318 @@
+/* THIS PROJECT IS PART OF A UDEMY TUTORIAL ON GREENSOCK JAVASCRIPT ANIMATIONS
+LEARN HOW TO ANIMATE WITH JAVASCRIPT BY ENROLLING IN THE COURSE: https://www.udemy.com/javascript-animations-using-greensock/
+USE DISCOUNT CODE 'CODEPEN' TO TAKE THE COURSE FOR JUST $9.99!  */
+
+
+/*GENERAL STYLES*/
+
+p {
+    line-height: 1.4em;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*NAV MENU*/
+
+.navMobie {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    visibility: hidden;
+    align-items: center;
+    background-color: #16181c;
+    overflow: scroll;
+}
+
+.infomationCart {
+    padding-top: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.custom-line-hr {
+    margin-top: 140px;
+    margin-bottom: 0px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-top: 1px solid #3d3f43;
+}
+
+.totalMonney {
+    margin-top: 45px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.cost-item,
+#totalMonney {
+    font-size: 26px;
+    color: rgba(255, 255, 255, 0.149);
+    font-weight: 600;
+    font-family: "Montserrat";
+}
+
+#totalMonney {
+    color: white !important;
+}
+
+.payment-now {
+    text-align: center;
+    margin-top: 155px;
+    cursor: pointer;
+}
+
+.payment-now a {
+    font-family: "Montserrat";
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.size-item {
+    font-family: "Montserrat";
+    color: rgba(255, 255, 255, 0.149);
+    font-size: 12px;
+    padding-top: 12px;
+    font-weight: normal;
+}
+
+.count-item div {
+    float: left;
+}
+
+.cost-info {
+    padding-top: 15px;
+}
+
+.cost-info div {
+    float: left;
+}
+
+.img-cart,
+.info-item,
+.count-item {
+    float: left;
+}
+
+.increment-item {
+    cursor: pointer;
+}
+
+.decrement-item {
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+.count-item {
+    padding-left: 55px;
+}
+
+.info-item {
+    padding-left: 18px;
+}
+
+.title-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.info-item div,
+.totalMonney div {
+    font-family: "Montserrat";
+}
+
+.totalMonney div:first-child {
+    font-size: 12px;
+    line-height: 1.8;
+    font-weight: 600;
+    float: left;
+    color: rgba(255, 255, 255, 0.302);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    padding-left: 25px;
+}
+
+#totalMonney {
+    float: right;
+    line-height: .9;
+}
+
+.container-cart-item {
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+#cartMenu {
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Montserrat";
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.number-item-cart {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    font-weight: bold;
+    background-color: #fff;
+    text-align: center;
+}
+
+.payment-now a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.number-item-cart div {
+    display: inline-block;
+    color: black;
+    font-family: "Montserrat";
+    font-weight: 600;
+    text-align: center;
+    font-size: 12px;
+}
+
+.closeButton {
+    font-size: 44px;
+    color: #fff;
+    position: absolute;
+    top: 5.86vh;
+    right: 3.255vw;
+    cursor: pointer;
+}
+
+.navMenu {
+    margin-bottom: 0px !important;
+}
+
+.container-icon-social {
+    float: left;
+}
+
+.container-icon-social-desktop {
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.burgerLine {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 6px;
+    background: -webkit-linear-gradient(left, white 30%, black 30%, black);
+}
+
+.lineCenter.burgerLine {
+    width: 30px;
+    background: -webkit-linear-gradient(left, black, black 30%, black 30%, black);
+}
+
+.navMenu {
+    padding-top: 15.42vh;
+    padding-left: 12.76vw;
+    flex-flow: column wrap;
+}
+
+.navMenu li {
+    list-style: none;
+}
+
+.navMenu li a {
+    color: #16181c;
+    text-decoration: none;
+    font-size: 7.1614vw;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding-bottom: 9.57vh;
+    transition: 0.2s ease all;
+    font-family: "Montserrat";
+    line-height: 1.2;
+    text-align: left;
+    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+
+.navMenu li.active a {
+    color: white !important;
+}
+
+.navMenu li:last-child a {
+    border-bottom: none;
+}
+
+.logo-menu-mobie {
+    position: absolute;
+    top: 15.43vh;
+    right: 45px;
+}
+
+#navRightCart {
+    width: 361px;
+    z-index: 250;
+    height: 100vh;
+    background-color: #1b1d22;
+    position: fixed;
+    right: -500px;
+    transition: right 1s ease-in-out;
+}
+
+.closeCart {
+    float: right;
+    width: 24px;
+    height: 24px;
+    color: white !important;
+}
+
+.artile {
+    padding-top: 60px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.artile .number-artile {
+    font-size: 12px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    float: left;
+    color: white;
+}
+
+.container-menu-mobie {
+    transition: all 1s ease-in-out;
+}
+
+@media (max-width: 360px) {
+    #navRightCart {
+        width: 100vw;
+    }
+    .logo-menu-mobie {
+        display: none;
+    }
+    .closeButton {
+        font-size: 25px;
+        top: 24px;
+        right: 12px;
+    }
+    .burgerIcon {
+        padding-top: 3.90625vh !important;
+        /* padding-right: 4.16666vw; */
+    }
+}
+
+
+/* .navMenu li:hover a {
+    background-color: #ff6500;
+} */
