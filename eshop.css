@@ -494,7 +494,7 @@ video {
 
 .product-grid .product-picture {
     position: relative;
-    margin-bottom: 28px;
+    margin-bottom: 30px;
     overflow: hidden;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -553,7 +553,7 @@ video {
 }
 
 .product-grid .product-name {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     max-height: 2.16rem;
     overflow: hidden;
     color: #000;
@@ -876,13 +876,17 @@ video {
     color: white;
 }
 
+.u-ul-footer li:last-child {
+    padding-bottom: 0rem;
+}
+
 .u-ul-footer li p {
     margin: 0;
     font-family: "Montserrat";
     font-size: 1.6rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.302);
-    line-height: 1.2;
+    line-height: 1.7;
     text-align: left;
 }
 
@@ -933,7 +937,7 @@ video {
     font-weight: 600;
     font-family: "Montserrat";
     color: rgba(255, 255, 255, 0.302);
-    line-height: 1.2;
+    line-height: 1.9;
 }
 
 .product-t-shirt {
@@ -1010,9 +1014,81 @@ video {
     text-align: left;
 }
 
+.footer-app-apple {
+    position: relative;
+    width: 210px;
+    height: 60px;
+    background-color: white;
+    border-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-app-apple a {
+    margin-right: 10px;
+}
+
+.footer-app-android {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: #b0b2b4 solid 2px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.color-black {
+    color: black !important;
+}
+
+.footer-logo-apple {
+    width: 2.6rem;
+    height: 3rem;
+    margin-left: 3rem;
+    position: relative;
+}
+
+.footer-app-store {
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.footer-logo-android {
+    width: 25px;
+    height: 27px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* For Safari 3.1 to 6.0 */
+    transition-property: all;
+    transition-property: transform;
+}
+
 @media (max-width: 1366px) {
+    .footer-app-apple {
+        width: 205px;
+    }
+    .inner-producr-similar {
+        margin-left: 6%;
+        width: 88%;
+    }
     .footer-lerver-0 {
         padding: 0px 83px;
+        padding-top: 11.5rem;
+        padding-bottom: 10.04rem;
     }
     ._container-small-images li {
         width: 50px;
