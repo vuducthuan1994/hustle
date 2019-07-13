@@ -7,21 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thời Trang</title>
     <!-- <link rel="stylesheet" href="pointer.css"> -->
-    <link rel="stylesheet" href="./eshop.css">
-    <link rel="stylesheet" href="slider.css">
-    <link rel="stylesheet" href="menu.css">
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="./eshop.css">
 
 </head>
 
 <body>
 
     <div id="page-wrapper">
+        <div class="js-select-overlay product-select-overlay "></div>
         <!-- <div class="cb-cursor cb-color" id="cursor-page">
         </div> -->
         <header class="header">
@@ -165,7 +165,10 @@
         </header>
 
         <main class="page-content">
-            <div class="container-eshop">
+
+
+            <section class="container-select-product">
+
                 <div class="_navi-link">
                     <div>
                         <div class="_item-link">E-SHOP</div>
@@ -187,55 +190,93 @@
                 </div>
 
                 <div class="_detail-item">
-                    <div id="_detail-item-left">
-                        <div class="_container-left">
+                    <div class=" u-d-inline" id="detail-item-left">
+                        <div class="inner-container-left">
                             <ul class="_container-small-images">
                                 <li>
-                                    <img class="image_slide " src="./img/anh1.png">
+                                    <img class="u-fit u-object-fit-cover " src="./img/anh1.png">
                                 </li>
                                 <li>
-                                    <img class="image_slide" src="./img/anh2.png">
+                                    <img class="u-fit u-object-fit-cover" src="./img/anh2.png">
                                 </li>
                                 <li>
-                                    <img class="image_slide" src="./img/anh3.png">
+                                    <img class="u-fit u-object-fit-cover" src="./img/anh3.png">
                                 </li>
                                 <li>
-                                    <img class="image_slide" src="./img/anh4.png">
+                                    <img class="u-fit u-object-fit-cover" src="./img/anh4.png">
                                 </li>
                                 <li>
-                                    <img class="image_slide" src="./img/anh5.png">
+                                    <img class="u-fit u-object-fit-cover" src="./img/anh5.png">
                                 </li>
                             </ul>
-                            <div id="_detail-image" class="carousel  fading">
+                            <div id="_detail-image" class="carousel">
                                 <div class="carousel-inner" role="listbox">
-                                    <div class="item">
-                                        <img class="image_slide" src="./img/anh1.png">
+                                    <div class="item u-absolute  u-fit active">
+                                        <img class="u-fit u-object-fit-cover" src="https://cdn.shopify.com/s/files/1/1320/6057/products/1432_1024x1024.jpg?v=1556084246">
                                     </div>
-
-                                    <div class="item ">
-                                        <img class="image_slide" src="./img/anh2.png">
+                                    <div class="item u-absolute u-fit">
+                                        <img class="u-fit u-object-fit-cover" src="https://cdn.shopify.com/s/files/1/1320/6057/products/Smaller_File_1024x1024.png?v=1559038947">
                                     </div>
-
-                                    <div class="item">
-                                        <img class="image_slide" src="./img/anh3.png">
+                                    <div class="item u-absolute u-fit">
+                                        <img class="u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/5_f9a74ef9-d9a2-43c1-aa3d-d554aada4708_1024x1024.jpg?v=1556006156">
                                     </div>
-
-                                    <div class="item">
-                                        <img class="image_slide" src="./img/anh4.png">
+                                    <div class="item u-absolute  u-fit">
+                                        <img class="u-fit u-object-fit-cover" src="./img/anh4.png">
                                     </div>
-                                    <div class="item">
-                                        <img class="image_slide" src="./img/anh5.png">
+                                    <div class="item u-absolute  u-fit">
+                                        <img class="u-fit u-object-fit-cover" src="./img/anh5.png">
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
-                    <div id="_detail-item-right">
+                    <div class="u-d-inline content-right-product">
+                        <div class="product-title">
+                            <h5 class="product-type-item">
+                                T-SHIRT
 
+                            </h5>
+                            <hr>
+                            <h2 class="product-title">
+                                Eye Flow
+                            </h2>
+
+                        </div>
+                        <div class="product-cart is-visible">
+                            <div class="product-cart-options">
+                                <div class="product-cart-option">
+                                    <label class="product-cart-option-label">Size</label>
+                                    <div class="custom-select">
+                                        <div class="js-custom-select">
+                                            <div class="product-custom-select">
+                                                <button class="js-product product-custom-select-label">S</button>
+                                                <ul class="product-custom-select-options ">
+                                                    <li class=" product-custom-select-options-item is-active">S</li>
+                                                    <li class=" product-custom-select-options-item ">M</li>
+                                                    <li class=" product-custom-select-options-item ">L</li>
+                                                </ul>
+                                            </div>
+                                            <select style="display: none" name="Color" class="">
+                                                    <option class=" product-custom-select-options-item is-active">S</option>
+                                                    <option class=" product-custom-select-options-item ">M</option>
+                                                    <option class=" product-custom-select-options-item ">L</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-cart-option">
+                                    <label class="product-cart-option-label">Color</label>
+                                </div>
+                            </div>
+                            <div class="product-cart-buy u-vacuum">
+                                <div class="product-cart-buy-button-container u-inline-block u-va-middle u-w4of8">
+                                    <button class="product-cart-buy-button "><span class="product-cart-buy-button-inner">Add to cart</span> <span class="product-cart-buy-button-plus">+</span></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
             <section class="product-similar-products u-relative">
                 <div class="inner-producr-similar">
                     <header class="product-grid-header">
@@ -253,6 +294,82 @@
                             </a>
                         </div>
 
+                        <div class="product-grid-item is-active">
+                            <a href="#" class="product-link">
+                                <div class="product-picture">
+                                    <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
+                                    <div class="product-more"></div>
+                                </div>
+                                <p class="product-name">Classic Blazer</p>
+                                <div class="product-info"><span class="product-info-category">T-SHIRT</span></div>
+                            </a>
+                        </div>
+
+                        <div class="product-grid-item is-active">
+                            <a href="#" class="product-link">
+                                <div class="product-picture">
+                                    <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
+                                    <div class="product-more"></div>
+                                </div>
+                                <p class="product-name">Classic Blazer</p>
+                                <div class="product-info"><span class="product-info-category">T-SHIRT</span></div>
+                            </a>
+                        </div>
+
+                        <div class="product-grid-item is-active">
+                            <a href="#" class="product-link">
+                                <div class="product-picture">
+                                    <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
+                                    <div class="product-more"></div>
+                                </div>
+                                <p class="product-name">Classic Blazer</p>
+                                <div class="product-info"><span class="product-info-category">T-SHIRT</span></div>
+                            </a>
+                        </div>
+
+                        <div class="product-grid-item is-active">
+                            <a href="#" class="product-link">
+                                <div class="product-picture">
+                                    <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
+                                    <div class="product-more"></div>
+                                </div>
+                                <p class="product-name">Classic Blazer</p>
+                                <div class="product-info"><span class="product-info-category">T-SHIRT</span></div>
+                            </a>
+                        </div>
+
+                        <div class="product-grid-item is-active">
+                            <a href="#" class="product-link">
+                                <div class="product-picture">
+                                    <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
+                                    <div class="product-more"></div>
+                                </div>
+                                <p class="product-name">Classic Blazer</p>
+                                <div class="product-info"><span class="product-info-category">T-SHIRT</span></div>
+                            </a>
+                        </div>
+
+                        <div class="product-grid-item is-active">
+                            <a href="#" class="product-link">
+                                <div class="product-picture">
+                                    <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
+                                    <div class="product-more"></div>
+                                </div>
+                                <p class="product-name">Classic Blazer</p>
+                                <div class="product-info"><span class="product-info-category">T-SHIRT</span></div>
+                            </a>
+                        </div>
+
+                        <div class="product-grid-item is-active">
+                            <a href="#" class="product-link">
+                                <div class="product-picture">
+                                    <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
+                                    <div class="product-more"></div>
+                                </div>
+                                <p class="product-name">Classic Blazer</p>
+                                <div class="product-info"><span class="product-info-category">T-SHIRT</span></div>
+                            </a>
+                        </div>
                     </div>
                     <div class="container-button-more">
                         <div class="container-product-grid-button-more">

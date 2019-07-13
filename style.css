@@ -97,11 +97,12 @@ video {
 }
 
 #page-wrapper {
-    height: 100vh;
+    /* height: 100vh; */
     border-radius: 10px;
     box-sizing: border-box;
     flex: 1;
     min-height: 0;
+    position: relative;
 }
 
 .menu-desktop {
@@ -973,7 +974,7 @@ DONE ANIMATION */
     }
 }
 
-@media(max-width:500px) and (min-width:320px)   {
+@media(max-width:500px) and (min-width:320px) {
     .cb-cursor {
         opacity: 0;
     }
@@ -1093,7 +1094,7 @@ DONE ANIMATION */
     .page-body {
         height: 82.03125vh;
     }
-    #page-wrapper{
+    #page-wrapper {
         overflow: hidden;
     }
 }

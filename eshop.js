@@ -1,5 +1,5 @@
 var totalImages = $("._container-small-images li img").length;
-console.log(totalImages);
+
 
 $(document).ready(function() {
 
@@ -18,4 +18,16 @@ $(document).ready(function() {
             $('._container-small-images li img').eq(indexImage).addClass('active');
         });
     }
+    $("body").css("height", "8000px")
+    $(".js-select-overlay").click(function() {
+        $(this).removeClass("is-active")
+        $(".product-custom-select-options").removeClass("is-active")
+    })
+
+    $(".js-product").click(function() {
+        console.log("hahahha");
+        $(".product-custom-select-options").addClass("is-active")
+        $(".js-select-overlay").addClass("is-active");
+    })
+
 });
