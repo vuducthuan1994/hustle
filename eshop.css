@@ -307,6 +307,11 @@ video {
     cursor: pointer;
 }
 
+.footer .inner-footer p {
+    margin: 0;
+    padding: 0;
+}
+
 .image_slide.active {
     border: white 5px solid;
 }
@@ -849,11 +854,15 @@ video {
     color: rgba(255, 255, 255, 0.302);
     line-height: 1.2;
     text-align: left;
+    cursor: pointer;
+}
+
+.u-ul-footer li {
+    padding-bottom: 2rem;
 }
 
 .u-ul-footer li h5 {
-    margin-top: 0px;
-    margin-bottom: 2.5rem;
+    margin: 0;
     font-family: "Montserrat";
     font-size: 1.2rem;
     font-weight: 600;
@@ -865,6 +874,16 @@ video {
 
 .u-ul-footer li a:hover {
     color: white;
+}
+
+.u-ul-footer li p {
+    margin: 0;
+    font-family: "Montserrat";
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.302);
+    line-height: 1.2;
+    text-align: left;
 }
 
 @media(max-width: 360px) {
@@ -992,6 +1011,9 @@ video {
 }
 
 @media (max-width: 1366px) {
+    .footer-lerver-0 {
+        padding: 0px 83px;
+    }
     ._container-small-images li {
         width: 50px;
         height: 50px;
@@ -1058,5 +1080,25 @@ video {
     }
     .product-cart-buy {
         padding-right: 0px;
+    }
+    @media (max-width: 360px) {
+        .footer-lerver-0 {
+            padding: 0px 15px;
+            padding-top: 70px;
+        }
+        .u-ul-footer li p {
+            margin: 0;
+            padding: 0;
+            font-size: 1.2rem;
+            line-height: 1.2;
+            text-align: left;
+            line-height: 2.5;
+        }
+        .footer-lerver-0-right {
+            padding-right: 15px;
+        }
+        .footer-lerver-0-left {
+            padding-left: 15px;
+        }
     }
 }
