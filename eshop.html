@@ -19,157 +19,15 @@
 </head>
 
 <body>
-
     <div id="page-wrapper">
         <div class="js-select-overlay product-select-overlay "></div>
         <!-- <div class="cb-cursor cb-color" id="cursor-page">
         </div> -->
-        <header class="header">
-            <div id="logo">
-                <a href="#">
-                    <img src="./img/logo.png">
-                </a>
-            </div>
-            <nav class="menu menu-desktop" role="navigation">
-                <ul class="menu-list menu-left">
-                    <li>
-                        <a class="link-item" href="#about">PROJECTS</a>
-                        <div class="container-red-slider">
-                            <hr class="active-li">
-                        </div>
-                    </li>
-                    <li>
-                        <a class="link-item" href="#exp">E-SHOP</a>
-                        <div class="container-red-slider">
-                            <hr class="active-li">
-                        </div>
-                    </li>
-                    <li>
-                        <a class="link-item" href="#skills">ABOUT US</a>
-                        <div class="container-red-slider">
-                            <hr class="active-li">
-                        </div>
-                    </li>
-                    <li>
-                        <a class="link-item" href="#projects">CONTACT</a>
-                        <div class="container-red-slider">
-                            <hr class="active-li">
-                        </div>
-                    </li>
-                    <li>
-                        <ul class="lang">
-                            <li style="padding: 0px">
-                                <a class="en expand active ">ENG </a>
-                                <a class="lang-space ">/</a>
-                                <a class="vi expand">VIE</a>
-                            </li>
-                        </ul>
-                        <div class="container-red-slider">
-                            <hr class="active-li">
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="navMobie">
-                <div class="container-menu-mobie">
-                    <ul class="navMenu">
-                        <li><a href="#0">PROJECTS</a></li>
-                        <li><a href="#0">E-SHOP</a></li>
-                        <li class="active"><a href="#0">ABOUT US</a></li>
-                        <li><a href="#0">CONTACT</a></li>
-                    </ul>
-                    <div class="logo-menu-mobie">
-                        <img src="./img/logo-menu-mobie.png">
-                    </div>
-                    <div class="footerMenuMobie">
-                        <div class="container-icon-social">
-                            <a href="#">
-                                <img class="img-facebook">
-                            </a>
-                            <a href="#">
 
-                                <img class="img-youtube ytb-mobie" src="./img/youtubeHover.svg">
-                            </a>
-                            <a href="#">
-                                <img class="img-instagram" src="./img/instaHover.svg">
-                            </a>
-                        </div>
-
-                        <div class="container-cart-item">
-                            <div id="cartMenu">
-                                CART
-                            </div>
-                            <div class="number-item-cart">
-                                <div>
-                                    0
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <i class="fa fa-times closeButton" aria-hidden="true"></i>
-            </nav>
-            <nav class="" id="navRightCart">
-                <div class="artile">
-                    <div class="number-artile">
-                        1 ARTICLE
-                    </div>
-                    <i class="fa fa-times closeCart" aria-hidden="true"></i>
-                </div>
-                <div class="infomationCart">
-                    <div class="img-cart">
-                        <img src="./img/itemCart.png">
-                    </div>
-                    <div class="info-item">
-                        <div class="title-item">
-                            1x Eye flow T-Shirt
-                        </div>
-                        <div class="size-item">
-                            S/Black/T-Shirt
-                        </div>
-                        <div class="cost-info">
-                            <div class="cost-item">
-                                75$
-                            </div>
-                            <div class="count-item">
-                                <div class="decrement-item">
-                                    <i class="fa fa-minus" style="color:#8d8e91;"></i>
-                                </div>
-                                <div class="increment-item">
-                                    <i class="fa fa-plus" style="color:white;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="custom-line-hr">
-                <div class="totalMonney">
-                    <div>
-                        Total
-                    </div>
-                    <div id="totalMonney">
-                        75$
-                    </div>
-                </div>
-                <div class="payment-now">
-                    <a>Payment Now</a>
-                </div>
-                <hr style="width: 66.5%">
-            </nav>
-            <div class="burgerIcon">
-                <div class="burgerLine"></div>
-                <div class="burgerLine lineCenter"></div>
-                <div class="burgerLine"></div>
-            </div>
-        </header>
 
         <main class="page-content">
-
-
             <section class="container-select-product">
-
-                <div class="_navi-link">
+                <nav class="_navi-link">
                     <div>
                         <div class="_item-link">E-SHOP</div>
                     </div>
@@ -187,7 +45,7 @@
                     <div>
                         <div class="_item-link active">SHOP</div>
                     </div>
-                </div>
+                </nav>
 
                 <div class="_detail-item">
                     <div class=" u-d-inline" id="detail-item-left">
@@ -250,7 +108,7 @@
                                         <div class="js-custom-select">
                                             <div class="product-custom-select">
                                                 <button class="js-product product-custom-select-label">S</button>
-                                                <ul class="product-custom-select-options ">
+                                                <ul class="product-custom-select-options js-custom-options-list--size ">
                                                     <li class=" product-custom-select-options-item is-active">S</li>
                                                     <li class=" product-custom-select-options-item ">M</li>
                                                     <li class=" product-custom-select-options-item ">L</li>
@@ -272,11 +130,33 @@
                                 <div class="product-cart-buy-button-container u-inline-block u-va-middle u-w4of8">
                                     <button class="product-cart-buy-button "><span class="product-cart-buy-button-inner">Add to cart</span> <span class="product-cart-buy-button-plus">+</span></button>
                                 </div>
+
+                                <div class="product-cart-currency u-inline-block u-va-middle u-custom-2of3 u-text-right ">
+                                    <div class="u-inline-block u-text-right">
+                                        <div class="custom-select custom-select--small u-inline-block">
+                                            <div class="js-custom-select">
+                                                <div class="product-custom-select product-custom-select--small">
+                                                    <button class="js-custom-label--currency product-custom-select-label">USD</button>
+                                                    <ul class="js-custom-options-list--currency product-custom-select-options">
+                                                        <li class="product-custom-select-options-item is-active" data-js-value="USD">USD</li>
+                                                        <li class=" product-custom-select-options-item" data-js-value="VND">VND</li>
+                                                    </ul>
+                                                </div>
+                                                <select style="display: none" name="current-currency" class="">
+                                        <option class="product-custom-select-options-item " value="USD">USD</option>
+                                        <option class="product-custom-select-options-item " value="VND">VND</option>
+                                        </select>
+                                            </div>
+                                        </div>
+                                        <div class="product-cart-price">$20</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section class="product-similar-products u-relative">
                 <div class="inner-producr-similar">
                     <header class="product-grid-header">
@@ -374,11 +254,13 @@
                     <div class="container-button-more">
                         <div class="container-product-grid-button-more">
                             <button class="product-grid-more-button">
-                                        <span class="product-cart-more-button-inner">Load More</span>
+                                <span class="product-cart-more-button-inner">Load More</span>
+                              </button>
                         </div>
                     </div>
                 </div>
             </section>
+
             <section class="keep-in-touch">
                 <div>
                     <h2>KEEP IN TOUCH</h2>
@@ -387,6 +269,45 @@
                     </div>
                 </div>
             </section>
+
+            <section class="footer-lerver-0">
+                <div class="footer-lerver-0-right ">
+                    <div class="footer-social">
+                        <ul class="u-ul-footer">
+
+                            <li><a>socil</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-scanner-app">
+                        <ul class="u-ul-footer">
+                            <li><a>scanner app</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-lerver-0-left">
+                    <div class="footer-company">
+                        <ul class="u-ul-footer">
+                            <li>
+                                <h5>company</h5>
+                            </li>
+                            <li><a>company 1</a></li>
+                            <li><a>company 1</a></li>
+                            <li><a>company 1</a></li>
+                            <li><a>company 1</a></li>
+                            <li><a>company 1</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-logo">
+                        <ul class="u-ul-footer">
+                            <li><img src="./img/logo-footer.png"></li>
+                            <li><a>We Create, You Hustle</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </section>
+
             <section class="footer">
                 <div class="inner-footer">
                     <p>Copyright @2019 Hustle Studio</p>

@@ -18,16 +18,21 @@ $(document).ready(function() {
             $('._container-small-images li img').eq(indexImage).addClass('active');
         });
     }
-    $("body").css("height", "8000px")
+
     $(".js-select-overlay").click(function() {
         $(this).removeClass("is-active")
-        $(".product-custom-select-options").removeClass("is-active")
+        $(".js-custom-options-list--size").removeClass("is-active")
+        $(".js-custom-options-list--currency").removeClass("is-active")
     })
 
     $(".js-product").click(function() {
-        console.log("hahahha");
-        $(".product-custom-select-options").addClass("is-active")
+        $(".js-custom-options-list--size").addClass("is-active")
         $(".js-select-overlay").addClass("is-active");
-    })
+    });
+    $(".js-custom-label--currency").click(function() {
+        $(".js-custom-options-list--currency").addClass("is-active");
+        $(".js-select-overlay").addClass("is-active");
+
+    });
 
 });

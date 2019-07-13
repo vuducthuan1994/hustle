@@ -92,6 +92,10 @@ video {
     vertical-align: baseline;
 }
 
+._navi-link ul li {
+    float: left;
+}
+
 .page-content {
     width: 100%;
     height: auto;
@@ -178,7 +182,7 @@ video {
 
 .product-cart-buy {
     margin-top: 45px;
-    padding-right: 33.3333333333%;
+    padding-right: 38.7%;
 }
 
 .u-vacuum {
@@ -199,6 +203,11 @@ video {
 
 .product-cart-buy-button-container {
     padding-right: 20px;
+    width: 42.04%;
+}
+
+.u-custom-2of3 {
+    width: 57.6%;
 }
 
 .product-cart-buy-button {
@@ -208,7 +217,7 @@ video {
     background: 0 0;
     border: 1px solid #e6e6e6;
     color: #000;
-    font-size: .9333333333rem;
+    font-size: 1.6rem;
     line-height: 1;
     letter-spacing: .05em;
     text-align: left;
@@ -245,15 +254,27 @@ video {
 .product-cart-buy-button-inner {
     position: relative;
     z-index: 2;
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .product-cart-buy-button-plus {
     position: relative;
     float: right;
+    position: relative;
+    z-index: 2;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .product-cart-buy-button:hover {
     color: #fff;
+}
+
+.container-product-grid-button-more {
+    padding-bottom: 15rem;
 }
 
 
@@ -282,7 +303,7 @@ video {
 ._container-small-images li {
     width: 50px;
     height: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 15px;
     cursor: pointer;
 }
 
@@ -782,6 +803,91 @@ video {
     background: transparent;
 }
 
+.footer-lerver-0 {
+    width: 100%;
+    padding: 0% 18.75%;
+    padding-top: 12rem;
+    padding-bottom: 10.4rem;
+    background-color: #1e2127;
+    position: relative;
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-flex-direction: row-reverse;
+    /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer-lerver-0-right,
+.footer-lerver-0-left {
+    display: flex;
+    width: 50%;
+}
+
+.footer-lerver-0-left {
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.footer-social,
+.footer-scanner-app,
+.footer-logo,
+.footer-company {
+    width: 50%;
+}
+
+.u-ul-footer {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.u-ul-footer li a {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.302);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.u-ul-footer li h5 {
+    margin-top: 0px;
+    margin-bottom: 2.5rem;
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.u-ul-footer li a:hover {
+    color: white;
+}
+
+@media(max-width: 360px) {
+    .footer-lerver-0-left {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+    .footer-lerver-0-right,
+    .footer-lerver-0-left {
+        display: block;
+    }
+    .footer-lerver-0 {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+    }
+    .footer-social,
+    .footer-scanner-app,
+    .footer-logo,
+    .footer-company {
+        width: 100%;
+    }
+}
+
 .container-input-email {
     text-align: center;
 }
@@ -831,9 +937,13 @@ video {
     transition: visibility .3s .3s, opacity .3s cubic-bezier(.25, .46, .45, .94);
 }
 
+.u-va-middle {
+    vertical-align: middle;
+}
+
 .product-cart-option {
     padding-top: 32px;
-    padding-right: 33.3333333333%;
+    padding-right: 38.7%;
     padding-bottom: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -856,6 +966,29 @@ video {
     text-transform: uppercase;
     font-weight: normal;
     font-family: "Montserrat";
+}
+
+.product-cart-price {
+    font-family: "Montserrat";
+    font-weight: 400;
+    color: rgb(40, 46, 56);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 1;
+    margin-top: 5px;
+    text-align: left;
+}
+
+.u-w1of3 {
+    width: 33.333333%;
+}
+
+.u-text-right {
+    text-align: right;
+}
+
+.u-text-left {
+    text-align: left;
 }
 
 @media (max-width: 1366px) {
@@ -892,6 +1025,9 @@ video {
     #_detail-image {
         width: 100%;
     }
+    .product-custom-select-label {
+        font-size: 1.2rem;
+    }
     .inner-producr-similar {
         margin: 0;
         padding-left: 25px;
@@ -913,5 +1049,14 @@ video {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    .product-cart-option {
+        padding-right: 0px;
+    }
+    .product-cart-option-label {
+        font-size: 1.2rem;
+    }
+    .product-cart-buy {
+        padding-right: 0px;
     }
 }
