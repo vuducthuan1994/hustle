@@ -814,6 +814,11 @@ video {
     display: inline-block;
     width: 100%;
     background: transparent;
+    font-size: 1.6rem;
+    font-family: "Montserrat";
+    color: rgba(40, 46, 56, 0.502);
+    line-height: 1.2;
+    text-align: left;
 }
 
 .footer-lerver-0 {
@@ -898,27 +903,6 @@ video {
     text-align: left;
 }
 
-@media(max-width: 360px) {
-    .footer-lerver-0-left {
-        -webkit-flex-direction: row;
-        flex-direction: row;
-    }
-    .footer-lerver-0-right,
-    .footer-lerver-0-left {
-        display: block;
-    }
-    .footer-lerver-0 {
-        -webkit-flex-direction: row;
-        flex-direction: row;
-    }
-    .footer-social,
-    .footer-scanner-app,
-    .footer-logo,
-    .footer-company {
-        width: 100%;
-    }
-}
-
 .container-input-email {
     text-align: center;
 }
@@ -930,6 +914,7 @@ video {
 .container-input-email input::placeholder {
     font-size: 1.6rem;
     font-family: "Montserrat";
+    font-weight: 400;
     color: rgba(40, 46, 56, 0.502);
     line-height: 1.2;
     text-align: left;
@@ -1137,7 +1122,7 @@ video {
     outline: none;
     text-align: center;
     padding: 0px;
-    top: 2px;
+    top: 1.1rem;
 }
 
 .nextArrowButton:hover {
@@ -1183,6 +1168,39 @@ video {
 }
 
 @media (max-width: 768px) {
+    .u-ul-footer li p {
+        line-height: 2.5;
+    }
+    .u-ul-footer li p {
+        font-size: 1.2rem;
+    }
+    ._container-small-images {
+        padding: 0px;
+    }
+    #detail-item-left {
+        padding: 0px;
+        padding-right: 20px;
+    }
+    .inner-container_select_product {
+        margin-left: 25px;
+        margin-right: 25px
+    }
+    .product-similar-products {
+        margin-top: 95px;
+    }
+    .footer-app-apple {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+    .footer-logo-apple {
+        margin-left: 0rem;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
     .product-title {
         font-size: 3.2rem;
     }
@@ -1203,11 +1221,12 @@ video {
         margin-top: 20px;
         margin-right: 20px;
     }
+    ._container-small-images li:last-child {
+        margin: 0;
+        margin-top: 20px;
+    }
     .inner-container-left {
         padding: 0;
-    }
-    ._detail-item {
-        padding: 0px 25px;
     }
     #_detail-image {
         width: 100%;
@@ -1246,7 +1265,67 @@ video {
     .product-cart-buy {
         padding-right: 0px;
     }
-    @media (max-width: 360px) {
+    @media (max-width:360px) {
+        .footer-lerver-0-left {
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        .footer-lerver-0-right,
+        .footer-lerver-0-left {
+            display: block;
+        }
+        .footer-lerver-0 {
+            -webkit-flex-direction: row;
+            flex-direction: row;
+        }
+        .footer-social,
+        .footer-scanner-app,
+        .footer-logo,
+        .footer-company {
+            width: 100%;
+        }
+        .keep-in-touch {
+            padding-top: 85px;
+            padding-bottom: 70px;
+            padding-left: 15px;
+            padding-right: 15px;
+            position: relative;
+        }
+        .inner-container-input-email {
+            width: 100%;
+        }
+        #detail-item-left {
+            width: 100%;
+            padding: 0px;
+        }
+        .content-right-product {
+            padding-left: 0;
+            width: 100%;
+            padding-top: 25px;
+        }
+        ._detail-item {
+            padding-top: 15px;
+        }
+        .inner-producr-similar {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .product-grid-item {
+            padding-right: 15px;
+            padding-bottom: 45px;
+            padding-left: 15px;
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .inner-container_select_product {
+            margin-left: 1.5rem;
+            margin-right: 1.5rem;
+        }
+        ._detail-item {
+            display: block;
+        }
         .footer-lerver-0 {
             padding: 0px 15px;
             padding-top: 70px;
