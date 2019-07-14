@@ -172,15 +172,21 @@ video {
     color: rgb(40, 46, 56);
     line-height: 1.2;
     text-align: left;
-    letter-spacing: 2.5px;
+    letter-spacing: 7px;
 }
 
 .product-title {
     font-size: 55px;
-    font-family: "Montserrat";
     color: rgb(40, 46, 56);
     text-align: left;
     font-weight: 800;
+}
+
+.product-title-2 {
+    font-size: 55px;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .product-cart-buy {
@@ -1082,7 +1088,11 @@ video {
 
 @media (max-width: 1366px) {
     .inner-container_select_product {
-        margin-left: 82px;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .product-cart-option {
+        padding-right: 0;
     }
     .footer-app-apple {
         width: 205px;
