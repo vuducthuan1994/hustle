@@ -492,6 +492,10 @@ video {
     display: block;
 }
 
+.inner-container-left {
+    padding-left: 82px;
+}
+
 .product-grid .product-picture {
     position: relative;
     margin-bottom: 30px;
