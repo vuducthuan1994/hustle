@@ -159,6 +159,7 @@ video {
     content: '';
     border-bottom: solid 1px #000;
     transform: scaleX(0);
+    -webkit-transition: transform 250ms ease-out;
     transition: transform 250ms ease-out;
     transform-origin: 100% 50%
 }
@@ -195,7 +196,7 @@ video {
 }
 
 .img-instagram:hover {
-    content: url(./img/instaHover.svg);
+    content: url(../img/instaHover.svg);
 }
 
 .img-facebook {
@@ -204,11 +205,11 @@ video {
 }
 
 .img-facebook {
-    content: url(./img/Facebook.svg);
+    content: url(../img/Facebook.svg);
 }
 
 .img-facebook:hover {
-    content: url(./img/FacebookHover.svg);
+    content: url(../img/FacebookHover.svg);
 }
 
 .img-youtube {
@@ -218,7 +219,7 @@ video {
 }
 
 .img-youtube:hover {
-    content: url(./img/youtubeHover.svg);
+    content: url(../img/youtubeHover.svg);
 }
 
 .cssArrow {
@@ -264,9 +265,11 @@ video {
     height: 0vh;
     width: 2px;
     margin: 0px;
+    transition: height 1s ease-out;
     -webkit-transition: height 1s ease-out;
-    /* For Safari 3.1 to 6.0 */
-    transition: height .5s ease-out;
+    -moz-transition: height 1s ease-out;
+    -ms-transition: height 1s ease-out;
+    -o-transition: height 1s ease-out;
 }
 
 .container-red-slider {
@@ -340,7 +343,7 @@ video {
 @media (min-width: 769px) {
     .customNextButton:hover img,
     .customPrevButton:hover img {
-        content: url(./img/Arrow-Right-White.svg);
+        content: url(../img/Arrow-Right-White.svg);
         opacity: 1;
     }
 }
@@ -348,6 +351,10 @@ video {
 .customNextButton img,
 .customPrevButton img {
     transition: width .5s ease-out;
+    -webkit-transition: width .5s ease-out;
+    -moz-transition: width .5s ease-out;
+    -ms-transition: width .5s ease-out;
+    -o-transition: width .5s ease-out;
 }
 
 ul.menu-left {
@@ -429,6 +436,10 @@ ul.menu-left.collapse {
     .customNextButton:hover {
         opacity: 1;
         transition: opacity .5s ease-out;
+        -webkit-transition: opacity .5s ease-out;
+        -moz-transition: opacity .5s ease-out;
+        -ms-transition: opacity .5s ease-out;
+        -o-transition: width .5s ease-out;
     }
 }
 
@@ -459,6 +470,10 @@ ul.menu-left.collapse {
     height: 100%;
     transform: scale(0);
     transition: all 500ms ease-out 0ms;
+    -webkit-transition: all 500ms ease-out 0ms;
+    -moz-transition: all 500ms ease-out 0ms;
+    -ms-transition: all 500ms ease-out 0ms;
+    -o-transition: all 500ms ease-out 0ms;
 }
 
 .circle-text:hover>.custom-animation {
@@ -466,6 +481,10 @@ ul.menu-left.collapse {
     border-radius: 50%;
     transform: scale(1);
     transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -webkit-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -moz-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -ms-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+    -o-transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 }
 
 
@@ -529,8 +548,11 @@ DONE ANIMATION */
     align-content: center;
     align-items: center;
     padding-left: 1.6%;
-    -webkit-transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
     transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
+    -webkit-transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
+    -moz-transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
+    -ms-transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
+    -o-transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
 }
 
 .logo-apple {
@@ -550,6 +572,10 @@ DONE ANIMATION */
     white-space: nowrap;
     overflow: hidden;
     transition: max-width 1s ease-out;
+    -webkit-transition: max-width 1s ease-out;
+    -moz-transition: max-width 1s ease-out;
+    -ms-transition: max-width 1s ease-out;
+    -o-transition: max-width 1s ease-out;
 }
 
 .text-descripton-1 {
@@ -582,6 +608,9 @@ DONE ANIMATION */
     -webkit-transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
     /* For Safari 3.1 to 6.0 */
     transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
+    -moz-transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
+    -ms-transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
+    -o-transition: width .5s ease-out, height .5s ease-out, background-color 1s ease-out;
 }
 
 .container-text-android {
@@ -602,7 +631,7 @@ DONE ANIMATION */
 .container_android:hover>.logo-android {
     position: relative;
     margin: 0;
-    content: url(./img/GooglePlayWhite.svg);
+    content: url(../img/GooglePlayWhite.svg);
 }
 
 .container_android:hover>.container-text-android {
@@ -622,7 +651,7 @@ DONE ANIMATION */
     /* For Safari 3.1 to 6.0 */
     transition-property: all;
     transition-property: transform;
-    content: url(./img/Googleplay.svg);
+    content: url(../img/Googleplay.svg);
 }
 
 .menu-left li.active .link-item {

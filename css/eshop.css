@@ -211,7 +211,6 @@ video {
 }
 
 .product-cart-buy-button-container {
-    padding-right: 20px;
     width: 42.04%;
 }
 
@@ -813,7 +812,7 @@ video {
     padding: 5px 15px;
     outline: none;
     display: inline-block;
-    width: 500px;
+    width: 100%;
     background: transparent;
 }
 
@@ -922,6 +921,18 @@ video {
 
 .container-input-email {
     text-align: center;
+}
+
+.container-input-email input {
+    padding-left: 0;
+}
+
+.container-input-email input::placeholder {
+    font-size: 1.6rem;
+    font-family: "Montserrat";
+    color: rgba(40, 46, 56, 0.502);
+    line-height: 1.2;
+    text-align: left;
 }
 
 [placeholder]:focus::-webkit-input-placeholder {
@@ -1086,7 +1097,57 @@ video {
     transition-property: transform;
 }
 
+.product-note {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.detail-note {
+    width: 50%;
+}
+
+.detail-note ul {
+    list-style: none;
+}
+
+.detail-note .dot-li {
+    height: 4px;
+    width: 4px;
+    background: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.image-note {
+    width: 50%;
+}
+
+.inner-container-input-email {
+    width: 42.1%;
+    display: inline-block;
+    position: relative;
+}
+
+.nextArrowButton {
+    position: absolute;
+    right: 0px;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 0px;
+    top: 2px;
+}
+
+.nextArrowButton:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 1366px) {
+    .product-cart-buy {
+        padding-right: 0;
+    }
     .inner-container_select_product {
         margin-left: 6%;
         margin-right: 6%;
@@ -1122,6 +1183,18 @@ video {
 }
 
 @media (max-width: 768px) {
+    .product-title {
+        font-size: 3.2rem;
+    }
+    .product-title-2 {
+        display: none;
+    }
+    .product-cart-buy-button-container {
+        width: 59%;
+    }
+    .u-custom-2of3 {
+        width: 41%;
+    }
     .content-right-product {
         padding-left: 40px;
     }
