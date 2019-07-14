@@ -121,6 +121,10 @@ video {
     background-color: black;
 }
 
+.inner-container_select_product {
+    margin-left: 18.75%;
+}
+
 ._container-dash {
     padding-right: 15px;
     padding-left: 15px;
@@ -152,12 +156,11 @@ video {
 
 .content-right-product {
     width: 50%;
-    padding-left: 30px;
+    padding-left: 3rem;
 }
 
 .inner-container-left {
-    padding-left: 18.75vw;
-    padding-right: 3.5rem;
+    padding-right: 3rem;
 }
 
 .product-type-item {
@@ -286,7 +289,7 @@ video {
 } */
 
 #_detail-image {
-    width: 88%;
+    width: 100%;
 }
 
 ._container-small-images {
@@ -490,10 +493,6 @@ video {
 
 .product-grid .product-link {
     display: block;
-}
-
-.inner-container-left {
-    padding-left: 82px;
 }
 
 .product-grid .product-picture {
@@ -1082,6 +1081,9 @@ video {
 }
 
 @media (max-width: 1366px) {
+    .inner-container_select_product {
+        margin-left: 82px;
+    }
     .footer-app-apple {
         width: 205px;
     }
