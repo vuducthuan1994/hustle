@@ -963,7 +963,8 @@ ol {
     list-style: none;
 }
 
-.u-ul-footer li a {
+.u-ul-footer li a,
+.u-ul-footer li a span {
     font-family: "Montserrat";
     font-size: 1.6rem;
     font-weight: 400;
