@@ -91,6 +91,11 @@ html {
     height: 13.88vh;
 }
 
+.u-ul-footer li p {
+    font-size: 1.2rem;
+    margin-top: -0.9rem;
+}
+
 video {
     margin: 0;
     padding: 0;
@@ -318,6 +323,10 @@ ol {
 
 #_detail-image {
     width: 100%;
+}
+
+.image-note img {
+    margin-right: 4rem;
 }
 
 ._container-small-images {
@@ -958,7 +967,7 @@ ol {
 
 .u-ul-footer li a {
     font-family: "Montserrat";
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.302);
     line-height: 1.2;
@@ -991,6 +1000,7 @@ ol {
 
 .u-ul-footer li p {
     margin: 0;
+    margin-top: -0.9rem;
     font-family: "Montserrat";
     font-size: 1.6rem;
     font-weight: 400;
@@ -1268,6 +1278,10 @@ ol {
 }
 
 @media (max-width: 768px) {
+    .u-ul-footer span:nth-child(2) {
+        display: block;
+        padding-left: 20%;
+    }
     .product-type-item {
         font-size: 1rem;
         margin-bottom: 1.5rem;
@@ -1304,9 +1318,6 @@ ol {
     }
     .u-ul-footer li p {
         line-height: 2.5;
-    }
-    .u-ul-footer li p {
-        font-size: 1.2rem;
     }
     ._container-small-images {
         padding: 0px;
@@ -1400,6 +1411,20 @@ ol {
         padding-right: 0px;
     }
     @media (max-width:360px) {
+        .footer-logo {
+            margin-top: 3rem;
+        }
+        .product-cart-option-label {
+            letter-spacing: 0.17em;
+        }
+        .navi-link-container li a {
+            font-size: 1rem;
+        }
+        .navi-link-container li:not(:first-child):before {
+            width: 15px;
+            margin-right: 1rem;
+            margin-left: 1rem;
+        }
         .footer-lerver-0-left {
             -webkit-flex-direction: row;
             flex-direction: row;
@@ -1467,6 +1492,7 @@ ol {
         }
         .u-ul-footer li p {
             margin: 0;
+            margin-top: -0.9rem;
             padding: 0;
             font-size: 1.2rem;
             line-height: 1.2;
