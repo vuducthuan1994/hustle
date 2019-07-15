@@ -1,7 +1,7 @@
 var totalImages = $("._container-small-images li img").length;
 var totalSizes = $(".js-custom-options-list--size li").length;
 var totalCurrencys = $(".js-custom-options-list--currency li").length;
-
+var totalColor = $(".select-colors span").length;
 $(document).ready(function() {
 
     $('#_detail-image div div').eq(0).addClass('active');
@@ -47,7 +47,7 @@ $(document).ready(function() {
         });
     }
 
-    // SET SIZE CURRENTCY PRODUCT IN FRONT END
+    // SET type CURRENTCY PRODUCT IN FRONT END
     for (let i = 0; i < totalCurrencys; i++) {
         $('.js-custom-options-list--currency li').eq(i).click(function() {
             $('.js-custom-options-list--currency  li').removeClass('is-active');
@@ -57,4 +57,27 @@ $(document).ready(function() {
             $(".js-custom-options-list--currency").removeClass("is-active")
         });
     }
+    initColor();
+    setColor();
 });
+
+function initColor() {
+    for (let i = 0; i < totalColor; i++) {
+        var colorCode = $(".select-colors span").eq(i).attr("color-code");
+        $(".select-colors span").eq(i).css("background-color", colorCode);
+        if (colorCode == '#ffffff') {
+            $(".select-colors span").eq(i).css("border", "#9c9fa3 1px solid");
+            $(".select-colors span div").eq(i).css("background-color", "#282e38");
+        }
+    }
+}
+
+function setColor() {
+    for (let i = 0; i < totalColor; i++) {
+        $('.select-colors span').eq(i).click(function() {
+            console.log("hahahaha")
+            $('.select-colors span div').removeClass('is-active');
+            $('.select-colors span div').eq(i).addClass('is-active');
+        });
+    }
+}

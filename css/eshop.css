@@ -633,41 +633,39 @@ ol {
     transition: color .6s cubic-bezier(.165, .84, .44, 1);
 }
 
-.select-colors .dot {
-    height: 17px;
-    width: 17px;
+.select-colors span {
+    position: relative;
+    height: 16px;
+    width: 16px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
+    cursor: pointer;
 }
 
-.select-colors .dot-2 {
-    background: #12b46a;
+.select-colors span div {
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: opacity .6s cubic-bezier(.165, .84, .44, 1);
+    transition: opacity .6s cubic-bezier(.165, .84, .44, 1);
 }
 
-.select-colors .dot-1 {
-    height: 16px;
-    width: 16px;
-    background: #ffffff;
-    border: #9c9fa3 1px solid;
+.select-colors span div.is-active {
+    opacity: 1;
 }
 
-.select-colors .dot-4 {
-    background: #282e38;
-}
-
-.select-colors .dot-3 {
-    background: #123cb4;
-}
-
-.select-colors .dot-3,
-.dot-2,
-.dot-1 {
+.select-colors span:not(:last-child) {
     margin-right: 20px;
-}
-
-.eshop-book .dot-3 {
-    background: #123cb4;
 }
 
 .product-grid .product-link:focus .product-picture img,
