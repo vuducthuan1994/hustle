@@ -118,17 +118,6 @@ video {
     position: relative;
 }
 
-._navi-link {
-    display: inline-flex;
-    align-items: center;
-}
-
-._dash {
-    width: 15px;
-    height: 2px;
-    background-color: black;
-}
-
 .inner-container_select_product {
     margin-left: 18.75%;
 }
@@ -138,8 +127,13 @@ video {
     padding-left: 15px;
 }
 
-._item-link {
-    font-size: 12px;
+.navi-link-container {
+    padding: 0;
+    margin: 0;
+}
+
+.navi-link-container li a {
+    font-size: 1.2rem;
     font-family: "Montserrat";
     color: rgb(30, 33, 39);
     text-transform: uppercase;
@@ -147,13 +141,24 @@ video {
     text-align: left;
 }
 
-._item-link.active,
-._item-link:hover {
+.navi-link-container li a.is-active,
+.navi-link-container li a:hover {
     font-weight: bold;
 }
 
+.navi-link-container li:not(:first-child):before {
+    height: 2px;
+    width: 1.5rem;
+    content: '';
+    display: inline-block;
+    margin-bottom: 4px;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    background-color: black;
+}
+
 ._detail-item {
-    padding-top: 28px;
+    padding-top: 2.5rem;
     display: flex;
 }
 
@@ -175,6 +180,7 @@ video {
     position: relative;
     font-weight: 400;
     font-size: 1.2rem;
+    margin-bottom: 7rem;
     font-family: "Montserrat";
     text-transform: uppercase;
     color: rgb(40, 46, 56);
@@ -212,6 +218,14 @@ video {
 
 .u-va-middle {
     vertical-align: middle;
+}
+
+ol {
+    list-style: none;
+}
+
+.u-va-top {
+    vertical-align: top;
 }
 
 .u-inline-block {
@@ -433,7 +447,7 @@ video {
 }
 
 .product-similar-products {
-    margin-top: 135px;
+    margin-top: 15rem;
 }
 
 .inner-producr-similar {
@@ -467,6 +481,7 @@ video {
 }
 
 .product-grid-header h2 {
+    margin: 0;
     padding-right: 20px;
     display: inline-block;
     background-color: #fff;
@@ -721,6 +736,13 @@ video {
     padding-top: 4rem;
 }
 
+.under-t-shirt {
+    width: 7rem;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 2rem;
+}
+
 .detail-note h5,
 .image-note h5 {
     font-size: 1.6rem;
@@ -829,11 +851,11 @@ video {
     position: absolute;
     top: 25px;
     right: 0;
-    padding: 20px 30px;
+    padding: 20px 18px;
     background: #fff;
     border: 1px solid #e6e6e6;
     z-index: 100;
-    min-width: 150px;
+    min-width: 120px;
     text-align: left;
     opacity: 0;
     visibility: hidden;
@@ -890,7 +912,7 @@ video {
     background: transparent;
     font-size: 1.6rem;
     font-family: "Montserrat";
-    color: rgba(40, 46, 56, 0.502);
+    color: black;
     line-height: 1.2;
     text-align: left;
 }
@@ -1246,6 +1268,40 @@ video {
 }
 
 @media (max-width: 768px) {
+    .product-type-item {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    .under-t-shirt {
+        width: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .product-grid-header h2 {
+        font-size: 2rem;
+        margin: 0;
+    }
+    .product-custom-select-options {
+        min-width: 70px;
+    }
+    .product-custom-select-options {
+        padding: 20px 20px;
+    }
+    .product-custom-select-options li {
+        display: block;
+    }
+    .product-custom-select-options-item {
+        font-size: 1.2rem;
+    }
+    .detail-note ul li {
+        font-size: 1rem;
+    }
+    .detail-note h5,
+    .image-note h5 {
+        font-size: 1.2rem;
+    }
+    .product-cart-price {
+        font-size: 3.2rem;
+    }
     .u-ul-footer li p {
         line-height: 2.5;
     }
@@ -1264,7 +1320,7 @@ video {
         margin-right: 25px
     }
     .product-similar-products {
-        margin-top: 95px;
+        margin-top: 10rem;
     }
     .footer-app-apple {
         width: 60px;
@@ -1425,5 +1481,3 @@ video {
         }
     }
 }
-
-;
