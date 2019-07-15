@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="./css/slider.css">
     <link rel="stylesheet" href="./css/menu.css">
-    <link rel="stylesheet" href="./css/eshop.css">
 
+    <link rel="stylesheet" href="./css/eshop.css">
+    <link rel="stylesheet" href="./libs/wow/animate.css">
 </head>
 
 <body>
@@ -259,17 +259,23 @@
                                                                 <option class=" product-custom-select-options-item is-active">S</option>
                                                                 <option class=" product-custom-select-options-item ">M</option>
                                                                 <option class=" product-custom-select-options-item ">L</option>
-                                                        </select>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="product-cart-option">
                                         <label class="product-cart-option-label">Color</label>
+                                        <div class="select-colors  text-right">
+                                            <span class="dot dot-1"></span>
+                                            <span class="dot dot-2"></span>
+                                            <span class="dot dot-3"></span>
+                                            <span class="dot dot-4"></span>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="product-cart-buy u-vacuum">
                                     <div class="product-cart-buy-button-container u-inline-block u-va-middle u-w4of8">
-                                        <button class="product-cart-buy-button "><span class="product-cart-buy-button-inner">Add to cart</span> <span class="product-cart-buy-button-plus">+</span></button>
+                                        <button class="product-cart-buy-button "><span class="product-cart-buy-button-inner">ADD TO CARD</span> <span class="product-cart-buy-button-plus">+</span></button>
                                     </div>
 
                                     <div class="product-cart-currency u-inline-block u-va-middle u-custom-2of3 u-text-right ">
@@ -277,19 +283,21 @@
                                             <div class="custom-select custom-select--small u-inline-block">
                                                 <div class="js-custom-select">
                                                     <div class="product-custom-select product-custom-select--small">
-                                                        <button class="js-custom-label--currency product-custom-select-label">USD</button>
+                                                        <button class="js-custom-label--currency product-custom-select-label">VND</button>
                                                         <ul class="js-custom-options-list--currency product-custom-select-options">
-                                                            <li class="product-custom-select-options-item is-active" data-js-value="USD">USD</li>
-                                                            <li class=" product-custom-select-options-item" data-js-value="VND">VND</li>
+                                                            <li class=" product-custom-select-options-item is-active" data-js-value="VND">VND</li>
+                                                            <li class="product-custom-select-options-item " data-js-value="USD">USD</li>
                                                         </ul>
                                                     </div>
+
                                                     <select style="display: none" name="current-currency" class="">
                                                     <option class="product-custom-select-options-item " value="USD">USD</option>
                                                     <option class="product-custom-select-options-item " value="VND">VND</option>
                                                     </select>
+
                                                 </div>
                                             </div>
-                                            <div class="product-cart-price">$20</div>
+                                            <div class="product-cart-price">5000</div>
                                         </div>
                                     </div>
                                 </div>
@@ -318,7 +326,6 @@
                         </div>
                     </div>
                 </div>
-
             </section>
 
             <section class="product-similar-products u-relative">
@@ -327,7 +334,7 @@
                         <h2>You may also like</h2>
                     </header>
                     <div class="product-grid">
-                        <div class="product-grid-item is-active">
+                        <div class="wow fadeInDown product-grid-item is-active">
                             <a href="#" class="product-link">
                                 <div class="product-picture">
                                     <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
@@ -338,7 +345,7 @@
                             </a>
                         </div>
 
-                        <div class="product-grid-item is-active">
+                        <div class="wow fadeInDown product-grid-item is-active">
                             <a href="#" class="product-link">
                                 <div class="product-picture">
                                     <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
@@ -349,7 +356,7 @@
                             </a>
                         </div>
 
-                        <div class="product-grid-item is-active">
+                        <div class="wow fadeInDown product-grid-item is-active">
                             <a href="#" class="product-link">
                                 <div class="product-picture">
                                     <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
@@ -360,7 +367,7 @@
                             </a>
                         </div>
 
-                        <div class="product-grid-item is-active">
+                        <div class="wow fadeInDown product-grid-item is-active">
                             <a href="#" class="product-link">
                                 <div class="product-picture">
                                     <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
@@ -371,7 +378,7 @@
                             </a>
                         </div>
 
-                        <div class="product-grid-item is-active">
+                        <div class="wow fadeInDown product-grid-item is-active">
                             <a href="#" class="product-link">
                                 <div class="product-picture">
                                     <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="./img/anh1.png" alt="">
@@ -382,7 +389,7 @@
                             </a>
                         </div>
 
-                        <div class="product-grid-item is-active">
+                        <div class="wow fadeInDown product-grid-item is-active">
                             <a href="#" class="product-link">
                                 <div class="product-picture">
                                     <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
@@ -393,7 +400,7 @@
                             </a>
                         </div>
 
-                        <div class="product-grid-item is-active">
+                        <div class="wow fadeInDown product-grid-item is-active">
                             <a href="#" class="product-link">
                                 <div class="product-picture">
                                     <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn2.shopify.com/s/files/1/1320/6057/products/BOUGUESSA_ECOM18155-1_475x675_cropped_top.jpg?v=1556525762" alt="">
@@ -404,7 +411,7 @@
                             </a>
                         </div>
 
-                        <div class="product-grid-item is-active">
+                        <div class="wow fadeInDown product-grid-item is-active">
                             <a href="#" class="product-link">
                                 <div class="product-picture">
                                     <img class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="https://cdn.shopify.com/s/files/1/1320/6057/products/Shoot_for_Bouguessa_Official_August_15_201879142-1_8cd7e408-85a0-4092-928d-0a2b43c0f49f_475x675_cropped_top.jpg?v=1554030010" alt="">
@@ -425,7 +432,7 @@
                 </div>
             </section>
 
-            <section class="keep-in-touch">
+            <section class=" wow fadeInDown keep-in-touch">
                 <div>
                     <h2>KEEP IN TOUCH</h2>
                     <div class="container-input-email">
@@ -438,7 +445,7 @@
                 </div>
             </section>
 
-            <section class="footer-lerver-0">
+            <section class=" wow fadeInDown footer-lerver-0">
                 <div class="footer-lerver-0-right ">
                     <div class="footer-social">
                         <ul class="u-ul-footer">
@@ -503,7 +510,7 @@
             </section>
 
             <section class="footer">
-                <div class="inner-footer">
+                <div class=" inner-footer">
                     <p>Copyright &copy; 2019 Hustle Studio</p>
                 </div>
             </section>
@@ -514,7 +521,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <!-- <script src="./pointer.js"></script> -->
     <script src="./js/menu.js "></script>
+
     <script src="./js/eshop.js "></script>
+    <script src="./libs/wow/wow.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100,
+            callback: function(box) {
+                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+            }
+        });
+        wow.init();
+        // document.getElementById('moar').onclick = function() {
+        //     var section = document.createElement('section');
+        //     section.className = 'section--purple wow fadeInDown';
+        //     this.parentNode.insertBefore(section, this);
+        // };
+    </script>
 </body>
 
 </html>
