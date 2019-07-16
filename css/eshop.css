@@ -526,9 +526,9 @@ ol {
 }
 
 .product-grid-item {
-    padding-right: 15px;
-    padding-bottom: 45px;
-    padding-left: 15px;
+    padding-right: 1.5rem;
+    padding-bottom: 5rem;
+    padding-left: 1.5rem;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.33%;
     flex: 0 0 33.33%;
@@ -547,7 +547,7 @@ ol {
 
 .product-grid .product-picture {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 4rem;
     overflow: hidden;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
