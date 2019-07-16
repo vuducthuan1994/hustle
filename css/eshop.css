@@ -183,7 +183,7 @@ video {
 
 .content-right-product {
     width: 50%;
-    padding-left: 3rem;
+    padding-left: 1.8rem;
 }
 
 .inner-container-left {
@@ -194,24 +194,27 @@ video {
     position: relative;
     font-weight: 400;
     font-size: 1.2rem;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
     font-family: "Montserrat";
     text-transform: uppercase;
-    color: rgb(40, 46, 56);
+    /* color: rgb(40, 46, 56); */
+    color: rgb(180, 18, 51);
     line-height: 1.2;
     text-align: left;
     letter-spacing: 7px;
 }
 
 .product-title {
-    font-size: 55px;
+    margin: 0;
+    font-size: 5.5rem;
     color: rgb(40, 46, 56);
     text-align: left;
     font-weight: 800;
 }
 
 .product-title-2 {
-    font-size: 55px;
+    margin: 0;
+    font-size: 5.5rem;
     font-weight: 900;
     color: #ffffff;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -959,11 +962,20 @@ ol {
     flex-direction: row-reverse;
 }
 
-.footer-social,
-.footer-scanner-app,
-.footer-logo,
+.footer-scanner-app {
+    width: 48%;
+}
+
+.footer-social {
+    width: 52%;
+}
+
+.footer-logo {
+    width: 49%;
+}
+
 .footer-company {
-    width: 50%;
+    width: 51%;
 }
 
 .u-ul-footer {
@@ -984,7 +996,7 @@ ol {
 }
 
 .u-ul-footer li {
-    padding-bottom: 2rem;
+    padding-bottom: 2.4rem;
 }
 
 .u-ul-footer li h5 {
@@ -1084,7 +1096,7 @@ ol {
 }
 
 .product-cart-option {
-    padding-top: 32px;
+    padding-top: 3.2rem;
     padding-right: 38.7%;
     padding-bottom: 10px;
     display: -webkit-box;
@@ -1238,6 +1250,9 @@ ol {
 }
 
 @media (max-width: 1366px) {
+    .product-type-item {
+        color: rgb(40, 46, 56);
+    }
     .product-cart-option-label {
         font-size: 1.6rem;
         text-transform: uppercase;
@@ -1286,6 +1301,28 @@ ol {
 }
 
 @media (max-width: 768px) {
+    .u-ul-footer li a,
+    .u-ul-footer li a span {
+        font-size: 1.2rem;
+    }
+    .u-ul-footer li p {
+        font-size: 1.2rem;
+    }
+    .footer-social {
+        width: 56.5%;
+    }
+    .footer-scanner-app {
+        width: 43.5%;
+    }
+    .footer-logo {
+        width: 52%;
+    }
+    .footer-company {
+        width: 48%;
+    }
+    .footer-social {
+        padding-left: 1.2rem;
+    }
     .image-note img {
         margin-right: 3rem;
     }
