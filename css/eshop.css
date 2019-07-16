@@ -96,6 +96,10 @@ html {
     margin-top: -0.9rem;
 }
 
+.footer-logo .u-ul-footer li:first-child {
+    margin-top: -1.13rem;
+}
+
 video {
     margin: 0;
     padding: 0;
