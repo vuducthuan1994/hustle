@@ -44,6 +44,7 @@ $(document).ready(function() {
             var size = $('.js-custom-options-list--size li').eq(i).text();
             $('.js-product').text(size);
             $(".js-custom-options-list--size").removeClass("is-active")
+            $(".js-select-overlay").removeClass("is-active");
         });
     }
 
@@ -54,7 +55,8 @@ $(document).ready(function() {
             $('.js-custom-options-list--currency  li').eq(i).addClass('is-active');
             var size = $('.js-custom-options-list--currency  li').eq(i).text();
             $('.js-custom-label--currency').text(size);
-            $(".js-custom-options-list--currency").removeClass("is-active")
+            $(".js-custom-options-list--currency").removeClass("is-active");
+            $(".js-select-overlay").removeClass("is-active");
         });
     }
     initColor();
