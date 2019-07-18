@@ -21,3 +21,27 @@
 .product-similar-products.product-similar-products-eshop {
     margin: 0;
 }
+
+.header.header-eshop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    z-index: 3;
+}
+
+.menu-left li .link-item {
+    color: rgba(255, 255, 255, 0.302);
+}
+
+.header-eshop .menu-left li .link-item:hover {
+    color: white;
+}
+
+.header-eshop .container-red-slider {
+    background-color: #1e2127;
+}
+
+.header-eshop .container-red-slider .active-li {
+    background-color: white;
+}
