@@ -2,6 +2,12 @@ var totalImages = $("._container-small-images li img").length;
 var totalSizes = $(".js-custom-options-list--size li").length;
 var totalCurrencys = $(".js-custom-options-list--currency li").length;
 var totalColor = $(".select-colors span").length;
+
+var sizeAndroid = $(".footer-app-android").width();
+
+var widthApple = $(".footer-app-apple").width();
+var heightApple = $(".footer-app-apple").height();
+
 $(document).ready(function() {
 
     $('#_detail-image div div').eq(0).addClass('active');
@@ -61,6 +67,84 @@ $(document).ready(function() {
     }
     initColor();
     setColor();
+
+
+    // ANIMATION FOOTER
+    $(".footer-app-android").hover(function() {
+        $(this).css({
+            "width": widthApple,
+            "height": heightApple,
+            "border-radius": "32.5px"
+        });
+
+
+        $(".footer-app-apple").css({
+            "width": sizeAndroid,
+            "height": sizeAndroid,
+        });
+
+        $(".footer-app-apple").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
+            function() {
+                $(".footer-app-apple").css({
+                    "border-radius": "32.5px",
+                    "display": "flex",
+                    "align-content": "center",
+                    "align-items": "center",
+                    "border": "#5c5d62 solid 1px"
+                });
+
+            });
+        $(this).bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
+            function() {
+                $(".footer-app-apple").css({
+                    "display": "flex",
+                    "align-content": "center",
+                    "align-items": "center",
+                    "border": "#5c5d62 solid 1px"
+                });
+            });
+
+        $(".footer-app-apple ").css("background-color", "transparent");
+        $(".container-text-apple").css("max-width", "0%");
+        $(".footer-logo-apple").css({
+            "position": "absolute",
+            "margin": "auto",
+            "top": "0",
+            "right": "0",
+            "bottom": "0",
+            "left": "0",
+        });
+    });
+
+
+    // WHEN OUT HOVER ANDROID LOGO
+    $(".footer-app-android").mouseleave(function() {
+        $(".footer-app-apple").css({
+            "border": "none",
+            "background-color": "white",
+            "width": widthApple,
+            "height": heightApple,
+            "border-radius": "30px"
+        });
+
+        $(this).css({
+            "height": sizeAndroid,
+            "width": sizeAndroid
+        });
+        $(this).bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
+            function() {
+                $(this).css("border-radius", "32.5px");
+            });
+
+
+        $(".container-text-apple").css("max-width", "100%");
+        $(".container-text-apple").css("max-width", "100%");
+        $(".footer-logo-apple").css({
+            "position": "relative",
+            "margin": "inherit"
+        });
+
+    });
 });
 
 function initColor() {
