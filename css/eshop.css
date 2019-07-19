@@ -54,12 +54,45 @@
 }
 
 .shop-header-wrapper {
+    position: absolute;
     background-color: red;
     margin-left: 360px;
+    margin-top: 200px;
 }
 
 .shop-filters {
     font-size: 55px;
     text-align: left;
-    font-family: 'Montserrat Black', arial;
+    font-family: 'Montserrat Black';
+    font-weight: normal;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.shop-filter {
+    padding-right: 36px;
+    font-family: 'Montserrat Black';
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    font-size: 55px;
+    border-bottom: 2px solid #fff;
+    cursor: pointer;
+    color: white;
+    text-shadow: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.shop-filter:before {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 0;
+    width: 0;
+    border-width: 6px 6px 0;
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    content: '';
 }
