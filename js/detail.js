@@ -3,10 +3,10 @@ var totalSizes = $(".js-custom-options-list--size li").length;
 var totalCurrencys = $(".js-custom-options-list--currency li").length;
 var totalColor = $(".select-colors span").length;
 
-var sizeAndroid = $(".footer-app-android").width();
+var sizeAndroidFooter = $(".footer-app-android").width();
 
-var widthApple = $(".footer-app-apple").width();
-var heightApple = $(".footer-app-apple").height();
+var widthAppleFooter = $(".footer-app-apple").width();
+var heightAppleFooter = $(".footer-app-apple").height();
 
 $(document).ready(function() {
 
@@ -72,15 +72,15 @@ $(document).ready(function() {
     // ANIMATION FOOTER
     $(".footer-app-android").hover(function() {
         $(this).css({
-            "width": widthApple,
-            "height": heightApple,
+            "width": widthAppleFooter,
+            "height": heightAppleFooter,
             "border-radius": "32.5px"
         });
 
 
         $(".footer-app-apple").css({
-            "width": sizeAndroid,
-            "height": sizeAndroid,
+            "width": sizeAndroidFooter,
+            "height": sizeAndroidFooter,
         });
 
         $(".footer-app-apple").bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
@@ -122,14 +122,14 @@ $(document).ready(function() {
         $(".footer-app-apple").css({
             "border": "none",
             "background-color": "white",
-            "width": widthApple,
-            "height": heightApple,
+            "width": widthAppleFooter,
+            "height": heightAppleFooter,
             "border-radius": "30px"
         });
 
         $(this).css({
-            "height": sizeAndroid,
-            "width": sizeAndroid
+            "height": sizeAndroidFooter,
+            "width": sizeAndroidFooter
         });
         $(this).bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
             function() {
@@ -161,7 +161,6 @@ function initColor() {
 function setColor() {
     for (let i = 0; i < totalColor; i++) {
         $('.select-colors span').eq(i).click(function() {
-            console.log("hahahaha")
             $('.select-colors span div').removeClass('is-active');
             $('.select-colors span div').eq(i).addClass('is-active');
         });
