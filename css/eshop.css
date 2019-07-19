@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Montserrat Black';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Black'), local('Montserrat-Black'), url(http://allfont.net/cache/fonts/montserrat-black_8089003721ce32d6f8e0e38037962053.woff) format('woff'), url(http://allfont.net/cache/fonts/montserrat-black_8089003721ce32d6f8e0e38037962053.ttf) format('truetype');
+}
+
 .inner-producr-similar.inner-producr-similar-eshop {
     margin-left: 8.3%;
     width: 83.4%;
@@ -44,4 +51,15 @@
 
 .header-eshop .container-red-slider .active-li {
     background-color: white;
+}
+
+.shop-header-wrapper {
+    background-color: red;
+    margin-left: 360px;
+}
+
+.shop-filters {
+    font-size: 55px;
+    text-align: left;
+    font-family: 'Montserrat Black', arial;
 }
