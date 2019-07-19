@@ -171,18 +171,16 @@
                 <header class="shop-header u-relative u-overflow-h">
                     <div class="shop-header-wrapper">
                         <div class="shop-filters">
+                            <div class="title-page-filters">
+                                E-SHOP
+                            </div>
+                            <div class="hr-title"></div>
                             Are you looking for
-                            <span class="shop-filter js-filter" data-filter-name="type" data-filter-options="[{" value ":"Skirt ","label ":"Skirt ","selected ":false},{"value ":"Abaya ","label ":"Abaya ","selected ":false},{"value ":"Top ","label ":"Top ","selected ":false},{"value
-                                ":"Dress ","label ":"Dress ","selected ":false},{"value ":"Pants ","label ":"Pants ","selected ":false},{"value ":"Jacket ","label ":"Jacket ","selected ":false},{"value ":"Scarve ","label ":"Scarve ","selected ":false}]" data-filter-default="everything"
-                                data-filter-selected="">T-Shirt</span>
+                            <span class="shop-filter js-filter" data-filter-default="T-Shirt">T-Shirt</span>
                             <br> In
-                            <span class="shop-filter js-filter" data-filter-name="type" data-filter-options="[{" value ":"Skirt ","label ":"Skirt ","selected ":false},{"value ":"Abaya ","label ":"Abaya ","selected ":false},{"value ":"Top ","label ":"Top ","selected ":false},{"value
-                                ":"Dress ","label ":"Dress ","selected ":false},{"value ":"Pants ","label ":"Pants ","selected ":false},{"value ":"Jacket ","label ":"Jacket ","selected ":false},{"value ":"Scarve ","label ":"Scarve ","selected ":false}]" data-filter-default="everything"
-                                data-filter-selected="">Hustle x Fustic</span>
+                            <span class="shop-filter js-filter" data-filter-default="Hustle x Fustic.">Hustle x Fustic.</span>
                         </div>
                     </div>
-
-
                 </header>
                 <div class="inner-producr-similar inner-producr-similar-eshop">
                     <div class="product-grid product-grid-eshop">
@@ -370,6 +368,7 @@
     <!-- FOR ANIMATION WHEN USER USE SCROLL BAR -->
     <script src="./js/eshop.js "></script>
     <script src="./libs/wow/wow.js"></script>
+    <script src="./js/eshopscreen.js "></script>
     <script>
         wow = new WOW({
             animateClass: 'animated',
@@ -380,6 +379,36 @@
         });
         wow.init();
     </script>
+    <div class="filter-dropdown">
+        <div class="filter-dropdown-close u-absolute u-pos-tl u-fit">
+
+        </div>
+        <div class="filter-dropdown-wrapper">
+            <span class="filter-dropdown-label">
+               null
+            </span>
+            <ul class="filter-dropdown-options">
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> A </span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> B </span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> C</span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> D </span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> E</span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> F </span>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 
 </html>
