@@ -132,8 +132,7 @@ video {
 .lang-space {
     float: left;
     font-size: 12px;
-    font-weight: 600;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat SemiBold';
     color: #93969b;
 }
 
@@ -659,17 +658,15 @@ DONE ANIMATION */
 }
 
 .menu-left li .link-item {
-    font-family: "Montserrat";
+    font-family: 'Montserrat SemiBold';
     color: rgba(40, 46, 56, 0.502);
-    font-weight: 600;
     letter-spacing: 2.5px;
     font-size: 1.4rem;
 }
 
 .menu-left li .lang li {
-    font-family: "Montserrat";
+    font-family: 'Montserrat SemiBold';
     color: rgba(40, 46, 56, 0.502);
-    font-weight: 600;
     text-transform: uppercase;
     font-size: 1.2rem;
     line-height: 1.2;
@@ -721,10 +718,9 @@ DONE ANIMATION */
         font-weight: bold;
     }
     .menu-left li .link-item {
-        font-family: "Montserrat";
+        font-family: 'Montserrat SemiBold';
         font-size: 10px;
         color: rgba(40, 46, 56, 0.502);
-        font-weight: 600;
         letter-spacing: 2.5px;
     }
     .container_apple {

@@ -53,6 +53,14 @@
     background-color: white;
 }
 
+.header-eshop .lang .active {
+    color: white;
+}
+
+.header .lang .active {
+    border-bottom: solid 1px white;
+}
+
 .shop-header-wrapper {
     position: absolute;
     margin-left: 360px;
@@ -116,6 +124,15 @@
 }
 
 @media (max-width: 1366px) {
+    .inner-producr-similar.inner-producr-similar-eshop {
+        margin-left: 6.1%;
+        width: 87.8%;
+    }
+    .product-grid-item.product-grid-item-eshop {
+        -ms-flex: 0 0 33.333%;
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
     .shop-filters {
         font-size: 48px;
     }
