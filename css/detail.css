@@ -1114,7 +1114,7 @@ ol {
 }
 
 .color-black {
-    color: black;
+    color: black !important;
 }
 
 .footer-logo-apple {
