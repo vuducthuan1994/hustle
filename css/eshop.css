@@ -75,6 +75,10 @@
     margin-top: 145px;
 }
 
+.header-eshop .burgerLine {
+    background: -webkit-linear-gradient(left, #1e2127 30%, white 30%, white);
+}
+
 .shop-filters {
     font-size: 55px;
     text-align: left;

@@ -814,9 +814,9 @@ DONE ANIMATION */
     .language-mobie a,
     .language-mobie b {
         font-size: 10px;
-        font-family: "Montserrat";
+        font-family: "Montserrat SemiBold";
         color: rgba(40, 46, 56, 0.502);
-        font-weight: 600;
+        font-weight: normal;
         text-transform: uppercase;
         line-height: 1.2;
         text-align: left;

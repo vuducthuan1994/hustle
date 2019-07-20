@@ -959,9 +959,9 @@ ol {
 
 .u-ul-footer li h5 {
     margin: 0;
-    font-family: "Montserrat";
+    font-family: "Montserrat SemiBold";
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: normal;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 1.6;
