@@ -137,8 +137,7 @@ html {
     margin-bottom: 4rem;
     font-family: 'Montserrat Regular';
     text-transform: uppercase;
-    /* color: rgb(40, 46, 56); */
-    color: rgb(180, 18, 51);
+    color: rgb(40, 46, 56);
     line-height: 1.2;
     text-align: left;
     letter-spacing: 7px;
@@ -1037,8 +1036,9 @@ ol {
 }
 
 .product-cart-option {
-    padding-top: 3.2rem;
-    padding-bottom: 10px;
+    position: relative;
+    padding-top: 6rem;
+    padding-bottom: 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1049,6 +1049,14 @@ ol {
     -ms-flex-align: center;
     align-items: center;
     border-bottom: 1px solid #e6e6e6;
+}
+
+.under-line-details {
+    width: 300%;
+    height: 1px;
+    background-color: #e6e6e6;
+    position: absolute;
+    bottom: -1px;
 }
 
 .product-cart-option-label {
@@ -1210,6 +1218,9 @@ ol {
 }
 
 @media (max-width: 1366px) {
+    .under-line-details {
+        display: none;
+    }
     .product-type-item {
         color: rgb(40, 46, 56);
     }
