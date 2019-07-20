@@ -27,6 +27,8 @@ img {
     align-items: center;
     background-color: #16181c;
     overflow: scroll;
+    top: 0;
+    left: 0;
 }
 
 .infomationCart {
@@ -151,7 +153,7 @@ img {
     align-items: center;
 }
 
-#cartMenu {
+.cartMenu {
     color: #fff;
     font-weight: 600;
     font-size: 12px;
@@ -162,12 +164,20 @@ img {
 }
 
 .number-item-cart {
+    cursor: pointer;
     border-radius: 50%;
     height: 32px;
     width: 32px;
     font-weight: bold;
     background-color: #fff;
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
 }
 
 .payment-now a:hover {
@@ -178,10 +188,14 @@ img {
 .number-item-cart div {
     display: inline-block;
     color: black;
-    font-family: "Montserrat";
-    font-weight: 600;
-    text-align: center;
+    font-family: "Montserrat SemiBold";
+    font-weight: normal;
     font-size: 12px;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .closeButton {
@@ -236,10 +250,10 @@ img {
     font-size: 7.1614vw;
     display: inline-block;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: normal;
     padding-bottom: 9.57vh;
     transition: 0.2s ease all;
-    font-family: "Montserrat";
+    font-family: "Montserrat ExtraBold";
     line-height: 1.2;
     text-align: left;
     text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;

@@ -21,6 +21,7 @@ tlmenu.to('.navMobie', 0.3, { autoAlpha: 1 })
 
 $('.burgerIcon').click(function() {
     tlmenu.play(0);
+    $('html').addClass('is-main-menu-open');
 });
 
 $('.closeButton').click(function() {
@@ -32,14 +33,11 @@ $(document).ready(function() {
         $("#cart-background").addClass('is-open');
         $('html').addClass('is-cart-open');
         $("#navRightCart").css("right", "0");
-        $(".container-menu-mobie").css("opacity", 0.5);
     });
     $('.closeCart').click(function() {
         $("#cart-background").removeClass('is-open');
         $("#navRightCart").css("right", "-500px");
         $('html').removeClass('is-cart-open');
-        $(".container-menu-mobie").css("opacity", 1);
-
     });
     const $menu = $('#navRightCart');
 

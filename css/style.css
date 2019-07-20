@@ -566,6 +566,11 @@ DONE ANIMATION */
     font-size: 18px;
 }
 
+.is-main-menu-open {
+    position: relative;
+    overflow: hidden;
+}
+
 .container_android {
     position: absolute;
     width: 70px;
@@ -600,10 +605,6 @@ DONE ANIMATION */
     background-color: #282e38;
 }
 
-.container_android:hover>.container-text-android {
-    max-width: 100%;
-}
-
 .container_android:hover>.logo-android {
     position: relative;
     margin: 0;
@@ -611,6 +612,7 @@ DONE ANIMATION */
 }
 
 .container_android:hover>.container-text-android {
+    max-width: 100%;
     opacity: 1;
     visibility: visible;
 }

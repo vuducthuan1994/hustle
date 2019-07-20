@@ -79,8 +79,6 @@ $(document).ready(function() {
             "border": "none"
         });
 
-        $(".container-text-android").css("max-width", "100%");
-        $(".container-text-android").css("display", "block");
         $(".footer-app-apple").css({
             "width": sizeAndroidFooter,
             "height": sizeAndroidFooter,
@@ -123,8 +121,6 @@ $(document).ready(function() {
     // WHEN OUT HOVER ANDROID LOGO
     $(".footer-app-android").mouseleave(function() {
         $('.footer-logo-apple').attr("src", './img/AppstoreBlack.svg');
-        $(".container-text-android").css("max-width", "0%");
-        $(".container-text-android").css("display", "none");
         $(".footer-app-apple").css({
             "border": "none",
             "background-color": "white",

@@ -19,32 +19,29 @@ html {
     margin-top: -1.13rem;
 }
 
-.container-text-android {
-    display: none;
-    max-width: 0%;
+.footer-app-android {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
 }
 
 .footer-app-android:hover>.footer-logo-android {
     content: url(../img/Googleplay.svg);
     margin: 0;
+    position: relative;
     margin-left: 3rem;
 }
 
-
-/* .footer-app-android:hover>.container-text-android {
+.footer-app-android:hover>.container-text-android {
+    max-width: 100%;
     opacity: 1;
     visibility: visible;
-}
-
-.footer-app-android:hover>.container-text-android .text-descripton-1 {} */
-
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    color: black !important;
 }
 
 ._navi-link ul li {
@@ -1154,6 +1151,7 @@ ol {
     right: 0;
     bottom: 0;
     left: 0;
+    position: absolute;
     /* For Safari 3.1 to 6.0 */
     transition-property: all;
     transition-property: transform;
