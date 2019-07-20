@@ -819,9 +819,13 @@ ol {
     cursor: pointer;
     position: relative;
     padding-right: 15px;
-    font-family: 'Montserrat SemiBold';
-    font-size: 2rem;
     color: #282e38;
+    font-family: 'Montserrat Regular';
+    font-size: 2rem;
+}
+
+.custom-text-currency {
+    font-size: 12px !important;
 }
 
 .product-custom-select-options {
