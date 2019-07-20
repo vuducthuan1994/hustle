@@ -869,10 +869,10 @@ ol {
     width: 100%;
     background: transparent;
     font-size: 1.6rem;
-    font-family: "Montserrat";
-    color: black;
-    line-height: 1.2;
+    font-family: 'Montserrat Regular';
+    color: rgba(40, 46, 56, 0.502);
     text-align: left;
+    padding-bottom: 19px;
 }
 
 .footer-lerver-0 {
@@ -974,23 +974,6 @@ ol {
     padding-left: 0;
 }
 
-.container-input-email input::placeholder {
-    line-height: 1.2;
-    font-size: 1.6rem;
-    font-family: 'Montserrat Regular';
-    color: rgba(40, 46, 56, 0.502);
-    text-align: left;
-    padding-top: 10px;
-}
-
-.container-input-email input::-webkit-input-placeholder {
-    line-height: 1.2;
-    font-size: 1.6rem;
-    font-family: 'Montserrat Regular';
-    color: rgba(40, 46, 56, 0.502);
-    text-align: left;
-}
-
 .footer {
     background-color: #16181c;
 }
@@ -1003,10 +986,9 @@ ol {
 .inner-footer p {
     font-size: 1.6rem;
     text-align: center;
-    font-weight: 600;
-    font-family: "Montserrat";
+    font-family: "Montserrat SemiBold";
     color: rgba(255, 255, 255, 0.302);
-    line-height: 1.9;
+    /* line-height: 1.9; */
 }
 
 .product-t-shirt {
@@ -1198,7 +1180,7 @@ ol {
     outline: none;
     text-align: center;
     padding: 0px;
-    top: 1.1rem;
+    top: .5rem;
 }
 
 .nextArrowButton:hover {
