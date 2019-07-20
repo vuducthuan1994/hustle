@@ -57,7 +57,15 @@
     color: white;
 }
 
-.header .lang .active {
+.header-eshop ul .lang li a:hover {
+    color: white;
+}
+
+.header-eshop .lang .active {
+    border-bottom: solid 1px white;
+}
+
+.header-eshop .expand:after {
     border-bottom: solid 1px white;
 }
 
