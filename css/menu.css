@@ -55,8 +55,8 @@ img {
 #totalMonney {
     font-size: 26px;
     color: rgba(255, 255, 255, 0.149);
-    font-weight: 600;
-    font-family: "Montserrat";
+    font-weight: normal;
+    font-family: "Montserrat SemiBold";
 }
 
 #totalMonney {
@@ -70,9 +70,9 @@ img {
 }
 
 .payment-now a {
-    font-family: "Montserrat";
+    font-family: "Montserrat SemiBold";
     color: white;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 12px;
 }
 

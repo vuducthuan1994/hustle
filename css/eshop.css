@@ -57,7 +57,15 @@
     color: white;
 }
 
-.header .lang .active {
+.header-eshop ul .lang li a:hover {
+    color: white;
+}
+
+.header-eshop .lang .active {
+    border-bottom: solid 1px white;
+}
+
+.header-eshop .expand:after {
     border-bottom: solid 1px white;
 }
 
@@ -65,6 +73,10 @@
     position: absolute;
     margin-left: 360px;
     margin-top: 145px;
+}
+
+.header-eshop .burgerLine {
+    background: -webkit-linear-gradient(left, #1e2127 30%, white 30%, white);
 }
 
 .shop-filters {
