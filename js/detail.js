@@ -141,7 +141,8 @@ $(document).ready(function() {
         $(".container-text-apple").css("max-width", "100%");
         $(".footer-logo-apple").css({
             "position": "relative",
-            "margin": "inherit"
+            "margin": "inherit",
+            "margin-left": "3rem"
         });
 
     });

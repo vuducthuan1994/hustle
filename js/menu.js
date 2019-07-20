@@ -27,24 +27,26 @@ $('.closeButton').click(function() {
     tlmenu.reverse(0);
 });
 $('#cartMenu').click(function() {
+    $("#cart-background").addClass('is-open');
     $("#navRightCart").css("right", "0");
     $(".container-menu-mobie").css("opacity", 0.5);
 });
-
+$('.number-items-container').click(function() {
+    console.log("hahahhahah")
+    $("#cart-background").addClass('is-open');
+    $('html').addClass('is-cart-open');
+    $("#navRightCart").css("right", "0");
+    $(".container-menu-mobie").css("opacity", 0.5);
+});
 $('.closeCart').click(function() {
-    console.log("close cart")
+    $("#cart-background").removeClass('is-open');
     $("#navRightCart").css("right", "-500px");
+    $('html').removeClass('is-cart-open');
     $(".container-menu-mobie").css("opacity", 1);
 
 });
-
-const $menu = $('#navRightCart');
-
-$(document).mouseup(function(e) {
-    if (!$menu.is(e.target) // if the target of the click isn't the container...
-        &&
-        $menu.has(e.target).length === 0) // ... nor a descendant of the container
-    {
-        $("#navRightCart").css("right", "-500px");
-    }
-});
+$("#cart-background").click(function() {
+    $("#navRightCart").css("right", "-500px");
+    $("#cart-background").removeClass('is-open');
+    $('html').removeClass('is-cart-open');
+})
