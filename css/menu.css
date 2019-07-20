@@ -261,12 +261,12 @@ img {
 
 #navRightCart {
     width: 361px;
-    z-index: 250;
+    z-index: 2001;
     height: 100vh;
     background-color: #1b1d22;
     position: fixed;
     right: -500px;
-    transition: right 1s ease-in-out;
+    transition: right .5s ease-in-out;
 }
 
 .closeCart {

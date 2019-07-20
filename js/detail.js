@@ -69,15 +69,18 @@ $(document).ready(function() {
     setColor();
 
 
-    // ANIMATION FOOTER
+    // ANIMATION FOOTER WHEN HOVER ANDROID LOGO
     $(".footer-app-android").hover(function() {
         $(this).css({
             "width": widthAppleFooter,
             "height": heightAppleFooter,
-            "border-radius": "32.5px"
+            "border-radius": "32.5px",
+            "background-color": "white",
+            "border": "none"
         });
 
-
+        $(".container-text-android").css("max-width", "100%");
+        $(".container-text-android").css("display", "block");
         $(".footer-app-apple").css({
             "width": sizeAndroidFooter,
             "height": sizeAndroidFooter,
@@ -103,7 +106,7 @@ $(document).ready(function() {
                     "border": "#5c5d62 solid 1px"
                 });
             });
-
+        $('.footer-logo-apple').attr("src", './img/Appstore.svg');
         $(".footer-app-apple ").css("background-color", "transparent");
         $(".container-text-apple").css("max-width", "0%");
         $(".footer-logo-apple").css({
@@ -119,6 +122,9 @@ $(document).ready(function() {
 
     // WHEN OUT HOVER ANDROID LOGO
     $(".footer-app-android").mouseleave(function() {
+        $('.footer-logo-apple').attr("src", './img/AppstoreBlack.svg');
+        $(".container-text-android").css("max-width", "0%");
+        $(".container-text-android").css("display", "none");
         $(".footer-app-apple").css({
             "border": "none",
             "background-color": "white",
@@ -129,7 +135,9 @@ $(document).ready(function() {
 
         $(this).css({
             "height": sizeAndroidFooter,
-            "width": sizeAndroidFooter
+            "width": sizeAndroidFooter,
+            "border": "#5c5d62 solid 1px",
+            "background-color": "transparent"
         });
         $(this).bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd",
             function() {

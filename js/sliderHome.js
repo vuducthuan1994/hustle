@@ -12,16 +12,14 @@ var widthApple = $(".container_apple ").width();
 var heightApple = $(".container_apple ").height();
 
 $(document).ready(function() {
-    // css({"propertyname":"value","propertyname":"value",...});
+
+
     $(".container_android").hover(function() {
-
-
         $(this).css({
             "width": widthApple,
             "height": heightApple,
             "border-radius": "32.5px"
         });
-
 
         $(".container_apple").css({
             "width": sizeAndroid,

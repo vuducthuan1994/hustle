@@ -19,6 +19,25 @@ html {
     margin-top: -1.13rem;
 }
 
+.container-text-android {
+    display: none;
+    max-width: 0%;
+}
+
+.footer-app-android:hover>.footer-logo-android {
+    content: url(../img/Googleplay.svg);
+    margin: 0;
+    margin-left: 3rem;
+}
+
+
+/* .footer-app-android:hover>.container-text-android {
+    opacity: 1;
+    visibility: visible;
+}
+
+.footer-app-android:hover>.container-text-android .text-descripton-1 {} */
+
 video {
     margin: 0;
     padding: 0;

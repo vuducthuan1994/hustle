@@ -84,6 +84,10 @@ html.is-cart-open {
     text-decoration: none;
 }
 
+.number-items-container:hover {
+    text-decoration: none;
+}
+
 .expand {
     position: relative;
     text-decoration: none;
@@ -93,9 +97,13 @@ html.is-cart-open {
 .detail-cart {
     font-family: 'Montserrat SemiBold';
     font-size: 1.2rem;
+    padding-left: 40px;
+    padding-right: 10px;
+    color: #93969b;
+    float: left;
 }
 
-.number-items {
+.number-items-container {
     background-color: black;
     width: 30px;
     height: 30px;
@@ -103,8 +111,23 @@ html.is-cart-open {
     overflow: visible;
     margin-left: 10px;
     display: inline-block;
-    top: -10px;
-    position: relative;
+    margin-top: -10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    align-content: center;
+    align-items: center;
+}
+
+.number-items {
+    color: white;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .expand:after {
