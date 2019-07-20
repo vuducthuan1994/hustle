@@ -26,6 +26,7 @@ $('.burgerIcon').click(function() {
 
 $('.closeButton').click(function() {
     tlmenu.reverse(0);
+    $('html').removeClass('is-main-menu-open');
 });
 
 $(document).ready(function() {
