@@ -817,12 +817,13 @@ ol {
     position: relative;
     padding-right: 15px;
     color: #282e38;
-    font-family: 'Montserrat Regular';
+    font-family: 'Montserrat SemiBold';
     font-size: 2rem;
 }
 
 .custom-text-currency {
     font-size: 12px !important;
+    font-family: 'Montserrat Regular';
 }
 
 .product-custom-select-options {
