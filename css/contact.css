@@ -213,6 +213,13 @@
 }
 
 @media (max-width: 360px) {
+    .contact-content {
+        left: 15px;
+        top: -60px;
+        position: absolute;
+        right: -15px;
+        width: auto;
+    }
     .tel-mail {
         font-size: 12px;
     }
@@ -222,21 +229,19 @@
     .inner-contact-content {
         margin: 0;
         padding: 0;
-        margin-left: 45px;
+        padding-left: 25px;
+        padding-top: 63px;
     }
     .contact-content {
         background-color: white;
-        width: 100%;
-        margin-top: -60px;
-    }
-    .title-contact {
-        margin-top: 65px;
     }
     .contact-us-right {
         height: 450px;
     }
     .contact-us-left {
         padding: 0px;
+        height: 355px;
+        position: relative;
     }
     .contact-us-right img {
         padding-bottom: 0px;
