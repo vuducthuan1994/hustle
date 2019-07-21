@@ -1,0 +1,139 @@
+.contact-us {
+    position: relative;
+    background-color: white;
+    display: -webkit-flex;
+    /* Safari */
+    -webkit-flex-direction: row-reverse;
+    /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row-reverse;
+    height: 918px;
+}
+
+.contact-content {
+    height: 100%;
+    width: 116.5%;
+    margin-right: 30px;
+    background-color: white;
+}
+
+.header-contact {
+    height: 140px;
+}
+
+.contact-us-right {
+    position: relative;
+    display: inline-block;
+    width: 62%;
+    height: 100%;
+}
+
+.contact-us-right img {
+    height: 100%;
+    padding-bottom: 150px;
+}
+
+.contact-us-left {
+    position: relative;
+    display: inline-block;
+    width: 38%;
+    padding-top: 60px;
+    padding-bottom: 211px;
+    background-color: white;
+}
+
+.inner-contact-content {
+    background-color: white;
+    width: 57.5%;
+    height: auto;
+    float: left;
+    margin-top: 100px;
+    margin-left: 42.35%;
+}
+
+.title-contact {
+    position: relative;
+    padding-left: 50px;
+    font-size: 12px;
+    font-family: 'Montserrat Regular';
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: rgb(40, 46, 56);
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 7.5px;
+}
+
+.title-contact::before {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    height: 1px;
+    width: 50px;
+    background-color: black;
+    content: '';
+}
+
+.main-contact {
+    margin-top: 60px;
+}
+
+.main-contact span:first-child {
+    font-size: 55px;
+    font-family: "Montserrat Black";
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.main-contact span:last-child {
+    color: #282e38;
+    font-size: 55px;
+    font-family: "Montserrat Black";
+    margin-left: 15px;
+}
+
+.address-contact {
+    position: relative;
+    padding-left: 50px;
+    line-height: 1.875;
+    font-size: 16px;
+    font-family: "Montserrat Regular";
+    color: rgba(40, 46, 56, 0.8);
+    text-align: left;
+    margin-top: 25px;
+}
+
+.address-contact::before {
+    position: absolute;
+    top: 135px;
+    left: 50px;
+    height: 1px;
+    width: 50px;
+    background-color: black;
+    content: '';
+}
+
+.tel-mail {
+    margin-top: 105px;
+    font-size: 16px;
+    font-weight: normal;
+    color: rgb(40, 46, 56);
+    line-height: 1.875;
+    text-align: left;
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-family: 'Montserrat SemiBold';
+    color: rgb(40, 46, 56);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.875;
+}
+
+@media (max-width: 1366px) {
+    .contact-us-right {
+        width: 76%;
+    }
+    .contact-content {
+        width: 126%;
+    }
+}
