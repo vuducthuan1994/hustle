@@ -69,6 +69,10 @@
     border-bottom: solid 1px white;
 }
 
+.filter-dropdown-close {
+    height: 100vh;
+}
+
 .shop-header-wrapper {
     position: absolute;
     margin-left: 360px;

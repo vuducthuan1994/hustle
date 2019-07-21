@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-
-
     $('.js-filter').click(function() {
         $('html').addClass("is-filter-dropdown-open ");
         var p = $(this);
