@@ -1455,6 +1455,10 @@ ol {
 }
 
 @media(max-width:500px) and (min-width:320px) {
+    .keep-in-touch:before {
+        top: -30px;
+        height: 60px;
+    }
     .product-grid {
         margin-top: 30px;
     }

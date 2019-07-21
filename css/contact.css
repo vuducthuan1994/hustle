@@ -44,7 +44,6 @@
 
 .inner-contact-content {
     background-color: white;
-    width: 57.5%;
     height: auto;
     float: left;
     margin-top: 100px;
@@ -130,10 +129,130 @@
 }
 
 @media (max-width: 1366px) {
+    .tel-mail {
+        margin-top: 90px;
+    }
+    .title-contact::before {
+        top: 43px;
+    }
+    .main-contact {
+        margin-top: 45px;
+    }
+    .header-contact {
+        height: 129px;
+    }
+    .inner-contact-content {
+        margin-top: 107px;
+        margin-left: 83px;
+    }
     .contact-us-right {
-        width: 76%;
+        width: 66.6%;
+    }
+    .contact-us-left {
+        width: 33.4;
     }
     .contact-content {
-        width: 126%;
+        width: 145.5%;
+    }
+    .main-contact span:first-child {
+        font-size: 48px;
+    }
+    .main-contact span:last-child {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title-contact::before {
+        top: 27px;
+    }
+    .main-contact {
+        margin-top: 17px;
+    }
+    .address-contact {
+        margin-top: 15px;
+    }
+    .address-contact::before {
+        top: 105px;
+    }
+    .tel-mail {
+        margin-top: 50px;
+        line-height: 1.7;
+    }
+    .contact-us {
+        height: 621px;
+    }
+    .contact-us-right img {
+        padding-bottom: 100px;
+    }
+    .contact-us-right {
+        width: 65.7%;
+    }
+    .contact-us-left {
+        width: 34.3%;
+    }
+    .header-contact {
+        height: 151px;
+    }
+    .inner-contact-content {
+        margin-left: 60px;
+        margin-top: 65px;
+    }
+    .contact-us-left {
+        padding-bottom: 160px;
+    }
+    .main-contact span:first-child {
+        font-size: 32px;
+    }
+    .main-contact span:last-child {
+        font-size: 32px;
+    }
+    .address-contact {
+        line-height: 1.7;
+    }
+}
+
+@media (max-width: 360px) {
+    .tel-mail {
+        font-size: 12px;
+    }
+    .header-contact {
+        height: 78px;
+    }
+    .inner-contact-content {
+        margin: 0;
+        padding: 0;
+        margin-left: 45px;
+    }
+    .contact-content {
+        background-color: white;
+        width: 100%;
+        margin-top: -60px;
+    }
+    .title-contact {
+        margin-top: 65px;
+    }
+    .contact-us-right {
+        height: 450px;
+    }
+    .contact-us-left {
+        padding: 0px;
+    }
+    .contact-us-right img {
+        padding-bottom: 0px;
+    }
+    .contact-us {
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        display: block;
+        height: 804px;
+    }
+    .contact-us-right {
+        display: block;
+        width: 100%;
+    }
+    .contact-us-left {
+        display: block;
+        width: 100%;
     }
 }
