@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thời Trang</title>
-    <link rel="stylesheet" href="./css/pointer.css">
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/detail.css">
     <link rel="stylesheet" href="./css/eshop.css">
+    <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -24,11 +24,16 @@
         <!-- <div class="cb-cursor cb-color" id="cursor-page">
         </div> -->
         <header class="header header-eshop">
+
+            <!-- LOGO -->
             <div id="logo">
                 <a href="#">
                     <img src="./img/logo-white.png">
                 </a>
             </div>
+            <!-- END LOGO -->
+
+            <!-- MENU DESKTOP -->
             <nav class="menu menu-desktop" role="navigation">
                 <ul class="menu-list menu-left">
                     <li>
@@ -75,6 +80,9 @@
                     </li>
                 </ul>
             </nav>
+            <!-- END MENU DESKTOP -->
+
+            <!-- MENU MOBIE -->
             <nav class="navMobie">
                 <div class="container-menu-mobie">
                     <ul class="navMenu">
@@ -115,6 +123,9 @@
                 </div>
                 <i class="fa fa-times closeButton" aria-hidden="true"></i>
             </nav>
+            <!-- END MENU MOBIE -->
+
+            <!-- RIGHT MENU ( PAYMENT) -->
             <nav class="" id="navRightCart">
                 <div class="artile">
                     <div class="number-artile">
@@ -162,15 +173,21 @@
                 </div>
                 <hr style="width: 66.5%">
             </nav>
+            <!-- END RIGHT MENU ( PAYMENT) -->
+
+            <!-- CLICK THIS DIV ELEMENT TO SHOW MENU MOBIE -->
             <div class="burgerIcon">
                 <div class="burgerLine"></div>
                 <div class="burgerLine lineCenter"></div>
                 <div class="burgerLine"></div>
             </div>
+            <!--END CLICK THIS DIV ELEMENT TO SHOW MENU MOBIE -->
         </header>
 
         <main class="page-content">
             <section class="product-similar-products product-similar-products-eshop u-relative">
+
+                <!--THIS HEADER ONLY FOR ESHOP SCREEN -->
                 <header class="shop-header u-relative u-overflow-h">
                     <div class="shop-header-wrapper">
                         <div class="shop-filters">
@@ -186,6 +203,8 @@
                         </div>
                     </div>
                 </header>
+                <!--END THIS HEADER ONLY FOR ESHOP SCREEN -->
+
                 <div class="eshop-screen inner-producr-similar inner-producr-similar-eshop">
                     <div class="product-grid product-grid-eshop">
                         <div class="wow fadeInDown product-grid-item product-grid-item-eshop is-active">
@@ -280,7 +299,7 @@
             </section>
 
 
-
+            <!-- INPUT EMAIL -->
             <section class=" wow fadeInDown keep-in-touch">
                 <div>
                     <h2>KEEP IN TOUCH</h2>
@@ -294,6 +313,9 @@
                     </div>
                 </div>
             </section>
+            <!-- END INPUT EMAIL -->
+
+            <!-- FOOTER FIRST -->
             <section class=" wow fadeInDown footer-lerver-0">
                 <div class="footer-lerver-0-right ">
                     <div class="footer-social">
@@ -359,11 +381,15 @@
                     </div>
                 </div>
             </section>
+            <!-- ENDFOOTER FIRST -->
+
+            <!-- LAST FOOTER -->
             <section class="footer">
                 <div class=" inner-footer">
                     <p>Copyright &copy; 2019 Hustle Studio</p>
                 </div>
             </section>
+            <!-- END LAST FOOTER -->
         </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -387,9 +413,10 @@
         });
         wow.init();
     </script>
+
+    <!-- THIS FILTER DROPDOW ONLY FOR ESHOP SCREEN -->
     <div class="filter-dropdown">
         <div class="filter-dropdown-close u-absolute u-pos-tl u-fit">
-
         </div>
         <div class="filter-dropdown-wrapper">
             <span class="filter-dropdown-label">
@@ -417,6 +444,8 @@
             </ul>
         </div>
     </div>
+    <!-- END  FILTER DROPDOW ONLY FOR ESHOP SCREEN -->
+
 </body>
 
 </html>

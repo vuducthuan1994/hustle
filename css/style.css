@@ -7,6 +7,33 @@ body {
 }
 
 
+/* CURSOR CSS WHEN USE MOUSE */
+
+.cb-cursor {
+    position: fixed;
+    margin: -23px 0 0 -23px;
+    width: 55px;
+    height: 55px;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    color: inherit;
+    border-radius: 50%;
+    border: 2px solid;
+    opacity: .8;
+    pointer-events: none;
+    transition: opacity 1s, color .5s, width .3s, transform 0.1s, height .3s, margin .5s, border-width .5s;
+    will-change: color, width, height, margin, border-with, transform;
+}
+
+.cb-color {
+    color: grey;
+}
+
+
+/* END CSS WHEN USE MOUSE */
+
+
 /* SLIDER_BAR_IN_HOME_ SCREEN  */
 
 #col-center {

@@ -6,28 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thời Trang</title>
-    <link rel="stylesheet" href="./css/pointer.css">
+
     <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/detail.css">
     <link rel="stylesheet" href="./css/eshop.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS FOR ANIMATION WHEN SCROLL BROWER -->
     <link rel="stylesheet" href="./libs/wow/animate.css">
+
+    <!-- CSS FOR FONT -->
     <link rel="stylesheet" href="./font/font.css">
 </head>
 
 <body>
     <div id="page-wrapper">
+
+        <!-- THIS DIV ELEMENT FOR ONLY HOME SCREEN -->
         <div class="cb-cursor cb-color" id="cursor-page">
         </div>
+        <!-- END -->
+
         <header class="header">
             <div id="logo">
                 <a href="#">
                     <img src="./img/logo.png">
                 </a>
             </div>
+            <!-- MENU DESKTOP -->
             <nav class="menu menu-desktop" role="navigation">
                 <ul class="menu-list menu-left">
                     <li>
@@ -60,13 +71,15 @@
                                 <a class="en expand active ">ENG </a>
                                 <a class="lang-space ">/</a>
                                 <a class="vi expand">VIE</a>
-                                <!-- For home screen , dont have menu cart and number item in cart; -->
+
+                                <!--Dont have menu cart and number item in cart in home screen => display: none; -->
                                 <a style="display: none;" class="detail-cart expand">Cart</a>
                                 <a style="display: none;" class="number-items-container">
                                     <div class="number-items">
                                         0
                                     </div>
                                 </a>
+                                <!-- end -->
 
                             </li>
                         </ul>
@@ -76,6 +89,9 @@
                     </li>
                 </ul>
             </nav>
+            <!-- END MENU DESKTOP -->
+
+            <!-- MENU MOBIE -->
             <nav class="navMobie">
                 <div class="container-menu-mobie">
                     <ul class="navMenu">
@@ -101,7 +117,7 @@
                             </a>
                         </div>
                         <div class="container-cart-item js-custom-cart">
-                            <div class="js-custom-cart cartMenu ">
+                            <div class="cartMenu js-custom-cart ">
                                 CART
                             </div>
                             <div class="number-item-cart js-custom-cart">
@@ -114,12 +130,13 @@
                 </div>
                 <i class="fa fa-times closeButton" aria-hidden="true"></i>
             </nav>
-
             <div class="burgerIcon">
                 <div class="burgerLine"></div>
                 <div class="burgerLine lineCenter"></div>
                 <div class="burgerLine"></div>
             </div>
+            <!-- END MENU MOBIE -->
+
         </header>
         <div class="page-body">
             <section id="cart-background" class="cart">
