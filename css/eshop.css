@@ -22,7 +22,7 @@
         }
         
         .product-grid.product-grid-eshop {
-            margin-top: -7rem;
+            margin-top: -70px;
         }
         
         .product-similar-products.product-similar-products-eshop {
@@ -81,6 +81,10 @@
         
         .header-eshop .burgerLine {
             background: -webkit-linear-gradient(left, #1e2127 30%, white 30%, white);
+        }
+        
+        .header-eshop .burgerLine:nth-child(2) {
+            background: -webkit-linear-gradient(left, white 30%, white 30%, white);
         }
         
         .shop-filters {
@@ -148,6 +152,9 @@
         }
         
         @media (max-width: 1366px) {
+            .filter-dropdown-label {
+                font-size: 32px;
+            }
             .eshop-screen .product-grid-item.product-grid-item-eshop {
                 -ms-flex: 0 0 33.333%;
                 flex: 0 0 33.333%;
@@ -328,6 +335,9 @@
             .shop-filter {
                 font-size: 32px;
             }
+            .filter-dropdown-label {
+                font-size: 32px;
+            }
             .title-page-filters::before {
                 top: 25px;
                 left: 50%;
@@ -346,6 +356,34 @@
         }
         
         @media(max-width:500px) and (min-width:320px) {
+            .filter-dropdown-label {
+                padding-right: 25px;
+            }
+            .filter-dropdown-label {
+                font-size: 26px;
+            }
+            .content-page-filters span:first-child {
+                margin-bottom: 10px;
+            }
+            .responsive-eshop-360 {
+                display: inline-block;
+            }
+            .shop-header-wrapper {
+                margin-top: 105px;
+            }
+            .shop-filter {
+                padding-right: 25px;
+            }
+            .shop-filter:before {
+                top: 33%;
+                border-width: 6px 6px 0;
+            }
+            .filter-dropdown-label:before {
+                border-width: 0 6px 6px;
+            }
+            .product-grid.product-grid-eshop {
+                margin-top: -80px;
+            }
             .eshop-screen .product-grid-item.product-grid-item-eshop {
                 -ms-flex: 0 0 100%;
                 flex: 0 0 100%;

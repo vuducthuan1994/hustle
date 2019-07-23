@@ -30,6 +30,14 @@ html {
     align-items: center;
 }
 
+.footer-app-store {
+    width: 150%;
+}
+
+.responsive-eshop-360 {
+    display: none;
+}
+
 .footer-app-android:hover>.footer-logo-android {
     content: url(../img/Googleplay.svg);
     margin: 0;
