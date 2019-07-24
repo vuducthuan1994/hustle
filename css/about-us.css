@@ -1,0 +1,71 @@
+.text-outline {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+}
+
+.header.header-about-us {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0;
+    z-index: 3;
+}
+
+.slogan-about-us {
+    margin-top: 50px;
+}
+
+.slogan-about-us span {
+    font-family: 'Montserrat Black';
+    font-size: 55px;
+    color: white;
+}
+
+.slogan-about-us span:first-child {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.slogan-about-us span:last-child {
+    padding-left: 70px;
+}
+
+.header-eshop.custom-red-slider .container-red-slider {
+    background-color: transparent;
+}
+
+.about-us-header {
+    background-color: #1e2127;
+    height: 600px;
+    background-image: url("../img/back-ground-about-us-header.png");
+    background-repeat: no-repeat;
+}
+
+.about-us-title-header {
+    font-size: 12px;
+    font-family: 'Montserrat Regular';
+    padding-left: 70px;
+    text-shadow: none;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 7px;
+}
+
+.about-us-title-header::before {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    width: 70px;
+    height: 2px;
+    background-color: white;
+    content: '';
+}
+
+.about-us-header-wrapper {
+    position: absolute;
+    margin-left: 18.75%;
+    margin-top: 168px;
+}

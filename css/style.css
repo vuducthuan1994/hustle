@@ -36,6 +36,10 @@ body {
 
 /* SLIDER_BAR_IN_HOME_ SCREEN  */
 
+.menu-left li:last-child .container-red-slider {
+    opacity: 0 !important;
+}
+
 #col-center {
     width: 21.67%;
     padding: 0px;
@@ -320,6 +324,7 @@ html.is-cart-open {
 }
 
 .active-li {
+    border: none;
     display: block;
     background: #b41233;
     height: 0vh;
