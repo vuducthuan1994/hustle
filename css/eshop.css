@@ -149,6 +149,7 @@
         
         .content-page-filters {
             margin-top: 65px;
+            line-height: 1.7;
         }
         
         @media (max-width: 1366px) {

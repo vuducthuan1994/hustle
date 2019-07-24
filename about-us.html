@@ -21,14 +21,20 @@
 <body>
     <div id="page-wrapper">
         <div class="js-select-overlay product-select-overlay "></div>
-        <!-- <div class="cb-cursor cb-color" id="cursor-page">
-        </div> -->
-        <header class="header header-contact">
+
+
+
+        <header class="header header-about-us">
+
+            <!-- LOGO -->
             <div id="logo">
                 <a href="#">
-                    <img src="./img/logo.png">
+                    <img src="./img/logo-white.png">
                 </a>
             </div>
+            <!-- END LOGO -->
+
+            <!-- MENU DESKTOP -->
             <nav class="menu menu-desktop" role="navigation">
                 <ul class="menu-list menu-left">
                     <li>
@@ -68,7 +74,6 @@
                                     </div>
                                 </a>
                             </li>
-
                         </ul>
                         <div class="container-red-slider">
                             <hr class="active-li">
@@ -76,6 +81,9 @@
                     </li>
                 </ul>
             </nav>
+            <!-- END MENU DESKTOP -->
+
+            <!-- MENU MOBIE -->
             <nav class="navMobie">
                 <div class="container-menu-mobie">
                     <ul class="navMenu">
@@ -115,16 +123,20 @@
                 </div>
                 <i class="fa fa-times closeButton" aria-hidden="true"></i>
             </nav>
-
+            <!-- END MENU MOBIE -->
+            <!-- CLICK THIS DIV ELEMENT TO SHOW MENU MOBIE -->
             <div class="burgerIcon">
                 <div class="burgerLine"></div>
                 <div class="burgerLine lineCenter"></div>
                 <div class="burgerLine"></div>
             </div>
+            <!--END CLICK THIS DIV ELEMENT TO SHOW MENU MOBIE -->
         </header>
 
         <main class="page-content">
+            <!-- THIS SECTION IS BACKGROUND WHEN CLICK TO CART . ( CLICK TO THIS SECTION TO CLOSE CART SCREEN) -->
             <section id="cart-background" class="cart">
+                <!-- MENU RIGHT (PAYMENT PART) -->
                 <nav id="navRightCart">
                     <div class="artile">
                         <div class="number-artile">
@@ -172,46 +184,52 @@
                     </div>
                     <hr style="width: 66.5%">
                 </nav>
+                <!--END  MENU RIGHT (PAYMENT PART) -->
             </section>
-            <section class="contact-us">
-                <div class="contact-us-right">
-                    <img src="./img/contact.png" class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="">
-                </div>
-                <div class="contact-us-left">
-                    <div class="contact-content">
-                        <div class="inner-contact-content">
-                            <div class="title-contact">
-                                Contact
+            <!-- END THIS SECTION IS BACKGROUND WHEN CLICK TO CART . ( CLICK TO THIS SECTION TO CLOSE CART SCREEN) -->
+
+            <section class="product-similar-products product-similar-products-eshop u-relative">
+                <!--THIS HEADER ONLY FOR ESHOP SCREEN -->
+                <header class="shop-header u-relative u-overflow-h">
+                    <div class="shop-header-wrapper">
+                        <div class="shop-filters">
+                            <div class="title-page-filters">
+                                E-SHOP
                             </div>
-                            <div class="main-contact">
-                                <span>Main</span>
-                                <span>Office</span>
-                            </div>
-                            <div class="address-contact">
-                                No.1, Thai Ha Street,
-                                <br>Dong Da Ward
-                                <br>Thanh Xuan District Ha Noi
-                            </div>
-                            <div class="tel-mail">
-                                TEL: (+84) 868216275
-                                <br> Mail: chienm.hus@gmail.com
+                            <div class="content-page-filters">
+                                Are you looking for
+                                <span class="shop-filter js-filter" data-filter-default="T-Shirt">T-Shirt</span>
+                                <br> In <br class="responsive-eshop-360">
+                                <span class="shop-filter js-filter" data-filter-default="Hustle x Fustic.">Hustle x Fustic.</span>
                             </div>
                         </div>
                     </div>
+                </header>
+                <!--END THIS HEADER ONLY FOR ESHOP SCREEN -->
+
+                <div class="container-about-us">
+
                 </div>
             </section>
+
+
+            <!-- INPUT EMAIL -->
             <section class=" wow fadeInDown keep-in-touch">
                 <div>
                     <h2>KEEP IN TOUCH</h2>
                     <div class="container-input-email">
                         <div class="inner-container-input-email">
                             <input placeholder="Enter your email here" />
+                            <div class="placeholder"></div>
                             <a class="nextArrowButton"><img style="width: 55px;background-color: #edeef1" src="./img/Arow-Right.svg"></a>
                         </div>
 
                     </div>
                 </div>
             </section>
+            <!-- END INPUT EMAIL -->
+
+            <!-- FOOTER FIRST -->
             <section class=" wow fadeInDown footer-lerver-0">
                 <div class="footer-lerver-0-right ">
                     <div class="footer-social">
@@ -277,23 +295,28 @@
                     </div>
                 </div>
             </section>
+            <!-- ENDFOOTER FIRST -->
+
+            <!-- LAST FOOTER -->
             <section class="footer">
                 <div class=" inner-footer">
                     <p>Copyright &copy; 2019 Hustle Studio</p>
                 </div>
             </section>
+            <!-- END LAST FOOTER -->
         </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <!-- <script src="./pointer.js"></script> -->
-    <script src="./js/sliderHome.js "></script>
     <script src="./js/menu.js "></script>
-    <script src="./js/detail.js "></script>
+
 
     <!-- FOR ANIMATION WHEN USER USE SCROLL BAR -->
+    <script src="./js/detail.js "></script>
     <script src="./libs/wow/wow.js"></script>
+    <script src="./js/eshopscreen.js "></script>
     <script>
         wow = new WOW({
             animateClass: 'animated',
@@ -304,6 +327,39 @@
         });
         wow.init();
     </script>
+
+    <!-- THIS FILTER DROPDOW ONLY FOR ESHOP SCREEN -->
+    <div class="filter-dropdown">
+        <div class="filter-dropdown-close u-absolute u-pos-tl u-fit">
+        </div>
+        <div class="filter-dropdown-wrapper">
+            <span class="filter-dropdown-label">
+               null
+            </span>
+            <ul class="filter-dropdown-options">
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> A </span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> B </span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> C</span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> D </span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> E</span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> F </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END  FILTER DROPDOW ONLY FOR ESHOP SCREEN -->
+
 </body>
 
 </html>

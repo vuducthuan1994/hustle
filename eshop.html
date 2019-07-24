@@ -24,7 +24,6 @@
         <!-- <div class="cb-cursor cb-color" id="cursor-page">
         </div> -->
         <header class="header header-eshop">
-
             <!-- LOGO -->
             <div id="logo">
                 <a href="#">
@@ -32,7 +31,6 @@
                 </a>
             </div>
             <!-- END LOGO -->
-
             <!-- MENU DESKTOP -->
             <nav class="menu menu-desktop" role="navigation">
                 <ul class="menu-list menu-left">
@@ -123,57 +121,6 @@
                 <i class="fa fa-times closeButton" aria-hidden="true"></i>
             </nav>
             <!-- END MENU MOBIE -->
-
-            <!-- RIGHT MENU ( PAYMENT) -->
-            <nav class="" id="navRightCart">
-                <div class="artile">
-                    <div class="number-artile">
-                        1 ARTICLE
-                    </div>
-                    <i class="fa fa-times closeCart" aria-hidden="true"></i>
-                </div>
-                <div class="infomationCart">
-                    <div class="img-cart">
-                        <img src="./img/itemCart.png">
-                    </div>
-                    <div class="info-item">
-                        <div class="title-item">
-                            1x Eye flow T-Shirt
-                        </div>
-                        <div class="size-item">
-                            S/Black/T-Shirt
-                        </div>
-                        <div class="cost-info">
-                            <div class="cost-item">
-                                75$
-                            </div>
-                            <div class="count-item">
-                                <div class="decrement-item">
-                                    <i class="fa fa-minus" style="color:#8d8e91;"></i>
-                                </div>
-                                <div class="increment-item">
-                                    <i class="fa fa-plus" style="color:white;"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="custom-line-hr">
-                <div class="totalMonney">
-                    <div>
-                        Total
-                    </div>
-                    <div id="totalMonney">
-                        75$
-                    </div>
-                </div>
-                <div class="payment-now">
-                    <a>Payment Now</a>
-                </div>
-                <hr style="width: 66.5%">
-            </nav>
-            <!-- END RIGHT MENU ( PAYMENT) -->
-
             <!-- CLICK THIS DIV ELEMENT TO SHOW MENU MOBIE -->
             <div class="burgerIcon">
                 <div class="burgerLine"></div>
@@ -184,8 +131,61 @@
         </header>
 
         <main class="page-content">
-            <section class="product-similar-products product-similar-products-eshop u-relative">
+            <!-- THIS SECTION IS BACKGROUND WHEN CLICK TO CART . ( CLICK TO THIS SECTION TO CLOSE CART SCREEN) -->
+            <section id="cart-background" class="cart">
+                <!-- MENU RIGHT (PAYMENT PART) -->
+                <nav id="navRightCart">
+                    <div class="artile">
+                        <div class="number-artile">
+                            1 ARTICLE
+                        </div>
+                        <i class="fa fa-times closeCart" aria-hidden="true"></i>
+                    </div>
+                    <div class="infomationCart">
+                        <div class="img-cart">
+                            <img src="./img/itemCart.png">
+                        </div>
+                        <div class="info-item">
+                            <div class="title-item">
+                                1x Eye flow T-Shirt
+                            </div>
+                            <div class="size-item">
+                                S/Black/T-Shirt
+                            </div>
+                            <div class="cost-info">
+                                <div class="cost-item">
+                                    75$
+                                </div>
+                                <div class="count-item">
+                                    <div class="decrement-item">
+                                        <i class="fa fa-minus" style="color:#8d8e91;"></i>
+                                    </div>
+                                    <div class="increment-item">
+                                        <i class="fa fa-plus" style="color:white;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="custom-line-hr">
+                    <div class="totalMonney">
+                        <div>
+                            Total
+                        </div>
+                        <div id="totalMonney">
+                            75$
+                        </div>
+                    </div>
+                    <div class="payment-now">
+                        <a>Payment Now</a>
+                    </div>
+                    <hr style="width: 66.5%">
+                </nav>
+                <!--END  MENU RIGHT (PAYMENT PART) -->
+            </section>
+            <!-- END THIS SECTION IS BACKGROUND WHEN CLICK TO CART . ( CLICK TO THIS SECTION TO CLOSE CART SCREEN) -->
 
+            <section class="product-similar-products product-similar-products-eshop u-relative">
                 <!--THIS HEADER ONLY FOR ESHOP SCREEN -->
                 <header class="shop-header u-relative u-overflow-h">
                     <div class="shop-header-wrapper">
@@ -340,7 +340,7 @@
                                     <div class="footer-app-apple">
                                         <img class="footer-logo-apple" src="./img/AppstoreBlack.svg">
                                         <div class="container-text-apple  color-black">
-                                            <div class="text-descripton-1  color-black">AVALABLE ON</div>
+                                            <div class="text-descripton-1  color-black">AVAILABLE ON</div>
                                             <div class="text-descripton-2  color-black">APP STORE</div>
                                         </div>
                                     </div>
