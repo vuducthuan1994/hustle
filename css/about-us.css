@@ -69,3 +69,129 @@
     margin-left: 18.75%;
     margin-top: 168px;
 }
+
+
+/* CSS FOR CONTENT PAGE ABOUT_US */
+
+.content-row {
+    background-color: white;
+    display: flex;
+}
+
+.container-about-us .content-row:nth-child(2) {
+    flex-direction: row-reverse;
+    background-color: #edeef1;
+}
+
+.about-us-text {
+    width: 50%;
+    padding-left: 21.3541%;
+}
+
+.about-us-text h1 {
+    font-family: 'Montserrat Bold';
+    font-size: 40px;
+    white-space: nowrap;
+    text-indent: -50px;
+    line-height: 1;
+    position: relative;
+}
+
+.about-us-text p {
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: left;
+}
+
+.about-us-text h1::before {
+    position: absolute;
+    top: -33px;
+    left: -50px;
+    height: 1px;
+    width: 50px;
+    background-color: black;
+    content: '';
+}
+
+.container-about-us .content-row:first-child .about-us-text {
+    padding-top: 290px;
+    padding-right: 88px;
+    padding-bottom: 530px;
+}
+
+.container-about-us .content-row:last-child .about-us-text {
+    padding-top: 400px;
+    padding-right: 88px;
+    padding-bottom: 450px;
+}
+
+.container-about-us .content-row:nth-child(2) .about-us-text {
+    padding-left: 141px;
+    padding-top: 200px;
+    padding-right: 18.75%;
+    padding-bottom: 188px;
+}
+
+.about-us-img {
+    width: 50%;
+    height: inherit;
+    position: relative;
+}
+
+.about-us-img img {
+    height: 100%;
+    width: 510px;
+}
+
+.container-about-us .content-row:first-child .about-us-img {
+    padding-left: 90px;
+    padding-right: 18.75%;
+    padding-top: 150px;
+    padding-bottom: 205px;
+}
+
+.container-about-us .content-row:last-child .about-us-img {
+    padding-left: 90px;
+    padding-right: 18.75%;
+    padding-top: 210px;
+    padding-bottom: 151px;
+}
+
+.container-about-us .content-row:nth-child(2) .about-us-img img {
+    position: absolute;
+    width: 820px;
+    height: 1050px;
+    top: -200px;
+}
+
+@media (max-width: 1366px) {
+    .about-us-header-wrapper {
+        margin-left: 83px;
+    }
+    .about-us-text {
+        padding-left: 130px;
+    }
+    .container-about-us .content-row:first-child .about-us-img {
+        padding-right: 83px;
+        padding-top: 100px;
+    }
+    .container-about-us .content-row:last-child .about-us-img {
+        padding-left: 90px;
+        padding-right: 83px;
+        padding-top: 200px;
+        padding-bottom: 151px;
+    }
+    .container-about-us .content-row:nth-child(2) .about-us-text {
+        padding-left: 141px;
+        padding-top: 212px;
+        padding-right: 83px;
+        padding-bottom: 195px;
+    }
+    .container-about-us .content-row:nth-child(2) .about-us-img img {
+        position: absolute;
+        width: 543px;
+        height: 1042px;
+        top: -200px;
+    }
+}
