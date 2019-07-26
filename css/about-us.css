@@ -73,6 +73,18 @@
 
 /* CSS FOR CONTENT PAGE ABOUT_US */
 
+.container-about-us .content-row:nth-child(1) {
+    height: 1123px;
+}
+
+.container-about-us .content-row:nth-child(2) {
+    height: 635px;
+}
+
+.container-about-us .content-row:nth-child(3) {
+    height: 1123px;
+}
+
 .content-row {
     background-color: white;
     display: flex;
@@ -85,7 +97,6 @@
 
 .about-us-text {
     width: 50%;
-    padding-left: 21.3541%;
 }
 
 .about-us-text h1 {
@@ -118,12 +129,14 @@
     padding-top: 290px;
     padding-right: 88px;
     padding-bottom: 530px;
+    padding-left: 21.3541%;
 }
 
 .container-about-us .content-row:last-child .about-us-text {
     padding-top: 400px;
     padding-right: 88px;
     padding-bottom: 450px;
+    padding-left: 21.3541%;
 }
 
 .container-about-us .content-row:nth-child(2) .about-us-text {
@@ -141,7 +154,6 @@
 
 .about-us-img img {
     height: 100%;
-    width: 510px;
 }
 
 .container-about-us .content-row:first-child .about-us-img {
@@ -166,6 +178,15 @@
 }
 
 @media (max-width: 1366px) {
+    .container-about-us .content-row:nth-child(1) {
+        height: 1068px;
+    }
+    .container-about-us .content-row:nth-child(2) {
+        height: 642px;
+    }
+    .container-about-us .content-row:nth-child(3) {
+        height: 1117px;
+    }
     .about-us-header-wrapper {
         margin-left: 83px;
     }
@@ -193,5 +214,36 @@
         width: 543px;
         height: 1042px;
         top: -200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-about-us .content-row:nth-child(1) {
+        height: 754px;
+    }
+    .container-about-us .content-row:nth-child(2) {
+        height: 439px;
+    }
+    .container-about-us .content-row:nth-child(3) {
+        height: 800px;
+    }
+    .container-about-us .content-row:first-child .about-us-text {
+        padding: 0;
+        padding-left: 80px;
+        padding-top: 190px;
+    }
+    .container-about-us .content-row:last-child .about-us-text {
+        padding: 0;
+    }
+    .container-about-us .content-row:first-child .about-us-img {
+        padding: 100px 26px 76px 30px;
+    }
+    .container-about-us .content-row:nth-child(2) .about-us-img img {
+        width: 334px;
+        height: 595px;
+        top: -77px;
+    }
+    .container-about-us .content-row:last-child .about-us-img {
+        padding: 80px 26px 145px 30px;
     }
 }
