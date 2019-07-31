@@ -6,6 +6,7 @@
     -webkit-flex-direction: row-reverse;
     /* Safari 6.1+ */
     display: flex;
+    display: -ms-flexbox;
     flex-direction: row-reverse;
     height: 918px;
 }

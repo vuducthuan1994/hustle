@@ -11,12 +11,10 @@
     <link rel="stylesheet" href="./css/detail.css">
     <link rel="stylesheet" href="./css/eshop.css">
     <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="./css/about-us.css">
-
+    <link rel="stylesheet" href="./css/project.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="./libs/wow/animate.css">
     <link rel="stylesheet" href="./font/font.css">
 </head>
@@ -24,13 +22,17 @@
 <body>
     <div id="page-wrapper">
         <div class="js-select-overlay product-select-overlay "></div>
-
-        <header class="header header-contact">
+        <!-- <div class="cb-cursor cb-color" id="cursor-page">
+        </div> -->
+        <header class="header header-eshop">
+            <!-- LOGO -->
             <div id="logo">
                 <a href="#">
-                    <img src="./img/Hustle-logo.svg">
+                    <img src="./img/logo-white.png">
                 </a>
             </div>
+            <!-- END LOGO -->
+            <!-- MENU DESKTOP -->
             <nav class="menu menu-desktop" role="navigation">
                 <ul class="menu-list menu-left">
                     <li>
@@ -70,7 +72,6 @@
                                     </div>
                                 </a>
                             </li>
-
                         </ul>
                         <div class="container-red-slider">
                             <hr class="active-li">
@@ -78,6 +79,9 @@
                     </li>
                 </ul>
             </nav>
+            <!-- END MENU DESKTOP -->
+
+            <!-- MENU MOBIE -->
             <nav class="navMobie">
                 <div class="container-menu-mobie">
                     <ul class="navMenu">
@@ -117,16 +121,22 @@
                 </div>
                 <i class="fa fa-times closeButton" aria-hidden="true"></i>
             </nav>
+            <!-- END MENU MOBIE -->
 
+            <!-- CLICK THIS DIV ELEMENT TO SHOW MENU MOBIE -->
             <div class="burgerIcon">
                 <div class="burgerLine"></div>
                 <div class="burgerLine lineCenter"></div>
                 <div class="burgerLine"></div>
             </div>
+            <!--END CLICK THIS DIV ELEMENT TO SHOW MENU MOBIE -->
+
         </header>
 
         <main class="page-content">
+            <!-- THIS SECTION IS BACKGROUND WHEN CLICK TO CART . ( USER CLICK TO THIS SECTION TO CLOSE CART SCREEN) -->
             <section id="cart-background" class="cart">
+                <!-- MENU RIGHT (PAYMENT PART) -->
                 <nav id="navRightCart">
                     <div class="artile">
                         <div class="number-artile">
@@ -174,46 +184,129 @@
                     </div>
                     <hr style="width: 66.5%">
                 </nav>
+                <!--END  MENU RIGHT (PAYMENT PART) -->
             </section>
-            <section class="contact-us">
-                <div class="contact-us-right">
-                    <img src="./img/contact.png" class="u-absolute u-pos-tl u-fit u-object-fit-cover" src="">
+            <!-- END THIS SECTION IS BACKGROUND WHEN CLICK TO CART . ( CLICK TO THIS SECTION TO CLOSE CART SCREEN) -->
+
+            <section class="product-similar-products product-similar-products-eshop u-relative">
+
+                <!--THIS HEADER ONLY FOR PROJECT SCREEN -->
+                <header class="shop-header u-relative u-overflow-h custom-project-screen">
+                    <div class="shop-header-wrapper">
+                        <div class="shop-filters">
+                            <div class="title-page-filters">
+                                PROJECTS
+                            </div>
+                            <h2>Loài Plastic</h2>
+                        </div>
+
+                    </div>
+
+                </header>
+                <!--END THIS HEADER ONLY FOR PROJECT SCREEN -->
+
+            </section>
+            <section class="project-videos">
+                <div class="text-overview">
+                    <div class="overview-text-left">
+                        <h3>What we did</h3>
+                        <div>
+                            <p>Design: Hustle Studio</p>
+                        </div>
+                        <div>
+                            <p>Visual: Fustlc.studio , Hai Doan </p>
+                        </div>
+                        <div>
+                            <p>App: Huslte </p>
+                        </div>
+                    </div>
+                    <div class="overview-text-right">
+                        <h3>Overview</h3>
+                        <p>Dự án thể nghiệm những visual lên sản phẩm thời trang bằng công nghệ AR. Dự án bao gồm 4 mẫu thiết kế theo chủ đề tương ứng với 4 mẫu thiết kế áo.
+                        </p>
+                    </div>
                 </div>
-                <div class="contact-us-left">
-                    <div class="contact-content">
-                        <div class="inner-contact-content">
-                            <div class="title-contact">
-                                Contact
-                            </div>
-                            <div class="main-contact">
-                                <span>Main</span>
-                                <span>Office</span>
-                            </div>
-                            <div class="address-contact">
-                                No.1, Thai Ha Street,
-                                <br>Dong Da Ward
-                                <br>Thanh Xuan District Ha Noi
-                            </div>
-                            <div class="tel-mail">
-                                TEL: (+84) 868216275
-                                <br> Mail: chienm.hus@gmail.com
-                            </div>
+                <div class="project-inner-video">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
+                    <div class="intro-video">
+                        <h3>Eye flow T-Shirt </h3>
+                        <p>T-Shirt</p>
+                    </div>
+                </div>
+                <div class="under-videos">
+                    <div class="project-item-image">
+                        <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/kinh-ap-trong.png">
+                        <div class="project-title-image">
+                            <h3>Eye flow T-Shirt</h3>
+                            <p>T-Shirt</p>
+                        </div>
+                    </div>
+                    <div class="project-description">
+                        <div>
+                            <h3>Eye flow T-Shirt</h3>
+                            <h5>T-Shirt</h5>
+                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,
+                                the master-builder of human happiness.</p>
+                        </div>
+                    </div>
+                    <div class="project-item-image">
+                        <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/bao-tay-ni-lon.png">
+                        <div class="project-title-image">
+                            <h3>Eye flow T-Shirt</h3>
+                            <p>T-Shirt</p>
                         </div>
                     </div>
                 </div>
             </section>
+            <section class="adam-smith-container">
+                <h3>ADAM SMITH</h3>
+                <h5>Project manager</h5>
+                <p>They're the kind of people you'd want building your website <br> and to have a beer with afterwards</p>
+            </section>
+
+            <section class=" wow fadeInDown related-work">
+                <h3> Related Work</h3>
+                <div class="related-work-images">
+                    <div class="related-work-image-inner">
+                        <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/ha-noi-riot.png">
+                        <div class="title-image">Hanoi Riot x Hustle </div>
+                    </div>
+                    <div class="related-work-image-inner">
+                        <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/plassic.png">
+                        <div class="title-image">Loài Plastic</div>
+                    </div>
+                    <div class="related-work-image-inner">
+                        <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/running-man.png">
+                        <div class="title-image">Running Man </div>
+                    </div>
+                </div>
+
+                <div class="container-button-more">
+                    <div class="container-product-grid-button-more">
+                        <button class="product-grid-more-button">
+                    <span class="product-cart-more-button-inner">View More</span>
+                  </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INPUT EMAIL -->
             <section class=" wow fadeInDown keep-in-touch">
                 <div>
                     <h2>KEEP IN TOUCH</h2>
                     <div class="container-input-email">
                         <div class="inner-container-input-email">
                             <input placeholder="Enter your email here" />
+                            <div class="placeholder"></div>
                             <a class="nextArrowButton"><img style="width: 55px;background-color: #edeef1" src="./img/Arow-Right.svg"></a>
                         </div>
 
                     </div>
                 </div>
             </section>
+            <!-- END INPUT EMAIL -->
+
+            <!-- FOOTER FIRST -->
             <section class=" wow fadeInDown footer-lerver-0">
                 <div class="footer-lerver-0-right ">
                     <div class="footer-social">
@@ -279,23 +372,28 @@
                     </div>
                 </div>
             </section>
+            <!-- ENDFOOTER FIRST -->
+
+            <!-- LAST FOOTER -->
             <section class="footer">
                 <div class=" inner-footer">
                     <p>Copyright &copy; 2019 Hustle Studio</p>
                 </div>
             </section>
+            <!-- END LAST FOOTER -->
         </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <!-- <script src="./pointer.js"></script> -->
-    <script src="./js/sliderHome.js "></script>
     <script src="./js/menu.js "></script>
-    <script src="./js/detail.js "></script>
+
 
     <!-- FOR ANIMATION WHEN USER USE SCROLL BAR -->
+    <script src="./js/detail.js "></script>
     <script src="./libs/wow/wow.js"></script>
+    <script src="./js/eshopscreen.js "></script>
     <script>
         wow = new WOW({
             animateClass: 'animated',
@@ -306,6 +404,39 @@
         });
         wow.init();
     </script>
+
+    <!-- THIS FILTER DROPDOW ONLY FOR ESHOP SCREEN -->
+    <div class="filter-dropdown">
+        <div class="filter-dropdown-close u-absolute u-pos-tl u-fit">
+        </div>
+        <div class="filter-dropdown-wrapper">
+            <span class="filter-dropdown-label">
+               null
+            </span>
+            <ul class="filter-dropdown-options">
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> A </span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> B </span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> C</span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> D </span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> E</span>
+                </li>
+                <li class="filter-dropdown-item">
+                    <span class="filter-dropdown-item-inner"> F </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END  FILTER DROPDOW ONLY FOR ESHOP SCREEN -->
+
 </body>
 
 </html>

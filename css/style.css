@@ -31,7 +31,15 @@ body {
 }
 
 
-/* END CSS WHEN USE MOUSE */
+/* LOGO_CSS  */
+
+.header #logo a img {
+    width: 123px;
+    height: 28px;
+}
+
+
+/* END LOGO_CSS  */
 
 
 /* SLIDER_BAR_IN_HOME_ SCREEN  */
@@ -200,7 +208,6 @@ html.is-cart-open {
     margin-left: 10px;
     display: inline-block;
     margin-top: -10px;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -605,7 +612,6 @@ DONE ANIMATION */
     background-color: #282e38;
     bottom: 52px;
     border-radius: 30px;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -668,7 +674,6 @@ DONE ANIMATION */
     border: #5c5d62 solid 1px;
     left: 300px;
     bottom: 52px;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
@@ -877,7 +882,6 @@ DONE ANIMATION */
         display: none;
     }
     .social-3 {
-        display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         -ms-flex-flow: row wrap;
