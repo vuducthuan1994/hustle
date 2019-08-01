@@ -84,6 +84,7 @@ section.adam-smith-container p {
 .project-videos {
     background-color: white;
     padding: 150px 360px;
+    padding-bottom: 85px;
 }
 
 .text-overview {
@@ -184,7 +185,6 @@ section.adam-smith-container p {
 }
 
 .project-inner-video .intro-video h3,
-.project-item-image .project-title-image h3,
 .project-description h3 {
     margin: 0;
     padding: 0;
@@ -195,8 +195,7 @@ section.adam-smith-container p {
     text-align: left;
 }
 
-.project-inner-video .intro-video p,
-.project-item-image .project-title-image p {
+.project-inner-video .intro-video p {
     margin: 0;
     padding: 0;
     font-size: 12px;
@@ -208,12 +207,33 @@ section.adam-smith-container p {
     letter-spacing: 3px;
 }
 
-.under-videos .project-item-image,
-.under-videos .project-description {
+.under-videos .project-item-image {
     padding-left: 15px;
     padding-right: 15px;
     width: 33.33333%;
     position: relative;
+    margin-bottom: 65px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.under-videos .project-item-image img {
+    height: 540px;
+}
+
+.under-videos .project-description {
+    width: calc(100% - 30px);
+    position: absolute;
+    top: calc(100% - 103px);
+    transition: all .5s ease-out 0s;
+    -webkit-transition: all .5s ease-out 0s;
+    -moz-transition: all .5s ease-out 0s;
+    -ms-transition: all .5s ease-out 0s;
+    -o-transition: all .5s ease-out 0s;
+}
+
+.project-item-image:hover>.project-description {
+    top: 0px;
 }
 
 .under-videos .project-description div {
@@ -223,16 +243,6 @@ section.adam-smith-container p {
     padding-top: 35px;
     padding-left: 30px;
     padding-right: 40px;
-}
-
-.project-title-image {
-    width: calc(100% - 30px);
-    height: 100px;
-    position: absolute;
-    bottom: 0;
-    background-color: #1e2127;
-    padding-top: 25px;
-    padding-left: 30px;
 }
 
 .project-description h5 {
@@ -268,6 +278,12 @@ section.adam-smith-container p {
 }
 
 @media (max-width: 1366px) {
+    .under-videos {
+        margin-top: 30px;
+    }
+    .under-videos .project-item-image {
+        margin-bottom: 30px;
+    }
     .custom-project-screen h2 {
         font-size: 48px;
         margin-top: 55px;
@@ -275,6 +291,7 @@ section.adam-smith-container p {
     .project-videos {
         background-color: white;
         padding: 150px 83px;
+        padding-bottom: 130px;
     }
     section.related-work {
         padding: 140px 83px 150px 83px;
@@ -282,10 +299,23 @@ section.adam-smith-container p {
 }
 
 @media (max-width: 768px) {
+    .adam-custom {
+        display: none;
+    }
+    section.adam-smith-container {
+        padding-bottom: 135px;
+    }
+    .under-videos .project-item-image {
+        margin-bottom: 20px;
+    }
+    .under-videos .project-item-image img {
+        height: 497px;
+    }
     .project-videos {
         background-color: white;
         padding: 150px 25px;
         padding-top: 100px;
+        padding-bottom: 130px;
     }
     .overview-text-right p {
         font-size: 20px;
@@ -300,12 +330,8 @@ section.adam-smith-container p {
     .under-videos .project-description div {
         height: 497px;
     }
-    .under-videos .project-item-image,
-    .under-videos .project-description {
+    .under-videos .project-item-image {
         width: 50%;
-    }
-    .under-videos .project-item-image:last-child {
-        display: none;
     }
     .under-videos {
         margin-top: 20px;
