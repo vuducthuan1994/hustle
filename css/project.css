@@ -17,6 +17,8 @@ section.related-work h3 {
 .under-videos {
     margin-top: 65px;
     display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
     display: -ms-flexbox;
     margin-left: -15px;
     margin-right: -15px;
@@ -89,6 +91,9 @@ section.adam-smith-container p {
 
 .text-overview {
     display: flex;
+    flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 
 .text-overview .overview-text-left,
@@ -348,5 +353,49 @@ section.adam-smith-container p {
     .under-videos {
         margin-left: -10px;
         margin-right: -10px;
+    }
+}
+
+@media(max-width:500px) and (min-width:320px) {
+    .text-overview .overview-text-left,
+    .text-overview .overview-text-right {
+        width: 100%;
+    }
+    .under-videos .project-item-image {
+        width: 100%;
+    }
+    .text-overview .overview-text-right {
+        padding-left: 0px;
+        margin-top: 60px;
+    }
+    .project-videos {
+        padding-top: 55px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .project-inner-video {
+        margin-top: 50px;
+        width: 120%;
+        margin-left: -15px;
+    }
+    .overview-text-left div {
+        width: 100%;
+    }
+    .overview-text-left h3 {
+        padding-bottom: 0px;
+    }
+    .overview-text-left div {
+        margin-top: 25px;
+    }
+    .overview-text-right h3 {
+        padding-bottom: 25px;
+    }
+    .project-inner-video iframe {
+        height: 206px;
+    }
+    .related-work-images,
+    .under-videos {
+        margin-left: -15px;
+        margin-right: -15px;
     }
 }
