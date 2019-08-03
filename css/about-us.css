@@ -224,6 +224,12 @@
 }
 
 @media (max-width: 768px) {
+    .container-about-us .content-row:nth-child(2) .about-us-text {
+        padding-left: 80px;
+        padding-top: 120px;
+        padding-right: 36px;
+        /* padding-bottom: 195px; */
+    }
     .container-about-us .content-row:nth-child(1) {
         height: 754px;
     }
