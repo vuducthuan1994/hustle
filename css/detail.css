@@ -888,6 +888,7 @@ ol {
 }
 
 .keep-in-touch input {
+    cursor: pointer;
     text-align: left;
     border-top: none;
     border-left: none;
@@ -903,6 +904,10 @@ ol {
     color: rgba(40, 46, 56, 0.502);
     text-align: left;
     padding-bottom: 19px;
+}
+
+.keep-in-touch input:hover {
+    border-bottom: 2px solid #1e2127;
 }
 
 .footer-lerver-0 {
