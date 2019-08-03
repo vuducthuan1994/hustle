@@ -253,6 +253,45 @@
 }
 
 @media(max-width:500px) and (min-width:320px) {
+    .container-about-us .content-row:nth-child(3) {
+        height: auto;
+    }
+    .container-about-us .content-row .about-us-img img {
+        height: 100% !important;
+    }
+    .container-about-us .content-row:first-child .about-us-text,
+    .container-about-us .content-row:last-child .about-us-text {
+        padding: 0;
+        padding-left: 66px;
+        padding-top: 100px;
+        padding-right: 30px;
+    }
+    .container-about-us .content-row:last-child .about-us-text {
+        padding-top: 612px;
+    }
+    .container-about-us .content-row:nth-child(2) .about-us-text {
+        padding: 0;
+        padding-left: 66px;
+        padding-top: 170px;
+        padding-right: 30px;
+    }
+    .about-us-text p {
+        margin: 0;
+    }
+    .container-about-us .content-row:nth-child(2) .about-us-img img {
+        width: 100%;
+    }
+    .container-about-us .content-row:nth-child(2) .about-us-img {
+        height: 645px;
+    }
+    .container-about-us .content-row:last-child .about-us-img {
+        padding: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about-us-text h1 {
+        font-size: 28px;
+    }
     .container-about-us .content-row:nth-child(1),
     .container-about-us .content-row:nth-child(2) {
         height: auto;
@@ -263,19 +302,33 @@
     }
     .about-us-img {
         width: 100%;
-        height: 580px;
         position: relative;
     }
     .container-about-us .content-row:first-child .about-us-img {
         padding: 0;
         padding-left: 15px;
         padding-right: 15px;
+        padding-top: 50px;
+        margin-bottom: -75px;
+        height: 630px;
     }
-    .container-about-us .content-row:first-child .about-us-text {
+    .container-about-us .content-row:nth-child(2) .about-us-img {
+        padding: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 50px;
+        margin-bottom: -511px;
+    }
+    .container-about-us .content-row .about-us-text {
         padding: 0;
         padding-left: 65px;
     }
     .container-about-us .content-row:nth-child(2) {
         flex-direction: row;
+    }
+    .container-about-us .content-row:nth-child(2) .about-us-img img {
+        position: inherit;
+        top: 0;
+        height: 595px;
     }
 }
