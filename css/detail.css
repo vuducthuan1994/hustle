@@ -904,6 +904,7 @@ ol {
     color: rgba(40, 46, 56, 0.502);
     text-align: left;
     padding-bottom: 19px;
+    transition: all .5s ease-in-out;
 }
 
 .keep-in-touch input:hover {
@@ -1225,8 +1226,19 @@ ol {
     top: .5rem;
 }
 
+.nextArrowButton img {
+    transition: all .3s ease-in-out;
+    width: 55px;
+    background-color: #edeef1";
+
+}
+
 .nextArrowButton:hover {
     cursor: pointer;
+}
+
+.nextArrowButton:hover>img {
+    width: 75px;
 }
 
 @media (max-width: 1366px) {

@@ -289,8 +289,14 @@
 }
 
 @media(max-width:500px) and (min-width:320px) {
+    .about-us-header-wrapper {
+        margin-top: 130px;
+    }
+    .about-us-header {
+        height: 450px;
+    }
     .slogan-about-us {
-        margin-top: 40px;
+        margin-top: 25px;
     }
     .slogan-about-us span {
         font-size: 26px;
