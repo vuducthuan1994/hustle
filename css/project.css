@@ -13,6 +13,14 @@ section.related-work h3 {
     text-align: left;
 }
 
+.project-header {
+    background-image: none;
+}
+
+.project-header .inner-header-wrapper {
+    margin-top: 148px;
+}
+
 .related-work-images,
 .under-videos {
     margin-top: 65px;
@@ -377,6 +385,9 @@ section.adam-smith-container p {
 }
 
 @media(max-width:500px) and (min-width:320px) {
+    .project-header .slogan-content span:last-child {
+        padding-left: 0px;
+    }
     section.related-work {
         padding-bottom: 90px;
     }

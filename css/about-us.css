@@ -11,17 +11,17 @@
     z-index: 3;
 }
 
-.slogan-about-us {
+.slogan-content {
     margin-top: 50px;
 }
 
-.slogan-about-us span {
+.slogan-content span {
     font-family: 'Montserrat Black';
     font-size: 55px;
     color: white;
 }
 
-.slogan-about-us span:first-child {
+.slogan-content span:first-child {
     color: transparent;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1px;
@@ -53,7 +53,7 @@
     background-color: white;
 }
 
-.slogan-about-us span:last-child {
+.slogan-content span:last-child {
     padding-left: 70px;
 }
 
@@ -61,7 +61,8 @@
     background-color: transparent;
 }
 
-.about-us-header {
+.about-us-header,
+.project-header {
     background-color: #1e2127;
     height: 600px;
     background-image: url("../img/back-ground-about-us-header.png");
@@ -70,7 +71,7 @@
     background-repeat: no-repeat;
 }
 
-.about-us-title-header {
+.slogan-title {
     font-size: 12px;
     font-family: 'Montserrat Regular';
     padding-left: 70px;
@@ -81,7 +82,7 @@
     letter-spacing: 7px;
 }
 
-.about-us-title-header::before {
+.slogan-title::before {
     position: absolute;
     top: 50px;
     left: 0px;
@@ -91,7 +92,7 @@
     content: '';
 }
 
-.about-us-header-wrapper {
+.inner-header-wrapper {
     position: absolute;
     margin-left: 18.75%;
     margin-top: 168px;
@@ -221,7 +222,7 @@
     .container-about-us .content-row:nth-child(3) {
         height: 1117px;
     }
-    .about-us-header-wrapper {
+    .inner-header-wrapper {
         margin-left: 83px;
     }
     .about-us-text {
@@ -259,21 +260,21 @@
     .our-work {
         left: 25px;
     }
-    .slogan-about-us {
+    .slogan-content {
         margin-top: 30px;
     }
-    .about-us-title-header {
+    .slogan-title {
         padding-left: 30px;
     }
-    .about-us-title-header::before {
+    .slogan-title::before {
         top: 30px;
         width: 30px;
         height: 2px;
     }
-    .slogan-about-us span {
+    .slogan-content span {
         font-size: 32px;
     }
-    .about-us-header-wrapper {
+    .inner-header-wrapper {
         margin-left: 25px;
         margin-top: 195px;
     }
@@ -324,22 +325,31 @@
 }
 
 @media(max-width:500px) and (min-width:320px) {
+    .slogan-title::before {
+        top: 25px;
+        width: 30px;
+        height: 2px;
+    }
+    .slogan-title {
+        font-size: 10px;
+    }
     .our-work {
         left: 15px;
     }
-    .about-us-header-wrapper {
+    .inner-header-wrapper {
         margin-top: 130px;
     }
-    .about-us-header {
+    .about-us-header,
+    .project-header {
         height: 450px;
     }
-    .slogan-about-us {
+    .slogan-content {
         margin-top: 25px;
     }
-    .slogan-about-us span {
+    .slogan-content span {
         font-size: 26px;
     }
-    .about-us-header-wrapper {
+    .inner-header-wrapper {
         margin-left: 15px;
     }
     .container-about-us .content-row:nth-child(3) {
