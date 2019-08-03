@@ -62,7 +62,8 @@
 }
 
 .about-us-header,
-.project-header {
+.project-header,
+.project-header-outside {
     background-color: #1e2127;
     height: 600px;
     background-image: url("../img/back-ground-about-us-header.png");
@@ -340,7 +341,8 @@
         margin-top: 130px;
     }
     .about-us-header,
-    .project-header {
+    .project-header,
+    .project-header-outside {
         height: 450px;
     }
     .slogan-content {
