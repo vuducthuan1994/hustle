@@ -224,6 +224,13 @@
 }
 
 @media (max-width: 768px) {
+    .about-us-text h1::before {
+        top: -40px;
+    }
+    .about-us-text h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
     .container-about-us .content-row:nth-child(2) .about-us-text {
         padding-left: 80px;
         padding-top: 120px;
@@ -246,6 +253,9 @@
     }
     .container-about-us .content-row:last-child .about-us-text {
         padding: 0;
+        padding-left: 75px;
+        padding-top: 240px;
+        padding-right: 70px;
     }
     .container-about-us .content-row:first-child .about-us-img {
         padding: 100px 26px 76px 30px;
