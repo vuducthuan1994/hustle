@@ -970,7 +970,7 @@ ol {
 .u-ul-footer li h5 {
     margin: 0;
     font-family: "Montserrat SemiBold";
-    font-size: 1.2rem;
+    font-size: 16px;
     font-weight: normal;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
@@ -1473,6 +1473,9 @@ ol {
 }
 
 @media(max-width:500px) and (min-width:320px) {
+    .u-ul-footer li h5 {
+        font-size: 12px;
+    }
     .container-product-grid-button-more {
         padding-bottom: 90px;
     }
@@ -1508,13 +1511,13 @@ ol {
         margin-top: 6.15rem;
     }
     .u-ul-footer li {
-        padding-bottom: 2rem;
+        padding-bottom: 20px;
     }
     .u-ul-footer li:first-child {
-        padding-bottom: 3rem;
+        padding-bottom: 25px;
     }
     .footer-lerver-0-left {
-        padding-left: 2rem;
+        padding-left: 20px;
     }
     .footer-social {
         padding-left: 0rem;

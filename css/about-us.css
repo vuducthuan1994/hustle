@@ -40,6 +40,8 @@
     background-color: #1e2127;
     height: 600px;
     background-image: url("../img/back-ground-about-us-header.png");
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -253,20 +255,28 @@
 }
 
 @media(max-width:500px) and (min-width:320px) {
+    .slogan-about-us span {
+        font-size: 26px;
+    }
+    .about-us-header-wrapper {
+        margin-left: 15px;
+    }
     .container-about-us .content-row:nth-child(3) {
         height: auto;
     }
     .container-about-us .content-row .about-us-img img {
         height: 100% !important;
     }
-    .container-about-us .content-row:first-child .about-us-text,
-    .container-about-us .content-row:last-child .about-us-text {
+    .container-about-us .content-row:first-child .about-us-text {
         padding: 0;
         padding-left: 66px;
         padding-top: 100px;
         padding-right: 30px;
     }
     .container-about-us .content-row:last-child .about-us-text {
+        padding: 0;
+        padding-left: 66px;
+        padding-right: 60px;
         padding-top: 612px;
     }
     .container-about-us .content-row:nth-child(2) .about-us-text {
@@ -288,6 +298,9 @@
         padding: 0;
         padding-left: 15px;
         padding-right: 15px;
+        height: 580px;
+        margin-bottom: 90px;
+        margin-top: 52px;
     }
     .about-us-text h1 {
         font-size: 28px;
