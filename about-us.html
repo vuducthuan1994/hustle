@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./libs/wow/animate.css">
     <link rel="stylesheet" href="./font/font.css">
+
+    <!-- ANIMATION NEW -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--END  ANIMATION NEW -->
 </head>
 
 <body>
@@ -210,38 +213,38 @@
 
                 <div class="container-about-us">
                     <div class="content-row">
-                        <div class="about-us-text">
+                        <div class="about-us-text" data-aos="fade-up">
                             <h1>Our Mission
                                 <br> We Carry Out </h1>
                             <p>
                                 Hustle Studio là dự án chính của Huslte app, tại đây chúng tôi nghiên cứu xây dựng, thiết kế và hoàn thiện các sản phẩm ứng dụng công nghệ thực tế ảo tăng cường (AR,VRvv..) vào trong các lĩnh vực thời trang, nghệ thuật và truyền thông
                             </p>
                         </div>
-                        <div class="about-us-img">
+                        <div class="about-us-img" data-aos="fade-up">
                             <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/contact.png">
                         </div>
                     </div>
-                    <div class="content-row">
-                        <div class="about-us-text">
+                    <div class="content-row ">
+                        <div class="about-us-text" data-aos="fade-up">
                             <h1>Our Vision
                                 <br> We Promote</h1>
                             <p>
                                 Bằng những sản phẩm chất lượng, mục tiêu của Huslte là xây dựng cộng đồng, tạo nên sự thay đổi, đem lại nhiều giá trị, ý nghĩa hơn cho từng sản phẩm.
                             </p>
                         </div>
-                        <div class="about-us-img">
+                        <div class="about-us-img" data-aos="fade-up">
                             <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/contact.png">
                         </div>
                     </div>
                     <div class="content-row">
-                        <div class="about-us-text">
+                        <div class="about-us-text" data-aos="fade-up">
                             <h1>Our Talented
                                 <br>& Drastic Team</h1>
                             <p>
                                 Bằng kinh nghiệm và thấu hiểu về công nghệ, chúng tôi xây dựng đội ngũ những nhà thiết kế trong thời đại số. Hustle Studio hoạt động như một agency trong lĩnh vực thực tế ảo tăng cường
                             </p>
                         </div>
-                        <div class="about-us-img">
+                        <div class="about-us-img" data-aos="fade-up">
                             <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/contact.png">
                         </div>
                     </div>
@@ -249,7 +252,7 @@
             </section>
 
             <!-- INPUT EMAIL -->
-            <section class=" wow fadeInDown keep-in-touch">
+            <section class=" keep-in-touch">
                 <div>
                     <h2>KEEP IN TOUCH</h2>
                     <div class="container-input-email">
@@ -265,7 +268,7 @@
             <!-- END INPUT EMAIL -->
 
             <!-- FOOTER FIRST -->
-            <section class=" wow fadeInDown footer-lerver-0">
+            <section class="footer-lerver-0">
                 <div class="footer-lerver-0-right ">
                     <div class="footer-social">
                         <ul class="u-ul-footer">
@@ -352,15 +355,15 @@
     <script src="./js/detail.js "></script>
     <script src="./libs/wow/wow.js"></script>
     <script src="./js/eshopscreen.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
     <script>
-        wow = new WOW({
-            animateClass: 'animated',
-            offset: 100,
-            callback: function(box) {
-                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-            }
+        AOS.init({
+            duration: 1000,
+            easing: 'ease',
+            once: true, // whether animation should happen only once - while scrolling down
+            // mirror: true, // whether elements should animate out while scrolling past them
         });
-        wow.init();
     </script>
 
     <!-- THIS FILTER DROPDOW ONLY FOR ESHOP SCREEN -->
