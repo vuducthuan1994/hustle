@@ -305,6 +305,13 @@ section.adam-smith-container p {
 }
 
 @media (max-width: 768px) {
+    .under-videos .project-description {
+        width: calc(100% - 20px);
+    }
+    .under-videos .project-item-image {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .adam-custom {
         display: none;
     }
