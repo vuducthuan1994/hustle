@@ -15,8 +15,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./libs/wow/animate.css">
+
+    <!-- CSS FOR FONT -->
     <link rel="stylesheet" href="./font/font.css">
+
+    <!-- ANIMATION NEW -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--END  ANIMATION NEW -->
 </head>
 
 <body>
@@ -226,7 +231,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="project-inner-video">
+                <div class="project-inner-video" data-aos="fade-up">
                     <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"> </iframe>
                     <div class="intro-video">
                         <h3>Eye flow T-Shirt </h3>
@@ -234,7 +239,7 @@
                     </div>
                 </div>
                 <div class="under-videos">
-                    <div class="project-item-image">
+                    <div class="project-item-image" data-aos="fade-up">
                         <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/kinh-ap-trong.png">
                         <div class="project-description">
                             <div>
@@ -246,7 +251,7 @@
                         </div>
                     </div>
 
-                    <div class="project-item-image">
+                    <div class="project-item-image" data-aos="fade-up">
                         <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/bao-tay-ni-lon.png">
                         <div class="project-description">
                             <div>
@@ -257,7 +262,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-item-image">
+                    <div class="project-item-image" data-aos="fade-up">
                         <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/bao-tay-ni-lon.png">
                         <div class="project-description">
                             <div>
@@ -268,7 +273,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-item-image">
+                    <div class="project-item-image" data-aos="fade-up">
                         <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/bao-tay-ni-lon.png">
                         <div class="project-description">
                             <div>
@@ -284,23 +289,23 @@
             <section class="adam-smith-container">
                 <h3>ADAM SMITH</h3>
                 <h5>Project manager</h5>
-                <p>They're the kind of people you'd want building your website <br class="adam-custom"> and to have a beer with afterwards</p>
+                <p data-aos="zoom-in">They're the kind of people you'd want building your website <br class="adam-custom"> and to have a beer with afterwards</p>
             </section>
 
-            <section class=" wow fadeInDown related-work">
+            <section class="related-work">
                 <h3> Related Work</h3>
                 <div class="related-work-images">
-                    <div class="related-work-image-inner">
+                    <div class="related-work-image-inner" data-aos="fade-up">
                         <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/ha-noi-riot.png">
                         <div class="title-image">Hanoi Riot x Hustle </div>
                         <h5>T-Shirt</h5>
                     </div>
-                    <div class="related-work-image-inner">
+                    <div class="related-work-image-inner" data-aos="fade-up">
                         <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/plassic.png">
                         <div class="title-image">Loài Plastic</div>
                         <h5>T-Shirt</h5>
                     </div>
-                    <div class="related-work-image-inner">
+                    <div class="related-work-image-inner" data-aos="fade-up">
                         <img class=" u-pos-tl u-fit u-object-fit-cover" src="./img/running-man.png">
                         <div class="title-image">Running Man </div>
                         <h5>T-Shirt</h5>
@@ -317,7 +322,7 @@
             </section>
 
             <!-- INPUT EMAIL -->
-            <section class=" wow fadeInDown keep-in-touch">
+            <section class="keep-in-touch">
                 <div>
                     <h2>KEEP IN TOUCH</h2>
                     <div class="container-input-email">
@@ -333,7 +338,7 @@
             <!-- END INPUT EMAIL -->
 
             <!-- FOOTER FIRST -->
-            <section class=" wow fadeInDown footer-lerver-0">
+            <section class="footer-lerver-0">
                 <div class="footer-lerver-0-right ">
                     <div class="footer-social">
                         <ul class="u-ul-footer">
@@ -414,23 +419,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
     <!-- <script src="./pointer.js"></script> -->
     <script src="./js/menu.js "></script>
+    <script src="./js/detail.js "></script>
+    <script src="./js/eshopscreen.js "></script>
 
 
     <!-- FOR ANIMATION WHEN USER USE SCROLL BAR -->
-    <script src="./js/detail.js "></script>
-    <script src="./libs/wow/wow.js"></script>
-    <script src="./js/eshopscreen.js "></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        wow = new WOW({
-            animateClass: 'animated',
-            offset: 100,
-            callback: function(box) {
-                console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-            }
+        AOS.init({
+            duration: 1000,
+            easing: 'ease',
+            once: true, // whether animation should happen only once - while scrolling down
+            // mirror: true, // whether elements should animate out while scrolling past them
         });
-        wow.init();
     </script>
-
+    <!-- END FOR ANIMATION WHEN USER USE SCROLL BAR -->
     <!-- THIS FILTER DROPDOW ONLY FOR ESHOP SCREEN -->
     <div class="filter-dropdown">
         <div class="filter-dropdown-close u-absolute u-pos-tl u-fit">
