@@ -21,6 +21,13 @@ section.related-work h3 {
     margin-top: 148px;
 }
 
+.project-header .slogan-content span:first-child {
+    color: black;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 0px;
+    -webkit-text-stroke-color: white;
+}
+
 .related-work-images,
 .under-videos {
     margin-top: 65px;
@@ -129,7 +136,6 @@ section.adam-smith-container p {
 .overview-text-left div p {
     margin: 0;
     padding: 0;
-    font-family: "Montserrat";
     color: rgba(40, 46, 56, 0.8);
     line-height: 1.2;
     text-align: left;
@@ -325,6 +331,13 @@ section.adam-smith-container p {
 }
 
 @media (max-width: 768px) {
+    .overview-text-left div p {
+        font-size: 16px;
+    }
+    .overview-text-left div {
+        padding-bottom: 15px;
+        width: 91.65%;
+    }
     .under-videos .project-description {
         width: calc(100% - 20px);
     }
@@ -355,7 +368,7 @@ section.adam-smith-container p {
     }
     .overview-text-right h3 {
         font-size: 28px;
-        margin-top: -4px;
+        margin-top: -5.5px;
     }
     .overview-text-left h3 {
         font-size: 20px;
