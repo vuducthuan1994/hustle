@@ -29,3 +29,7 @@
     font-weight: normal;
     letter-spacing: 2px;
 }
+
+.payment-sucess .product-cart-more-button-inner i {
+    font-size: 12px;
+}

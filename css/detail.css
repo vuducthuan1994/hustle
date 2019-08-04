@@ -588,9 +588,9 @@ ol {
     background: 0 0;
     border: 1px solid #282e38;
     color: #000;
-    font-size: 1.2rem;
+    font-size: 12px;
     line-height: 1;
-    letter-spacing: .05em;
+    letter-spacing: 2px;
     text-align: center;
     cursor: pointer;
     width: 100%;
