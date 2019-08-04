@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thời Trang</title>
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/eshop.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/about-us.css">
+    <link rel="stylesheet" href="./css/payment.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS FOR FONT -->
+    <link rel="stylesheet" href="./font/font.css">
+
+
+    <!-- ANIMATION NEW -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--END  ANIMATION NEW -->
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <div class="js-select-overlay product-select-overlay "></div>
+        <header class="header header-detail">
+            <div id="logo">
+                <a href="#">
+                    <img src="./img/logo.png">
+                </a>
+            </div>
+            <!-- MENU DESKTOP -->
+            <nav class="menu menu-desktop" role="navigation">
+                <ul class="menu-list menu-left">
+                    <li>
+                        <a class="link-item" href="#about">PROJECTS</a>
+                        <div class="container-red-slider">
+                            <hr class="active-li">
+                        </div>
+                    </li>
+                    <li>
+                        <a class="link-item" href="#exp">E-SHOP</a>
+                        <div class="container-red-slider">
+                            <hr class="active-li">
+                        </div>
+                    </li>
+                    <li>
+                        <a class="link-item" href="#skills">ABOUT US</a>
+                        <div class="container-red-slider">
+                            <hr class="active-li">
+                        </div>
+                    </li>
+                    <li>
+                        <a class="link-item" href="#projects">CONTACT</a>
+                        <div class="container-red-slider">
+                            <hr class="active-li">
+                        </div>
+                    </li>
+                    <li>
+                        <ul class="lang">
+                            <li style="padding: 0px">
+                                <a class="en expand active ">ENG </a>
+                                <a class="lang-space ">/</a>
+                                <a class="vi expand">VIE</a>
+                                <a class="detail-cart expand js-custom-cart">Cart</a>
+                                <a class="number-items-container js-custom-cart">
+                                    <div class="number-items js-custom-cart">
+                                        0
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                        <div class="container-red-slider">
+                            <hr class="active-li">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <!-- END DESKTOP -->
+
+            <!-- MENU MOBIE -->
+            <nav class="navMobie">
+                <div class="container-menu-mobie">
+                    <ul class="navMenu">
+                        <li><a href="#0">PROJECTS</a></li>
+                        <li><a href="#0">E-SHOP</a></li>
+                        <li class="active"><a href="#0">ABOUT US</a></li>
+                        <li><a href="#0">CONTACT</a></li>
+                    </ul>
+                    <div class="logo-menu-mobie">
+                        <img src="./img/logo-menu-mobie.png">
+                    </div>
+                    <div class="footerMenuMobie">
+                        <div class="container-icon-social">
+                            <a href="#">
+                                <img class="img-facebook">
+                            </a>
+                            <a href="#">
+
+                                <img class="img-youtube ytb-mobie" src="./img/youtubeHover.svg">
+                            </a>
+                            <a href="#">
+                                <img class="img-instagram" src="./img/instaHover.svg">
+                            </a>
+                        </div>
+
+                        <div class="container-cart-item js-custom-cart">
+                            <div class="js-custom-cart cartMenu ">
+                                CART
+                            </div>
+                            <div class="number-item-cart js-custom-cart">
+                                <div>
+                                    1
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i class="fa fa-times closeButton" aria-hidden="true"></i>
+            </nav>
+            <!-- END MENU MOBIE -->
+
+            <!-- ICON TO OPEN MENU MOBIE -->
+            <div class="burgerIcon">
+                <div class="burgerLine"></div>
+                <div class="burgerLine lineCenter"></div>
+                <div class="burgerLine"></div>
+            </div>
+            <!-- END ICON TO OPEN MENU MOBIE -->
+        </header>
+
+        <main class="page-content">
+            <!-- THIS SECTION IS BACKGROUND WHEN CLICK TO CART . ( CLICK TO THIS SECTION TO CLOSE CART SCREEN) -->
+            <section id="cart-background" class="cart">
+                <!-- MENU RIGHT (PAYMENT PART) -->
+                <nav id="navRightCart">
+                    <div class="artile">
+                        <div class="number-artile">
+                            1 ARTICLE
+                        </div>
+                        <i class="fa fa-times closeCart" aria-hidden="true"></i>
+                    </div>
+                    <div class="infomationCart">
+                        <div class="img-cart">
+                            <img src="./img/itemCart.png">
+                        </div>
+                        <div class="info-item">
+                            <div class="title-item">
+                                1x Eye flow T-Shirt
+                            </div>
+                            <div class="size-item">
+                                S/Black/T-Shirt
+                            </div>
+                            <div class="cost-info">
+                                <div class="cost-item">
+                                    75$
+                                </div>
+                                <div class="count-item">
+                                    <div class="decrement-item">
+                                        <i class="fa fa-minus" style="color:#8d8e91;"></i>
+                                    </div>
+                                    <div class="increment-item">
+                                        <i class="fa fa-plus" style="color:white;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="custom-line-hr">
+                    <div class="totalMonney">
+                        <div>
+                            Total
+                        </div>
+                        <div id="totalMonney">
+                            75$
+                        </div>
+                    </div>
+                    <div class="payment-now">
+                        <a>Payment Now</a>
+                    </div>
+                    <hr style="width: 66.5%">
+                </nav>
+                <!--END  MENU RIGHT (PAYMENT PART) -->
+            </section>
+            <!-- END THIS SECTION IS BACKGROUND WHEN CLICK TO CART . ( CLICK TO THIS SECTION TO CLOSE CART SCREEN) -->
+        </main>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <!-- <script src="./pointer.js"></script> -->
+    <script src="./js/sliderHome.js "></script>
+    <script src="./js/menu.js "></script>
+    <script src="./js/detail.js "></script>
+
+    <!-- FOR ANIMATION WHEN USER USE SCROLL BAR -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease',
+            once: true, // whether animation should happen only once - while scrolling down
+            // mirror: true, // whether elements should animate out while scrolling past them
+        });
+    </script>
+
+</body>
+
+</html>
