@@ -1,0 +1,31 @@
+.payment-sucess {
+    text-align: center;
+}
+
+.payment-sucess i {
+    color: #53b412;
+    font-size: 44px;
+}
+
+.payment-sucess h3 {
+    font-size: 26px;
+    color: rgb(40, 46, 56);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'Montserrat Bold';
+    letter-spacing: 4.2px;
+}
+
+.payment-sucess h5 {
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: rgba(27, 29, 34, 0.502);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    font-family: 'Montserrat Regular';
+    font-weight: normal;
+    letter-spacing: 2px;
+}
