@@ -2,9 +2,9 @@
     text-align: center;
 }
 
-.payment-sucess i {
+.payment-sucess .custom-icon {
     color: #53b412;
-    font-size: 44px;
+    font-size: 72px;
 }
 
 .payment-sucess h3 {
