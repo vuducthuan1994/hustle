@@ -3,6 +3,10 @@
     var timeout;
 
     function handleMouseMove(event) {
+        if (!document.getElementById('cursor-page')) {
+            return;
+        }
+
         var eventDoc, doc, body;
         event = event || window.event;
         if (timeout !== undefined) {

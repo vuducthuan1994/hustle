@@ -2,10 +2,6 @@ html {
     font-size: 10px;
 }
 
-.wow:first-child {
-    visibility: hidden;
-}
-
 .header.header-detail {
     height: 13.88vh;
 }
