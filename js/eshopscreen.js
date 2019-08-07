@@ -1,15 +1,16 @@
 $(document).ready(function() {
 
     $('.js-filter').click(function() {
-        $('html').addClass("is-filter-dropdown-open ");
+        $('html').addClass("is-filter-dropdown-open");
         var p = $(this);
-        var position = p.offset();
+        var offset = p.offset();
+        var w = $(window);
         var labelMenu = $(this).data("filter-default");
         console.log(labelMenu);
         $(".filter-dropdown-label").text(labelMenu);
         $('.filter-dropdown-wrapper').css({
-            "top": position.top,
-            "left": position.left
+            "left": offset.left - w.scrollLeft(),
+            "top": offset.top - w.scrollTop()
         })
 
     });
