@@ -4,7 +4,7 @@
 
 .our-partner {
     width: 100%;
-    height: 865px;
+    height: auto;
     background-color: white;
 }
 
@@ -16,7 +16,7 @@
 }
 
 section.related-work.project-screen {
-    padding-top: 0px;
+    padding-top: 135px;
 }
 
 section.project-outsite.project-videos {
@@ -100,6 +100,8 @@ section.project-outsite.project-videos {
 }
 
 .inner-our-partner-content-up p {
+    margin: 0;
+    margin-top: 30px;
     font-family: 'Montserrat Regular';
     font-size: 16px;
     font-family: "Montserrat";
@@ -109,15 +111,20 @@ section.project-outsite.project-videos {
 }
 
 .our-partner-content-dow h3 {
+    margin: 0px;
+    margin-top: 15px;
     font-size: 20px;
     font-family: "Montserrat Bold";
     color: rgb(180, 18, 51);
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
+    letter-spacing: 3.5px;
 }
 
 .our-partner-content-dow h5 {
+    margin: 0px;
+    margin-top: 15px;
     font-size: 12px;
     font-family: 'Montserrat Regular';
     color: rgba(40, 46, 56, 0.702);
@@ -132,5 +139,69 @@ section.project-outsite.project-videos {
         padding-left: 83px;
         padding-right: 83px;
         margin-top: 60px;
+    }
+    .arrow-triangle {
+        left: 13.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-partner .our-partner-content-dow {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .container-logo img {
+        display: none;
+    }
+    .container-logo img:nth-child(1) {
+        display: block;
+    }
+    .container-logo img:nth-child(2) {
+        display: block;
+    }
+    .container-logo img:nth-child(3) {
+        display: block;
+    }
+    .container-logo {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    .arrow-triangle {
+        left: 14.7%;
+    }
+    .inner-our-partner-content-up h2 {
+        font-size: 26px;
+        margin-bottom: 30px;
+    }
+    .our-partner .our-partner-content-dow {
+        height: 417px;
+        padding-top: 135px;
+    }
+}
+
+@media(max-width:500px) and (min-width:320px) {
+    .inner-our-partner-content-up {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .container-logo {
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-top: 25px;
+    }
+    .container-logo img {
+        width: 65px;
+        height: 65px;
+    }
+    .our-partner-content-dow {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .our-partner .our-partner-content-dow p {
+        font-size: 20px;
+    }
+    .our-partner .our-partner-content-dow {
+        height: 324px;
+        padding-top: 55px;
     }
 }
