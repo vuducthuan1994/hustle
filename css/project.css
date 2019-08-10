@@ -15,9 +15,18 @@
     text-align: center;
 }
 
+section.related-work.project-screen {
+    padding-top: 0px;
+}
+
+section.project-outsite.project-videos {
+    padding-bottom: 0px;
+}
+
 .inner-our-partner-content-up {
     /* max-width: 1200px; */
     text-align: center;
+    padding-top: 70px;
 }
 
 .our-partner .our-partner-content-dow {
@@ -25,16 +34,24 @@
     background-color: white;
     text-align: center;
     position: relative;
+    padding-top: 135px;
 }
 
 .container-logo {
-    max-width: 1200px;
     display: -webkit-flex;
     /* Safari */
     -webkit-justify-content: space-between;
     /* Safari 6.1+ */
     display: flex;
     justify-content: space-between;
+    padding-left: 360px;
+    padding-right: 360px;
+    margin-top: 70px;
+}
+
+.container-logo img {
+    width: 100px;
+    height: 100px;
 }
 
 .our-partner .our-partner-content-dow p {
@@ -59,4 +76,61 @@
     font-size: 188.6px;
     color: rgba(40, 46, 56, 0.102);
     font-weight: bold;
+}
+
+.arrow-triangle {
+    border: 20px solid #fff;
+    border-bottom: none;
+    border-color: #1e2127 #fff transparent #fff;
+    position: absolute;
+    left: 24%;
+    bottom: -20px;
+    z-index: 2;
+}
+
+.inner-our-partner-content-up h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: "Montserrat Bold";
+    color: rgb(255, 255, 255);
+    font-weight: normal;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.inner-our-partner-content-up p {
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgba(255, 255, 255, 0.502);
+    line-height: 1.875;
+    text-align: center;
+}
+
+.our-partner-content-dow h3 {
+    font-size: 20px;
+    font-family: "Montserrat Bold";
+    color: rgb(180, 18, 51);
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.our-partner-content-dow h5 {
+    font-size: 12px;
+    font-family: 'Montserrat Regular';
+    color: rgba(40, 46, 56, 0.702);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 3.5px;
+}
+
+@media (max-width: 1366px) {
+    .container-logo {
+        padding-left: 83px;
+        padding-right: 83px;
+        margin-top: 60px;
+    }
 }
