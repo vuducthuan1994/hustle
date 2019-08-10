@@ -204,4 +204,17 @@ section.project-outsite.project-videos {
         height: 324px;
         padding-top: 55px;
     }
+    .arrow-triangle {
+        border: 13px solid #fff;
+        border-bottom: none;
+        border-color: #1e2127 #fff transparent #fff;
+        position: absolute;
+        left: 16%;
+        bottom: -13px;
+        z-index: 2;
+    }
+    .our-partner .our-partner-content-dow {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
