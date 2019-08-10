@@ -65,17 +65,29 @@ section.project-outsite.project-videos {
     text-align: center;
 }
 
-.our-partner-comma p {
-    width: 75px;
-    height: 50px;
-    overflow: visible;
+.our-partner-comma {
+    width: 190px;
+    height: auto;
     position: absolute;
-    top: 135px;
-    left: calc(50% - 95px);
+    left: calc(50% - 92px);
+    top: 38%;
+}
+
+.our-partner-comma .comma {
+    overflow: visible;
     font-family: 'Playfair Display';
     font-size: 188.6px;
     color: rgba(40, 46, 56, 0.102);
     font-weight: bold;
+    line-height: 52px;
+}
+
+.our-partner-comma .comma:nth-child(1) {
+    text-align: left;
+}
+
+.our-partner-comma .comma:nth-child(2) {
+    text-align: right;
 }
 
 .arrow-triangle {
@@ -180,6 +192,14 @@ section.project-outsite.project-videos {
 }
 
 @media(max-width:500px) and (min-width:320px) {
+    .our-partner-comma {
+        width: 195px;
+        left: calc(50% - 96px);
+        top: 20%;
+    }
+    .our-partner-comma .comma {
+        line-height: 91px;
+    }
     .inner-our-partner-content-up {
         padding-left: 15px;
         padding-right: 15px;
