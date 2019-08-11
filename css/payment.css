@@ -1,0 +1,132 @@
+.payment-container {
+    position: relative;
+    background: linear-gradient(90deg, #1b1d22 50%, #1b1d22 50%);
+    height: auto;
+}
+
+.inner-payment-container {
+    max-width: 1200px;
+    margin: 0px auto;
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.inner-payment-container .cart-payment {
+    background-color: #1b1d22;
+    width: 40%;
+    height: auto;
+}
+
+.inner-payment-container .process-payment-container {
+    background-color: white;
+    width: 60%;
+    height: auto;
+    padding-right: 40px;
+}
+
+.inner-payment-container .process-payment-container h1 {
+    margin: 0;
+    margin-top: 60px;
+    font-size: 40px;
+    font-family: 'Montserrat Black';
+    color: rgb(40, 46, 56);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.process-payment-container .step-container {
+    display: flex;
+}
+
+.step-container .common-step-paymment {
+    position: relative;
+    display: flex;
+}
+
+.common-step-paymment .number-items {
+    font-size: 14px;
+    font-family: "Montserrat SemiBold";
+    color: rgba(40, 46, 56, 0.502);
+}
+
+.step-container .common-step-paymment .number-items-container {
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border: solid 1px #f6f6f6;
+}
+
+.step-container .common-step-paymment.active .number-items-container {
+    background-color: #282e38;
+}
+
+.step-container .common-step-paymment.done-step .number-items-container {
+    background-color: #b41233;
+}
+
+.step-container .common-step-paymment.active .number-items-container .number-items {
+    color: white;
+}
+
+.step-container .common-step-paymment span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 10px;
+    font-family: 'Montserrat SemiBold';
+    font-weight: normal;
+    color: rgb(40, 46, 56);
+    text-transform: uppercase;
+    line-height: 3.5;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.common-step-paymment.step-two {
+    margin-left: 50px;
+}
+
+.done-step .number-items-container i {
+    color: white;
+    font-size: 17px;
+}
+
+.step-container {
+    margin-top: 20px;
+}
+
+.container-input-form {
+    position: relative;
+}
+
+.process-payment-container .container-input-form input {
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 25px;
+    border: 1px solid #c6c8cc;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    font-family: 'Montserrat Regular';
+    color: rgba(40, 46, 56, 0.502);
+    text-align: left;
+    height: 60px;
+    transition: all .5s ease-in-out;
+}
+
+.process-payment-container .container-input-form label {
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Montserrat SemiBold';
+    color: rgb(40, 46, 56);
+    line-height: 1.2;
+    text-align: left;
+    position: absolute;
+    left: 20px;
+    font-weight: bold;
+    top: 15px;
+}
