@@ -1,6 +1,6 @@
 .payment-container {
     position: relative;
-    background: linear-gradient(90deg, #1b1d22 50%, #1b1d22 50%);
+    background: linear-gradient(90deg, white 50%, #1b1d22 50%);
     height: auto;
 }
 
@@ -411,4 +411,202 @@
 
 .payment-total-price .row-data:first-child {
     margin-top: 40px;
+}
+
+.process-payment-button .button-back-to-eshop:hover {
+    color: #1b1d22;
+}
+
+.fill-infomation,
+.click-paypal {
+    display: flex;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.fill-infomation {
+    height: 50px;
+    border-top: solid 1px #d9d9da;
+}
+
+.click-paypal {
+    height: 60px;
+}
+
+.fill-infomation .infomation-title,
+.fill-infomation label.container-checkbox-payment {
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Montserrat Bold';
+    color: rgb(40, 46, 56);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 4.2;
+    text-align: left;
+}
+
+.fill-infomation .infomation-value,
+.click-paypal .infomation-title {
+    font-family: 'Montserrat Regular';
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: rgb(40, 46, 56);
+    line-height: 3;
+    text-align: right;
+}
+
+.click-paypal .logo-paypal {
+    width: 141px;
+    border: solid 1px #d9d9da;
+    border-radius: 30px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.logo-paypal img {
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.fill-infomation.paymment-method {
+    height: 90px;
+}
+
+.fill-infomation.paymment-method .infomation-title {
+    font-size: 26px;
+    font-family: "Montserrat SemiBold";
+}
+
+.process-payment-container .fill-infomation:first-child {
+    margin-top: 35px;
+}
+
+
+/* CSS FOR CUSTOM CHECKBOX */
+
+.container-checkbox-payment {
+    display: block;
+    position: relative;
+    padding-left: 27px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Hide the browser's default checkbox */
+
+.container-checkbox-payment input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Create a custom checkbox */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 18px;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border: 1px solid #282e38;
+}
+
+
+/* On mouse-over, add a grey background color */
+
+.container-checkbox-payment:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+
+/* When the checkbox is checked, add a blue background */
+
+.container-checkbox-payment input:checked~.checkmark {
+    background-color: #282e38;
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Show the checkmark when checked */
+
+.container-checkbox-payment input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Style the checkmark/indicator */
+
+.container-checkbox-payment .checkmark:after {
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* END CSS FOR CUSTOM CHECKBOX */
+
+@media (max-width: 768px) {
+    .inner-payment-container {
+        width: 100%;
+        flex-direction: row;
+        display: block;
+    }
+    .inner-payment-container .cart-payment {
+        width: 100%;
+        display: block;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .inner-payment-container .process-payment-container {
+        width: 100%;
+        display: block;
+        padding-left: 25px;
+        padding-bottom: 85px;
+    }
+    .container-product-cart-payment {
+        display: flex;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .container-product-cart-payment .cart-item-products {
+        width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+    }
+    .container-product-cart-payment .cart-item-products:not(:first-child) {
+        margin-top: 0px;
+    }
+    .container-product-cart-payment .cart-item-products:last-child {
+        margin-bottom: 0px;
+    }
 }
