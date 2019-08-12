@@ -16,7 +16,7 @@
 .inner-payment-container .cart-payment {
     background-color: #1b1d22;
     width: 40%;
-    height: auto;
+    height: 100vh;
 }
 
 .inner-payment-container .process-payment-container {
@@ -97,8 +97,19 @@
     margin-top: 20px;
 }
 
-.container-input-form {
+.container-input-form,
+.container-select-form {
     position: relative;
+}
+
+.container-select-form {
+    width: 50%;
+    margin-right: 10px;
+}
+
+.input-wrapper .container-input-form.city {
+    width: 50%;
+    margin-left: 10px;
 }
 
 .process-payment-container .container-input-form input {
@@ -118,7 +129,13 @@
     transition: all .5s ease-in-out;
 }
 
-.process-payment-container .container-input-form label {
+.process-payment-container .container-input-form input:focus,
+.process-payment-container .container-select-form select:focus {
+    border: 1px solid #919499;
+}
+
+.process-payment-container .container-input-form label,
+.process-payment-container .container-select-form label {
     margin: 0;
     font-size: 10px;
     font-family: 'Montserrat SemiBold';
@@ -129,4 +146,80 @@
     left: 20px;
     font-weight: bold;
     top: 15px;
+}
+
+.input-wrapper {
+    display: flex;
+}
+
+.input-wrapper .address,
+.input-wrapper .postal-code {
+    width: 50%;
+}
+
+.input-wrapper .address {
+    margin-right: 10px;
+}
+
+.input-wrapper .postal-code {
+    margin-left: 10px;
+}
+
+.container-select-form select {
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 25px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid #c6c8cc;
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    font-family: 'Montserrat Regular';
+    color: rgba(40, 46, 56, 0.502);
+    text-align: left;
+    height: 60px;
+    transition: all .5s ease-in-out;
+}
+
+.container-select-form select:required:invalid {
+    color: gray;
+}
+
+.container-select-form select option[value=""][disabled] {
+    display: none;
+}
+
+.container-select-form select option {
+    color: black;
+}
+
+.input-wrapper.row-data,
+.container-input-form.row-data {
+    margin-top: 20px;
+}
+
+.process-payment-container .container-input-form.row-data:first-child {
+    margin-top: 35px;
+}
+
+.process-payment-button {
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+}
+
+.process-payment-button .button-back-to-eshop {
+    vertical-align: middle;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+
+.process-payment-button .product-grid-more-button {
+    width: 36.71%;
+    height: 60px;
 }
