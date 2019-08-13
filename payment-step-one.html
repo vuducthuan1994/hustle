@@ -313,8 +313,8 @@
                             <div class="input-wrapper row-data">
                                 <div class="container-select-form">
                                     <label>Country</label>
-                                    <select>
-                                        <option value="" disabled selected>Your Country</option>
+                                    <select required>
+                                        <option value="" disabled selected hidden>Your Country</option>
                                         <option value="1">One</option>
                                         <option value="2">Two</option>
                                     </select>
@@ -341,12 +341,12 @@
                             </div>
                         </form>
                         <div class="process-payment-button">
-                            <button class="button-back-to-eshop">
-                                <i class="fa fa-caret-left"></i>
-                                <span class="product-cart-more-button-inner">BACK TO ESHOP</span>
-                            </button>
                             <button class="product-grid-more-button">
                                 <span class="product-cart-more-button-inner">NEXT TO PAYMENT</span>
+                            </button>
+                            <button class="button-back-to-eshop">
+                                    <i class="fa fa-caret-left"></i>
+                                    <span class="product-cart-more-button-inner">BACK TO ESHOP</span>
                             </button>
                         </div>
 

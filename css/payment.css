@@ -268,10 +268,8 @@
 }
 
 .container-select-form select {
-    cursor: pointer;
-    padding-left: 20px;
+    padding-left: 15px;
     padding-top: 25px;
-    height: 60px;
     cursor: pointer;
     border: 1px solid #c6c8cc;
     outline: none;
@@ -280,14 +278,14 @@
     background: transparent;
     font-size: 16px;
     font-family: 'Montserrat Regular';
-    color: rgba(40, 46, 56, 0.502);
+    color: black;
     text-align: left;
     height: 60px;
     transition: all .5s ease-in-out;
 }
 
-.container-select-form select:required:invalid {
-    color: gray;
+.container-select-form select:invalid {
+    color: rgba(40, 46, 56, 0.502);
 }
 
 .container-select-form select option[value=""][disabled] {
@@ -295,7 +293,7 @@
 }
 
 .container-select-form select option {
-    color: black;
+    color: rgba(40, 46, 56, 0.502);
 }
 
 .input-wrapper.row-data,
