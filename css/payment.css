@@ -19,7 +19,7 @@
 .inner-payment-container .cart-payment {
     background-color: #1b1d22;
     width: 41.77%;
-    height: auto;
+    height: 100vh;
     padding-left: 60px;
     padding-top: 25px;
 }
@@ -435,6 +435,10 @@
     margin-top: 40px;
 }
 
+.payment-total-price .row-data:last-child {
+    margin-top: 45px;
+}
+
 .process-payment-button .button-back-to-eshop:hover {
     color: #1b1d22;
 }
@@ -605,6 +609,9 @@
 /* END CSS FOR CUSTOM CHECKBOX */
 
 @media (max-width: 768px) {
+    .inner-payment-container .cart-payment {
+        height: auto;
+    }
     .inner-payment-container {
         width: 100%;
         flex-direction: row;
