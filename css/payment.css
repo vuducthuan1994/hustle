@@ -437,6 +437,11 @@
 
 .payment-total-price .row-data:last-child {
     margin-top: 45px;
+    padding-bottom: 50px;
+}
+
+.payment-total-price .row-data:last-child .row-data-price {
+    font-size: 42px;
 }
 
 .process-payment-button .button-back-to-eshop:hover {
@@ -649,6 +654,15 @@
 }
 
 @media(max-width:500px) and (min-width:320px) {
+    .payment-total-price .row-data .row-data-title {
+        font-size: 10px;
+    }
+    .payment-total-price .row-data .row-data-price {
+        font-size: 20px;
+    }
+    .payment-total-price .row-data:last-child .row-data-price {
+        font-size: 30px;
+    }
     .click-paypal .infomation-title {
         text-align: left;
         width: 37%;
