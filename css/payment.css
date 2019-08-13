@@ -19,7 +19,7 @@
 .inner-payment-container .cart-payment {
     background-color: #1b1d22;
     width: 41.77%;
-    height: 100vh;
+    height: auto;
     padding-left: 60px;
     padding-top: 25px;
 }
