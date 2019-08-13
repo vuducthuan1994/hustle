@@ -228,19 +228,25 @@
     border: 1px solid #919499;
 }
 
+.process-payment-container .container-input-form input:focus+label,
+.process-payment-container .container-select-form select:focus+label {
+    color: #b41233;
+}
+
 .process-payment-container .container-input-form label,
 .process-payment-container .container-select-form label,
 .promo-code-container .container-input-form label {
     margin: 0;
     font-size: 10px;
     font-family: 'Montserrat SemiBold';
-    color: rgb(40, 46, 56);
+    color: #50555d;
     line-height: 1.2;
     text-align: left;
     position: absolute;
     left: 20px;
     font-weight: bold;
     top: 15px;
+    transition: all .5s ease-in-out;
 }
 
 .promo-code-container .container-input-form label {
