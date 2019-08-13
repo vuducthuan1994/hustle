@@ -243,6 +243,10 @@
     top: 15px;
 }
 
+.promo-code-container .container-input-form label {
+    color: rgba(255, 255, 255, 0.302);
+}
+
 .input-wrapper,
 .promo-code-container {
     display: flex;
@@ -309,6 +313,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    flex-direction: row-reverse;
 }
 
 .process-payment-button .button-back-to-eshop {
@@ -337,15 +342,34 @@
 }
 
 .promo-code-container input {
+    background-color: #3d3f43;
     height: 60px;
     width: 100%;
-    background-color: #3d3f43;
     border: none;
-    outline-color: #919499;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 25px;
+    /* border: 1px solid #c6c8cc; */
+    outline: none;
+    display: inline-block;
+    width: 100%;
+    background: transparent;
+    font-size: 16px;
+    font-family: 'Montserrat Regular';
+    color: rgb(40, 46, 56);
+    text-align: left;
+    height: 60px;
+    transition: all .5s ease-in-out;
+    color: white;
 }
 
 .promo-code-container .container-input-form {
     width: 65.45%;
+    background-color: #3d3f43;
+}
+
+.promo-code-container .container-input-form input:focus {
+    border: 1px solid #919499;
 }
 
 .promo-code-container button {
@@ -431,7 +455,10 @@
 }
 
 .click-paypal {
-    height: 60px;
+    height: 100px;
+    margin-top: 20px;
+    border-bottom: solid 1px #d9d9da;
+    margin-bottom: 40px;
 }
 
 .fill-infomation .infomation-title,
@@ -456,8 +483,13 @@
     text-align: right;
 }
 
+.click-paypal .infomation-title {
+    text-align: left;
+}
+
 .click-paypal .logo-paypal {
     width: 141px;
+    height: 60px;
     border: solid 1px #d9d9da;
     border-radius: 30px;
     align-content: center;
@@ -608,5 +640,75 @@
     }
     .container-product-cart-payment .cart-item-products:last-child {
         margin-bottom: 0px;
+    }
+}
+
+@media(max-width:500px) and (min-width:320px) {
+    .click-paypal .infomation-title {
+        text-align: left;
+        width: 37%;
+        font-size: 12px;
+        line-height: 1.8;
+    }
+    .process-payment-button .product-grid-more-button {
+        width: 100%;
+    }
+    .process-payment-button {
+        display: block;
+        flex-direction: row;
+    }
+    .process-payment-button .button-back-to-eshop {
+        text-align: center;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .fill-infomation.row-have-checkbox {
+        display: block;
+        height: auto;
+        padding-bottom: 30px;
+    }
+    .fill-infomation.row-have-checkbox .infomation-value {
+        text-align: left;
+    }
+    .container-product-cart-payment .cart-item-products {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 35px;
+    }
+    .container-product-cart-payment {
+        display: block;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .container-product-cart-payment .cart-item-products:last-child {
+        margin-bottom: 45px;
+    }
+    .inner-payment-container .cart-payment {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 40px;
+    }
+    .inner-payment-container .process-payment-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .click-paypal {
+        height: 90px;
+        margin-top: 30px;
+        border-bottom: solid 1px #d9d9da;
+        margin-bottom: 30px;
+    }
+    .fill-infomation label.container-checkbox-payment {
+        line-height: 1;
+        margin-top: 30px;
+    }
+    .fill-infomation.row-have-checkbox .infomation-value {
+        text-align: left;
+        line-height: 1;
+        margin-top: 20px;
+    }
+    .checkmark {
+        margin-top: -2px;
     }
 }
