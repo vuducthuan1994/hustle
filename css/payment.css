@@ -1,3 +1,7 @@
+.header.header-payment {
+    height: 180px;
+}
+
 .payment-container {
     position: relative;
     background: linear-gradient(90deg, white 50%, #1b1d22 50%);
@@ -619,7 +623,16 @@
 
 /* END CSS FOR CUSTOM CHECKBOX */
 
+@media (max-width: 1366px) {
+    .header.header-payment {
+        height: 134px;
+    }
+}
+
 @media (max-width: 768px) {
+    .header.header-payment {
+        height: 146px;
+    }
     .inner-payment-container .cart-payment {
         height: auto;
     }
@@ -660,6 +673,9 @@
 }
 
 @media(max-width:500px) and (min-width:320px) {
+    .header.header-payment {
+        height: 73px;
+    }
     .payment-total-price .row-data .row-data-title {
         font-size: 10px;
     }
