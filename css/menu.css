@@ -255,7 +255,8 @@ img {
     font-family: "Montserrat ExtraBold";
     line-height: 1.2;
     text-align: left;
-    text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .navMenu li.active a {
